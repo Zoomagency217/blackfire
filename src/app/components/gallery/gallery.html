@@ -1,0 +1,10 @@
+<div class="app-gallery">
+	<h2>{{gl.title}}</h2>
+	<div class="description">{{gl.description}}</div>
+	<ul class="list-unstyled">
+		<li ng-repeat="item in gl.gallery" ng-class="'w-'+item.width">
+			<img ng-src="{{item.image}}">
+		</li>
+	</ul>
+	<div class="clearfix"></div>
+</div>

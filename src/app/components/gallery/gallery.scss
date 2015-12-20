@@ -1,0 +1,18 @@
+.app-gallery {
+	padding-top: 25px;
+	text-align: center;
+	ul {
+		margin-top: 55px;
+		li {
+			position: relative;
+			width: 20%;
+			float: left;
+			&.w-2 {
+				width: 40%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

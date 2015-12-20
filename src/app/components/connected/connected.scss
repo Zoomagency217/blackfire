@@ -1,0 +1,39 @@
+.app-connected {
+	width: 100%;
+	.cta {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		text-align: center;
+		color: white;
+		h2 {
+			font-size: 34px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.main {
+		position: relative;
+		max-height: 736px;
+		overflow: hidden;
+		video {
+			width: 100%;
+		}
+	}
+	ul {
+		color: white;
+		li {
+			position: relative;
+			float: left;
+			img {
+				width: 100%;
+			}
+			.cta {
+				top: auto;
+				bottom: 60px;
+			}
+		}
+	}
+}

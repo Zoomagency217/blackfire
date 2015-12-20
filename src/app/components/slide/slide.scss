@@ -1,0 +1,15 @@
+.app-slide {
+	#slides_control {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		margin-left: -50%;
+		> div {
+			height: 200px;
+		}
+	}
+	img {
+		margin: auto;
+		width: 100%;
+	}
+}

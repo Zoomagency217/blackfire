@@ -1,0 +1,11 @@
+<div class="app-header" ng-class="{'header-collapsed':hd.global.scrollTop()>0}">
+	<div class="logo">
+		<a ui-sref="home">
+			<img src="assets/images/logo.png">
+		</a>
+	</div>
+	<ul class="menu">
+		<li ng-repeat="item in hd.menus"><a ng-href="#">{{item.title}}</a></li>
+	</ul>
+	</div>
+</div>

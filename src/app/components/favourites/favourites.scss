@@ -1,0 +1,29 @@
+.app-favourites {
+	padding-top: 25px;
+	text-align: center;
+	ul {
+		list-style-type: none;
+		margin-top: 25px;
+		li {
+			display: inline-block;
+			margin-bottom: 45px;
+			padding: 13px 70px;
+			position: relative;
+			&:after {
+				border-right: #dfdfdf 1px solid;
+				content: '';
+				height: 79px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 1px;
+				&:last-child {
+					border-right: none;
+				}
+			}
+			img {
+				margin-right: 25px;
+			}
+		}
+	}
+}
