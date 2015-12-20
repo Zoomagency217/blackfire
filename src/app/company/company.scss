@@ -1,0 +1,35 @@
+.company {
+	h2 {
+		font-size: 40px;
+		font-weight: lighter;
+	}
+	p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.about {
+		padding: 120px 0;
+		h2 {
+			color: #383838;
+		}
+		p {
+			color: #4a4a4a;
+		}
+	}
+	.company-banner {
+		position: relative;
+		.cta {
+			z-index: 9;
+			padding: 0 5%;
+			width: 50%;
+			right: 0;
+			text-align: right;
+			h2 {
+				color: white;
+			}
+			p {
+				color: #868b8e;
+			}
+		}
+	}
+}

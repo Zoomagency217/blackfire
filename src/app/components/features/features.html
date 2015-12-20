@@ -1,0 +1,13 @@
+<div class="app-features">
+	<ul class="row list-unstyled">
+		<li ng-repeat="item in ft.features" class="col-sm-4">
+			<div class="row">
+				<img ng-src="{{item.image}}">
+				<div class="cta">
+					<h2>{{item.title}}</h2>
+					<p>{{item.description}}</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

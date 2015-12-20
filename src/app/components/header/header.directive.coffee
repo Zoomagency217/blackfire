@@ -9,18 +9,22 @@ angular.module 'blackfire'
         {
           id: 1
           title: 'Company'
+          state: 'company'
         }
         {
           id: 2
           title: 'Solution'
+          state: 'solution'
         }
         {
           id: 3
           title: 'Technology'
+          state: 'technology'
         }
         {
           id: 4
           title: 'Contact'
+          state: 'contact'
         }
       ]
 

@@ -22,9 +22,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 body {
 	font-family: 'Helvetica';
-	h2 {
-		font-weight: normal;
-	}
+	font-weight: 300;
 }
 
 .content {
@@ -34,6 +32,22 @@ body {
 	&.header-collapsed {
 		padding-top: 51px;
 	}
+}
+
+.fullwidth-image {
+	img {
+		width: 100%;
+	}
+}
+
+.relative {
+	position: relative;
+}
+
+.vertical-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 
