@@ -1,0 +1,15 @@
+<div class="app-press">
+	<h3>Press</h3>
+	<div class="description">{{pr.description}}</div>
+	<ul class="row list-unstyled">
+		<li ng-repeat="item in pr.presses" class="col-sm-4">
+			<div class="row">
+				<img ng-src="{{item.image}}">
+				<div class="cta">
+					<div class="date">{{item.date}}</div>
+					<div class="description">{{item.description}}</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

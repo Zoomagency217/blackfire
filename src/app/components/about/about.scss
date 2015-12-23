@@ -1,0 +1,17 @@
+.app-about {
+	width: 100%;
+	ul {
+		color: white;
+		li {
+			position: relative;
+			float: left;
+			img {
+				width: 100%;
+			}
+			.cta {
+				top: auto;
+				bottom: 60px;
+			}
+		}
+	}
+}
