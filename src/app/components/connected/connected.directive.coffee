@@ -4,9 +4,10 @@ angular.module 'blackfire'
     connectedController = () ->
       'ngInject'
       cn = this
-      cn.cta =
-        title: 'Always connected'
-        description: 'What’s the point of wireless if you always need to pair your device? With Blackfire you can get the music going from any room.'
+      cn.data =
+        cta:
+          title: 'Always connected'
+          description: 'What’s the point of wireless if you always need to pair your device? With Blackfire you can get the music going from any room.'
 
       return
 

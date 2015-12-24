@@ -1,17 +1,83 @@
 .app-about {
-	width: 100%;
-	ul {
-		color: white;
-		li {
+	.bl-group-1 {
+		padding: 108px 0;
+		background: white;
+		.bl-description {
+			font-size: 31px;
+			line-height: 36px;
+			padding-bottom: 20px;
+		}
+		.bl-cta {
+			button {
+				background: white;
+				border: #f36802 1px solid;
+				color: #f36802;
+				font-size: 21px;
+				padding: 17px 29px;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				box-shadow: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.bl-group-2 {
+		background: #2a2f32;
+		padding-top: 92px;
+		.bl-title {
+			color: white;
+			font-size: 30px;
+			margin-bottom: 6px;
+		}
+		> .bl-description {
+			color: #76797c;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 36px;
+			margin-bottom: 175px;
+		}
+		.bl-list {
 			position: relative;
-			float: left;
 			img {
 				width: 100%;
 			}
-			.cta {
-				top: auto;
-				bottom: 60px;
+			.bl-description {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				right: 0;
+				color: white;
+				font-size: 30px;
+				transform: translateY(-50%);
 			}
+		}
+	}
+	.bl-group-3 {
+		background: #f78f1e;
+		color: white;
+		padding-top: 90px;
+		padding-bottom: 64px;
+		.bl-title {
+			font-weight: bold;
+			font-size: 42px;
+			line-height: 56px;
+		}
+		.bl-description {
+			font-size: 30px;
+			line-height: 36px;
+		}
+		.bl-image {
+			img {
+				width: 85%;
+			}
+		}
+	}
+	.bl-group-4 {
+		background: white;
+		padding: 97px 0 85px;
+		.bl-title {
+			font-size: 30px;
+			color: #2d2d2d;
 		}
 	}
 }

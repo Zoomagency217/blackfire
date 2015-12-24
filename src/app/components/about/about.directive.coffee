@@ -4,23 +4,32 @@ angular.module 'blackfire'
     aboutController = () ->
       'ngInject'
       ab = this
-      ab.description = 'Stream media to anywhere in the house, or to the whole house. It works the way you need it to work. The idea is brilliantly simple.';
-      ab.description.cta = 'We call it Blackfire';
-      ab.about = [
+      ab.data = [
         {
-          image: 'assets/images/multichanel.png'
-          title: 'Multichannel'
-          description: 'Want surround sound? Or add a subwoofer? That’s'
+          'description': 'Stream media to anywhere in the house, or to the whole house. It works the way you need it to work. The idea is brilliantly simple.'
+          'cta': 'We call it Blackfire'
         }
         {
-          image: 'assets/images/multidevice.png'
-          title: 'Multidevice'
-          description: '20 speaker dream set-up? No problem.'
+          'title': 'The Power of Blackfire'
+          'description': 'You can stream audio and video in your home with complete freedom'
+          'content': [
+            {
+              'image': 'assets/images/solution-1.png'
+              'description': 'Stream audio to one device, video to another. Multichannel transforms into multiroom.'
+            }
+            {
+              'image': 'assets/images/solution-2.png'
+              'description': 'Stream to multiple tablets through Blackfire. Everyone gets to watch.'
+            }
+          ]
         }
         {
-          image: 'assets/images/multiroom.png'
-          title: 'Multiroom'
-          description: 'If it gets Wi-Fi, it’ll work with Blackfire.'
+          'title': 'TV, PC, Smartphone, all in in perfect rhythm'
+          'description': 'Because sometimes life just needs a soundtrack. Blackfire makes sure that you don’t miss a beat.'
+          'image': 'assets/images/about.png'
+        }
+        {
+          'title': 'Get Connected With Blackfire'
         }
       ]
 
