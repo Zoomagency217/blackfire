@@ -1,8 +1,8 @@
-<div class="app-gallery">
-	<h2>{{gl.title}}</h2>
-	<div class="description">{{gl.description}}</div>
+<div class="app-gallery ">
+	<h2 class="fade-in-up-item">{{gl.title}}</h2>
+	<div class="description fade-in-up-item">{{gl.description}}</div>
 	<ul class="list-unstyled">
-		<li ng-repeat="item in gl.gallery" ng-class="'w-'+item.width">
+		<li class="fade-in-item" ng-repeat="item in gl.gallery" ng-class="'w-'+item.width">
 			<img ng-src="{{item.image}}">
 		</li>
 	</ul>

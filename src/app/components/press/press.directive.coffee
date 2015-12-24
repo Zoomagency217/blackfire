@@ -6,7 +6,7 @@ angular.module 'blackfire'
       pr = this
       pr.data =
         'title': 'Press'
-        'description': 'People have already discovered Blackfire Technology. See what the press is saying about our products, technology, and partners.';
+        'description': 'People have already discovered Blackfire Technology. See what the press is saying about our products, technology, and partners.'
         'presses': [
           {
             'image': 'assets/images/press_1.png'

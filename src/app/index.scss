@@ -50,6 +50,16 @@ body {
 	transform: translateY(-50%);
 }
 
+.fade-in-item,
+.fade-in-left-item,
+.fade-in-right-item,
+.fade-in-up-item {
+	opacity: 0;
+	&.animated {
+		opacity: 1;
+	}
+}
+
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

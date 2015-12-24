@@ -3,18 +3,18 @@
 		<div class="top-area row">
 			<div class="col-lg-5 col-sm-6 hidden-xs text-right">
 				<ul class="list-inline">
-					<li ng-repeat="item in ft.devices[0]" class="text-center">
+					<li ng-repeat="item in ft.devices[0]" class="text-center fade-in-up-item">
 						<img ng-src="{{item.image}}" />
 						<br>{{item.title}}
 					</li>
 				</ul>
 			</div>
-			<div class="col-lg-2 hidden-md hidden-sm text-center logo">
+			<div class="col-lg-2 hidden-md hidden-sm text-center logo fade-in-up-item">
 				<a ui-sref="home">
 					<img src="assets/images/logo.png">
 				</a>
 			</div>
-			<div class="col-lg-5 col-sm-6 hidden-xs text-left">
+			<div class="col-lg-5 col-sm-6 hidden-xs text-left fade-in-up-item">
 				<ul class="list-inline">
 					<li ng-repeat="item in ft.devices[1]" class="text-center">
 						<img ng-src="{{item.image}}" />
@@ -27,17 +27,17 @@
 		<div class="bottom-area text-center">
 			<div class="row">
 				<div class="social text-center col-md-4">
-					<img ng-src="{{item.image}}" ng-repeat="item in ft.techs">
-					<br> ©2015 Blackfire Research, Inc.
+					<img ng-src="{{item.image}}" ng-repeat="item in ft.techs" class="fade-in-up-item">
+					<div class="fade-in-up-item">©2015 Blackfire Research, Inc.</div>
 					<ul class="other-menus list-inline">
-						<li ng-repeat="item in ft.socials">
+						<li ng-repeat="item in ft.socials" class="fade-in-up-item">
 							<a href="{{item.href}}">
 								<img ng-src="{{item.image}}" />
 							</a>
 						</li>
 					</ul>
 					<ul class="other-menus list-inline">
-						<li ng-repeat="item in ft.otherMenus">
+						<li ng-repeat="item in ft.otherMenus" class="fade-in-up-item">
 							<a ui-sref="{{item.state}}">{{item.title}}</a>
 							<span class="divider">|</span>
 						</li>
@@ -45,9 +45,9 @@
 					<div class="about">{{ft.about}}</div>
 				</div>
 				<div ng-repeat="menu in ft.menus" class="col-md-2 col-sm-3 col-xs-6 text-left menus">
-					<div class="title">{{menu.title}}</div>
+					<div class="title fade-in-up-item">{{menu.title}}</div>
 					<ul class="list-unstyled">
-						<li ng-repeat="item in menu.items">
+						<li ng-repeat="item in menu.items" class="fade-in-up-item">
 							<a ui-sref="{{item.state}}">{{item.title}}</a>
 						</li>
 					</ul>

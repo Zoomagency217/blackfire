@@ -1,10 +1,10 @@
 <div class="app-press">
-	<div class="bl-title">{{pr.data.title}}</div>
-	<div class="bl-description col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1">{{pr.data.description}}</div>
+	<div class="bl-title fade-in-up-item">{{pr.data.title}}</div>
+	<div class="bl-description col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 fade-in-up-item">{{pr.data.description}}</div>
 	<div class="clearfix"></div>
 	<ul class="row list-inline">
 		<li ng-repeat="item in pr.data.presses">
-			<div class="bl-container">
+			<div class="bl-container fade-in-up-item">
 				<img ng-src="{{item.image}}">
 				<div class="bl-cta">
 					<div class="bl-date">{{item.date}}</div>
@@ -13,7 +13,7 @@
 			</div>
 		</li>
 	</ul>
-	<div class="bl-viewmore">
+	<div class="bl-viewmore fade-in-up-item">
 		<a ui-sref="main">{{pr.data.viewmore}}</a>
 	</div>
 </div>
