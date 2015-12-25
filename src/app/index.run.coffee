@@ -11,6 +11,8 @@ angular.module 'blackfire'
     $rootScope.global =
       scrollTop: ->
         $rootScope.pageYOffset
+      toggleMenu: ->
+        $rootScope.showMenu = !$rootScope.showMenu
 
     checkScroll = ->
       $('.fade-in-up-item').each ->
@@ -33,7 +35,7 @@ angular.module 'blackfire'
         self.addClass cls
 
     $rootScope.$on '$stateChangeStart', (event, toState, toParams, fromState, fromParams)->
-      console.log 'here'
+      $rootScope.showMenu = false
       $timeout ->
         checkScroll()
       , 300

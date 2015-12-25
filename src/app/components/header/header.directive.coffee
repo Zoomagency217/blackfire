@@ -7,22 +7,22 @@ angular.module 'blackfire'
       hd.global = $rootScope.global
       hd.menus = [
         {
-          id: 1
           title: 'Company'
           state: 'company'
         }
         {
-          id: 2
           title: 'Solution'
           state: 'solution'
         }
         {
-          id: 3
           title: 'Technology'
           state: 'technology'
         }
         {
-          id: 4
+          title: 'Press'
+          state: 'press'
+        }
+        {
           title: 'Contact'
           state: 'contact'
         }

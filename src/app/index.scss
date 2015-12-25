@@ -21,8 +21,23 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 }
 
 body {
-	font-family: 'Helvetica';
-	font-weight: 300;
+	transition: margin-left .3s ease-out, margin-right .3s ease-out;
+	-moz-transition: margin-left .3s ease-out, margin-right .3s ease-out;
+	-webkit-transition: margin-left .3s ease-out, margin-right .3s ease-out;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #4e4e4e;
+	* {
+		-webkit-osx-font-smoothing: grayscale;
+		-moz-osx-font-smoothing: grayscale;
+		font-family: 'Helvetica';
+		font-weight: 300;
+	}
+	&.show-menu {
+		margin-left: -280px;
+		margin-right: 280px;
+	}
 }
 
 .content {
@@ -57,6 +72,93 @@ body {
 	opacity: 0;
 	&.animated {
 		opacity: 1;
+	}
+}
+
+.fs-1 {
+	.hd {
+		font-size: 32px;
+		line-height: 35px;
+		font-weight: bold;
+		color: white;
+		margin-bottom: 14px;
+		.xs & {
+			font-size: 22px;
+			line-height: 28px;
+			margin-bottom: 7px;
+		}
+	}
+	.ct {
+		font-size: 23px;
+		line-height: 27px;
+		font-weight: 300;
+		color: white;
+		.xs & {
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}
+
+.fs-2 {
+	font-size: 23px;
+	line-height: 27px;
+	font-weight: 300;
+	color: #3a3a3a;
+	.xs & {
+		font-size: 19px;
+		line-height: 22px;
+	}
+}
+
+.fs-3 {
+	.hd {
+		font-size: 30px;
+		line-height: 41px;
+		font-weight: 300;
+		color: white;
+		margin-bottom: 14px;
+		.xs & {
+			font-size: 22px;
+			line-height: 28px;
+			margin-bottom: 7px;
+		}
+	}
+	.ct {
+		font-size: 13px;
+		line-height: 20px;
+		font-weight: normal;
+		color: #76797c;
+	}
+}
+
+.fs-4 {
+	.hd {
+		font-size: 30px;
+		line-height: 41px;
+		font-weight: 300;
+		color: #3a3a3a;
+		margin-bottom: 14px;
+		.xs & {
+			font-size: 22px;
+			line-height: 28px;
+			margin-bottom: 7px;
+		}
+	}
+	.ct {
+		font-size: 13px;
+		line-height: 20px;
+		font-weight: normal;
+		color: #4e4e4e;
+	}
+}
+
+.fs-p {
+	padding-top: 110px;
+	padding-bottom: 110px;
+	.xs & {
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 

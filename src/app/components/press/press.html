@@ -1,19 +1,30 @@
-<div class="app-press">
-	<div class="bl-title fade-in-up-item">{{pr.data.title}}</div>
-	<div class="bl-description col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 fade-in-up-item">{{pr.data.description}}</div>
+<div class="app-press fs-4 fs-p">
+	<div class="hd fade-in-up-item text-center">{{pr.data.title}}</div>
+	<div class="ct col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 fade-in-up-item text-center">{{pr.data.description}}</div>
 	<div class="clearfix"></div>
-	<ul class="row list-inline">
+	<ul class="row list-inline hidden-xs">
 		<li ng-repeat="item in pr.data.presses">
 			<div class="bl-container fade-in-up-item">
 				<img ng-src="{{item.image}}">
 				<div class="bl-cta">
-					<div class="bl-date">{{item.date}}</div>
-					<div class="bl-description">{{item.description}}</div>
+					<div class="bl-date ct">{{item.date}}</div>
+					<div class="bl-desciption ct">{{item.description}}</div>
 				</div>
 			</div>
 		</li>
 	</ul>
+	<carousel interval="myInterval" class="visible-xs fade-in-up-item">
+		<slide ng-repeat="item in pr.data.presses" active="item.active">
+			<div class="bl-container">
+				<img ng-src="{{item.image}}">
+				<div class="bl-cta">
+					<div class="bl-date ct">{{item.date}}</div>
+					<div class="bl-desciption ct">{{item.description}}</div>
+				</div>
+			</div>
+		</slide>
+	</carousel>
 	<div class="bl-viewmore fade-in-up-item">
-		<a ui-sref="main">{{pr.data.viewmore}}</a>
+		<a ui-sref="main" class="ct">{{pr.data.viewmore}}</a>
 	</div>
 </div>

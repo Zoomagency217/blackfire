@@ -2,39 +2,42 @@
 	.bl-group-1 {
 		padding: 108px 0;
 		background: white;
+		.xs & {
+			padding: 40px 15px;
+		}
 		.bl-description {
-			font-size: 31px;
-			line-height: 36px;
 			padding-bottom: 20px;
+			.xs & {
+			}
 		}
 		.bl-cta {
 			button {
 				background: white;
 				border: #f36802 1px solid;
 				color: #f36802;
-				font-size: 21px;
 				padding: 17px 29px;
 				-moz-appearance: none;
 				-webkit-appearance: none;
 				box-shadow: none;
 				text-transform: uppercase;
+				.xs & {
+					font-size: 18px;
+					padding: 10px 20px;
+				}
 			}
 		}
 	}
 	.bl-group-2 {
 		background: #2a2f32;
 		padding-top: 92px;
-		.bl-title {
-			color: white;
-			font-size: 30px;
-			margin-bottom: 6px;
+		.xs & {
+			padding-top: 40px;
 		}
-		> .bl-description {
-			color: #76797c;
-			font-weight: 500;
-			font-size: 18px;
-			line-height: 36px;
+		.bl-description {
 			margin-bottom: 175px;
+			.xs & {
+				margin-bottom: 40px;
+			}
 		}
 		.bl-list {
 			position: relative;
@@ -47,8 +50,11 @@
 				left: 0;
 				right: 0;
 				color: white;
-				font-size: 30px;
 				transform: translateY(-50%);
+				.xs & {
+					font-size: 18px;
+					line-height: 22px;
+				}
 			}
 		}
 	}
@@ -57,27 +63,30 @@
 		color: white;
 		padding-top: 90px;
 		padding-bottom: 64px;
-		.bl-title {
-			font-weight: bold;
-			font-size: 42px;
-			line-height: 56px;
+		.xs & {
+			padding: 40px 15px;
+			text-align: center;
 		}
 		.bl-description {
-			font-size: 30px;
-			line-height: 36px;
+			.xs & {
+				padding-bottom: 40px;
+			}
 		}
 		.bl-image {
+			.xs & {
+				text-align: center;
+				max-width: 300px;
+				margin: 40px auto;
+			}
 			img {
 				width: 85%;
+				.xs & {
+					width: 100%;
+				}
 			}
 		}
 	}
 	.bl-group-4 {
 		background: white;
-		padding: 97px 0 85px;
-		.bl-title {
-			font-size: 30px;
-			color: #2d2d2d;
-		}
 	}
 }

@@ -8,7 +8,14 @@ $menu-color: #353535;
 	right: 0;
 	transition: height .2s ease-in;
 	z-index: 99;
-	.logo {
+	transition: margin-left .3s ease-out, margin-right .3s ease-out;
+	-moz-transition: margin-left .3s ease-out, margin-right .3s ease-out;
+	-webkit-transition: margin-left .3s ease-out, margin-right .3s ease-out;
+	.show-menu & {
+		margin-left: -280px;
+		margin-right: 280px;
+	}
+	.bl-logo {
 		float: left;
 		margin: 24px 0 0 40px;
 		transition: margin-top .2s ease-in;
@@ -17,7 +24,8 @@ $menu-color: #353535;
 			transition: width .2s ease-in, height .2s ease-in;
 		}
 	}
-	.menu {
+	.bl-menu,
+	.bl-menu-xs {
 		float: right;
 		list-style-type: none;
 		text-align: right;
@@ -35,7 +43,8 @@ $menu-color: #353535;
 				top: 4px;
 				left: 0;
 			}
-			&:first-child:before {
+			&:first-child:before,
+			&:last-child:before {
 				border-left: none;
 			}
 			a {
@@ -48,16 +57,51 @@ $menu-color: #353535;
 			}
 		}
 	}
+	.bl-menu-xs {
+		a {
+			margin-left: 10px;
+		}
+	}
 	&.header-collapsed {
 		height: 51px;
-		.logo {
+		.bl-logo {
 			margin-top: 10px;
 			img {
 				width: 50%;
 			}
 		}
-		.menu {
+		.bl-menu {
 			margin-top: 15px;
+		}
+		.bl-menu-xs {
+			margin-top: 15px;
+		}
+	}
+	.menu-xs {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: -280px;
+		width: 280px;
+		background: #2a2f32;
+		color: white;
+		transition: right .3s ease-out;
+		-moz-transition: right .3s ease-out;
+		-webkit-transition: right .3s ease-out;
+		.show-menu & {
+			right: 0;
+		}
+	}
+	.bl-menu-right-xs {
+		li {
+			a {
+				display: block;
+				width: 100%;
+				padding: 10px 20px;
+				border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
+				color: white;
+				font-size: 20px;
+			}
 		}
 	}
 }

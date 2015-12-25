@@ -1,13 +1,12 @@
 .app-favourites {
-	padding-top: 90px;
 	text-align: center;
 	padding-bottom: 40px;
 	ul {
 		list-style-type: none;
 		margin-top: 25px;
-		li {
+		> li {
 			display: inline-block;
-			margin-bottom: 45px;
+			margin: 0 22px;
 			padding: 13px 70px;
 			position: relative;
 			&:after {
@@ -18,12 +17,45 @@
 				right: 0;
 				top: 0;
 				width: 1px;
+				.xs &,
 				&:last-child {
 					border-right: none;
+					width: 0;
 				}
 			}
 			img {
 				margin-right: 25px;
+			}
+		}
+	}
+	.carousel {
+		list-style-type: none;
+		margin-top: 10px;
+		white-space: nowrap;
+		overflow-x: scroll;
+		.carousel-indicators {
+			bottom: -10px;
+			li {
+				border: none;
+				background: #464442;
+				margin: 0 2px;
+			}
+			.active {
+				background: #f78f1e;
+				width: 10px;
+				height: 10px;
+			}
+		}
+		.carousel-control {
+			display: none;
+		}
+		.item {
+			width: 100%;
+			margin-bottom: 25px;
+			padding: 13px 15px;
+			img {
+				margin-right: 15px;
+				display: inline-block;
 			}
 		}
 	}

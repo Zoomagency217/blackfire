@@ -5,13 +5,8 @@
 		top: 50%;
 		left: 0;
 		right: 0;
-		text-align: center;
-		color: white;
-		h2 {
-			font-size: 34px;
-		}
-		p {
-			font-size: 18px;
+		.xs & {
+			display: none;
 		}
 	}
 	.bl-main {

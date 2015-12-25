@@ -22,6 +22,11 @@ angular.module 'blackfire'
         templateUrl: 'app/technology/technology.html'
         controller: 'TechnologyController'
         controllerAs: 'technology'
+      .state 'press',
+        url: '/press'
+        templateUrl: 'app/press/press.html'
+        controller: 'PressController'
+        controllerAs: 'press'
       .state 'contact',
         url: '/contact'
         templateUrl: 'app/contact/contact.html'

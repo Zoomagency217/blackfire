@@ -1,24 +1,39 @@
 .app-press {
 	background: #f0f0f0;
-	padding: 138px 10px 100px;
-	.bl-title {
-		font-size: 42px;
-		font-weight: bold;
-		color: #3a3a3a;
-		text-align: center;
-		margin-bottom: 15px;
+	.xs & {
+		padding-bottom: 0;
 	}
-	> .bl-description {
-		font-size: 30px;
-		color: #3a3a3a;
+	ul,
+	.carousel {
 		text-align: center;
-		margin-bottom: 60px;
-	}
-	ul {
-		text-align: center;
-		li {
+		margin-top: 110px;
+		.xs & {
+			margin-top: 40px;
+		}
+		.carousel-indicators {
+			bottom: 0;
+			li {
+				border: none;
+				background: #464442;
+				margin: 0 2px;
+ 			}
+ 			.active {
+ 				background: #f78f1e;
+ 				width: 10px;
+ 				height: 10px;
+ 			}
+		}
+		.carousel-control {
+			display: none;
+		}
+		> li,
+		.item {
 			width: 414px;
 			padding: 0 12px;
+			.xs & {
+				width: 100%;
+				padding: 0;
+			}
 			.bl-container {
 				img {
 					width: 100%;
@@ -30,20 +45,14 @@
 					text-align: left;
 					height: 220px;
 					.bl-date {
-						font-size: 14px;
-						font-weight: bold;
-						color: #3b3b3b;
 						text-transform: uppercase;
 						background: url(/assets/images/icon-calendar.png) top left no-repeat;
 						padding-left: 30px;
 					}
 					.bl-description {
-						font-size: 22px;
-						color: #3a3a3a;
 						height: 100px;
 						text-overflow: hidden;
 						margin-top: 26px;
-						line-height: 35px;
 					}
 				}
 			}
@@ -52,10 +61,8 @@
 	.bl-viewmore {
 		text-align: center;
 		padding: 47px 0;
-		a {
-			font-size: 18px;
-			font-weight: normal;
-			color: #3a3a3a;
+		.xs & {
+			display: none;
 		}
 	}
 }

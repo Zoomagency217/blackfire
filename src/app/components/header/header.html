@@ -1,11 +1,22 @@
 <div class="app-header" ng-class="{'header-collapsed':hd.global.scrollTop()>0}">
-	<div class="logo">
+	<div class="bl-logo">
 		<a ui-sref="home">
 			<img src="assets/images/logo.png">
 		</a>
 	</div>
-	<ul class="menu">
+	<ul class="bl-menu hidden-xs">
 		<li ng-repeat="item in hd.menus"><a ui-sref="{{item.state}}">{{item.title}}</a></li>
+		<li>
+			<a href="javascript:;" ng-click="showSearch()"><img src="/assets/images/icon-search.png" /></a>
+		</li>
 	</ul>
+	<div class="bl-menu-xs visible-xs">
+		<a href="javascript:;" ng-click="showSearch()"><img src="/assets/images/icon-search.png" /></a>
+		<a href="javascript:;" ng-click="global.toggleMenu()"><img src="/assets/images/icon-menu.png" /></a>
+	</div>
+	<div class="menu-xs visible-xs">
+		<ul class="bl-menu-right-xs list-unstyled">
+			<li ng-repeat="item in hd.menus"><a ui-sref="{{item.state}}">{{item.title}}</a></li>
+		</ul>
 	</div>
 </div>

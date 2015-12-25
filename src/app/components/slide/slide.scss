@@ -12,4 +12,16 @@
 		margin: auto;
 		width: 100%;
 	}
+	.carousel-indicators {
+		li {
+			border: none;
+			background: white;
+			margin: 0 2px;
+		}
+		.active {
+			background: #f78f1e;
+			width: 10px;
+			height: 10px;
+		}
+	}
 }
