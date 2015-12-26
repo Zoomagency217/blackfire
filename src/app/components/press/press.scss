@@ -3,7 +3,7 @@
 	.xs & {
 		padding-bottom: 0;
 	}
-	ul,
+	> ul,
 	.carousel {
 		text-align: center;
 		margin-top: 110px;
@@ -16,12 +16,12 @@
 				border: none;
 				background: #464442;
 				margin: 0 2px;
- 			}
- 			.active {
- 				background: #f78f1e;
- 				width: 10px;
- 				height: 10px;
- 			}
+			}
+			.active {
+				background: #f78f1e;
+				width: 10px;
+				height: 10px;
+			}
 		}
 		.carousel-control {
 			display: none;
@@ -46,16 +46,21 @@
 					height: 220px;
 					.bl-date {
 						text-transform: uppercase;
-						background: url(/assets/images/icon-calendar.png) top left no-repeat;
+						background: url(/assets/icon-calendar.png) top left no-repeat;
 						padding-left: 30px;
 					}
 					.bl-description {
 						height: 100px;
-						text-overflow: hidden;
+						overflow: hidden;
 						margin-top: 26px;
 					}
 				}
 			}
+		}
+	}
+	> ul {
+		> li {
+			max-width: 30%;
 		}
 	}
 	.bl-viewmore {

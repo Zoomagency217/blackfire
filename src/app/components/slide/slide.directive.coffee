@@ -7,16 +7,16 @@ angular.module 'blackfire'
       sl.myInterval = 3000
       sl.slides = [
         {
-          image: 'assets/images/banner.png'
+          image: 'assets/banner.png'
         }
         {
-          image: 'assets/images/banner.png'
+          image: 'assets/banner.png'
         }
         {
-          image: 'assets/images/banner.png'
+          image: 'assets/banner.png'
         }
         {
-          image: 'assets/images/banner.png'
+          image: 'assets/banner.png'
         }
       ]
 

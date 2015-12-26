@@ -11,6 +11,9 @@ $menu-color: #353535;
 	transition: margin-left .3s ease-out, margin-right .3s ease-out;
 	-moz-transition: margin-left .3s ease-out, margin-right .3s ease-out;
 	-webkit-transition: margin-left .3s ease-out, margin-right .3s ease-out;
+	.xs & {
+		height: 65px;
+	}
 	.show-menu & {
 		margin-left: -280px;
 		margin-right: 280px;
@@ -19,6 +22,10 @@ $menu-color: #353535;
 		float: left;
 		margin: 24px 0 0 40px;
 		transition: margin-top .2s ease-in;
+		.xs & {
+			margin: 15px 0 0 20px;
+			width: 90px;
+		}
 		img {
 			width: 100%;
 			transition: width .2s ease-in, height .2s ease-in;
@@ -29,8 +36,11 @@ $menu-color: #353535;
 		float: right;
 		list-style-type: none;
 		text-align: right;
-		margin: 45px 10px 0 0;
+		margin: 45px 45px 0 0;
 		transition: margin-top .2s ease-in;
+		.xs & {
+			margin: 22px 20px 0 0;
+		}
 		li {
 			display: inline-block;
 			padding: 0 15px;
@@ -40,7 +50,7 @@ $menu-color: #353535;
 				border-left: $menu-color 1px solid;
 				height: 10px;
 				position: absolute;
-				top: 4px;
+				top: 8px;
 				left: 0;
 			}
 			&:first-child:before,
@@ -62,12 +72,13 @@ $menu-color: #353535;
 			margin-left: 10px;
 		}
 	}
-	&.header-collapsed {
+	&.header-collapsed,
+	&.header-collapsed.xs {
 		height: 51px;
 		.bl-logo {
 			margin-top: 10px;
 			img {
-				width: 50%;
+				width: 83px;
 			}
 		}
 		.bl-menu {

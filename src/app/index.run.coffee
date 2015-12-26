@@ -31,6 +31,9 @@ angular.module 'blackfire'
       bottom_of_object = self.offset().top + self.outerHeight()
       bottom_of_window = $(window).scrollTop() + $(window).height()
 
+      if self.outerHeight() > 50
+        bottom_of_object = self.offset().top + 50
+
       if bottom_of_window > bottom_of_object
         self.addClass cls
 

@@ -4,8 +4,8 @@ angular.module 'blackfire'
     galleryController = () ->
       'ngInject'
       gl = this
-      gl.title = 'Always connected'
-      gl.description = 'What’s the point of wireless if you always need to pair your device.'
+      gl.title = 'Easy as Blackfire'
+      gl.description = 'Enjoying a truly seamless real-time media experience on multiple devices has never been this easy. Our technology works with almost any hardware platform.'
       gl.gallery = [
         {
           image: 'http://lorempixel.com/300/800/technics/'

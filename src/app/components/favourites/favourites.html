@@ -1,5 +1,6 @@
 <div class="app-favourites fs-4 fs-p">
-	<div class="hd fade-in-up-item">{{fv.data.title}}</div>
+	<div class="hd col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 fade-in-up-item">{{fv.data.title}}</div>
+	<div class="clearfix"></div>
 	<ul>
 		<li ng-repeat="item in fv.data.favourites" class="fade-in-up-item hidden-xs">
 			<img ng-src="{{item.image}}"> {{item.title}}

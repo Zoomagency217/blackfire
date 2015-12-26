@@ -8,27 +8,27 @@ angular.module 'blackfire'
         'title': 'Supports your Favourite Streaming Services'
         'favourites': [
           {
-            'image': 'assets/images/spotify.png'
+            'image': 'assets/spotify.png'
             'title': 'Spotify'
           }
           {
-            'image': 'assets/images/google_play_music.png'
+            'image': 'assets/google_play_music.png'
             'title': 'Google Play Music'
           }
           {
-            'image': 'assets/images/rdio.png'
+            'image': 'assets/rdio.png'
             'title': 'Rdio'
           }
           {
-            'image': 'assets/images/nrpone.png'
+            'image': 'assets/nrpone.png'
             'title': 'NRpone'
           }
           {
-            'image': 'assets/images/7_digital.png'
+            'image': 'assets/7_digital.png'
             'title': '7 digital'
           }
           {
-            'image': 'assets/images/tune_in.png'
+            'image': 'assets/tune_in.png'
             'title': 'TuneIn'
           }
         ]

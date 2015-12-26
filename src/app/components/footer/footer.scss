@@ -43,6 +43,8 @@ $footer-color: #2c2c2c;
 			.other-menus {
 				padding: 40px 0;
 				li {
+					padding-left: 3px;
+					padding-right: 3px;
 					img {
 						.xs & {
 							width: 25px;
@@ -69,8 +71,6 @@ $footer-color: #2c2c2c;
 				.xs & {
 					border-top: #c8c8c8 1px solid;
 					padding: 20px 0;
-					line-height: 30px;
-					font-size: 19px;
 				}
 			}
 		}
