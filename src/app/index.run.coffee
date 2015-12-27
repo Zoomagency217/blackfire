@@ -1,6 +1,12 @@
 angular.module 'blackfire'
   .run ($log, $rootScope, $timeout, $window) ->
     'ngInject'
+
+    $rootScope.toggleSearch = ->
+      $rootScope.onSearch = !$rootScope.onSearch
+      $timeout ->
+        $('#search-input').focus()
+      , 300
     
     angular.element($window).bind "scroll", ->
       $rootScope.pageYOffset = $window.pageYOffset

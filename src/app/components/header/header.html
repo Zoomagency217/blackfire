@@ -7,11 +7,11 @@
 	<ul class="bl-menu hidden-xs">
 		<li ng-repeat="item in hd.menus"><a ui-sref="{{item.state}}">{{item.title}}</a></li>
 		<li>
-			<a href="javascript:;" ng-click="showSearch()"><img src="/assets/icon-search.png" /></a>
+			<a href="javascript:;" ng-click="toggleSearch()"><img src="/assets/icon-search.png" /></a>
 		</li>
 	</ul>
 	<div class="bl-menu-xs visible-xs">
-		<a href="javascript:;" ng-click="showSearch()"><img src="/assets/icon-search.png" /></a>
+		<a href="javascript:;" ng-click="toggleSearch()"><img src="/assets/icon-search.png" /></a>
 		<a href="javascript:;" ng-click="global.toggleMenu()"><img src="/assets/icon-menu.png" /></a>
 	</div>
 	<div class="menu-xs visible-xs">
@@ -19,4 +19,5 @@
 			<li ng-repeat="item in hd.menus"><a ui-sref="{{item.state}}">{{item.title}}</a></li>
 		</ul>
 	</div>
+	<div ng-include="'app/components/search/search.html'"></div>
 </div>

@@ -40,15 +40,15 @@ angular.module 'blackfire'
       ]
       ft.techs = [
         {
-          id: 1
+          image: 'assets/icon-blackfire.png'
+        }
+        {
           image: 'assets/icon-wifi.png'
         }
         {
-          id: 2
           image: 'assets/icon-android.png'
         }
         {
-          id: 3
           image: 'assets/icon-apple.png'
         }
       ]

@@ -1,46 +1,174 @@
-.main-press {
-	.about {
-		margin-top: 80px;
-		margin-bottom: 200px;
-		color: #3a3a3a;
-		h2 {
-			font-weight: 300;
+.page-press {
+	.app-press {
+		.xs & {
+			padding-bottom: 30px;
 		}
 	}
-	.contact-form {
-		background: #f78f1e;
-		padding-top: 80px;
-		padding-bottom: 125px;
-		h2 {
-			color: white;
-			margin-bottom: 30px;
+	.main-press {
+		background: #2a2f32;
+		padding-bottom: 200px;
+		padding-top: 150px;
+		position: relative;
+		.xs & {
+			padding-top: 40px;
+			padding-bottom: 150px;
 		}
-		input,
-		select {
-			height: 60px;
-		}
-		input,
-		select,
-		textarea {
-			border: none;
-			border-radius: 0;
-			margin-bottom: 20px;
-			padding-left: 30px;
-			padding-right: 30px;
-			-moz-appearance: none;
-			-webkit-appearance: none;
-			&.name {
-				padding-left: 60px;
-				background: url(/assets/icon-user.png) 22px 20px no-repeat white;
+		.more-press {
+			.hd {
+				.sm &,
+				.md &,
+				.lg & {
+					margin-bottom: 187px;
+				}
+				.xs & {
+					margin-bottom: 35px;
+				}
 			}
 		}
-		button {
-			border: white 1px solid;
-			border-radius: 0;
-			background: transparent;
-			padding: 0 22px;
-			height: 60px;
-			color: white;
+		.press-top-line-1 {
+			background: url(/assets/press-top-line-1.png) top left no-repeat;
+			height: 427px;
+			margin-right: -5px;
+			position: absolute;
+			right: 50%;
+			top: -135px;
+			width: 92px;
+			.xs & {
+				background: url(/assets/press-top-line-xs.png) top center no-repeat;
+				background-size: 100%;
+				height: 141px;
+				margin-right: -6px;
+				top: -41px;
+				width: 12px;
+			}
+		}
+		.press-top-line-2 {
+			background: url(/assets/press-top-line-2.png) top left repeat-x;
+			left: 350px;
+			height: 3px;
+			margin-right: 89px;
+			position: absolute;
+			right: 50%;
+			top: 289px;
+			.sm & {
+				left: 290px;
+			}
+			.xs & {
+				display: none;
+			}
+		}
+		.press-top-line-3 {
+			background: url(/assets/press-top-line-3.png) top left no-repeat;
+			height: 100px;
+			left: 252px;
+			position: absolute;
+			top: 289px;
+			width: 100px;
+			.sm & {
+				left: 192px;
+			}
+			.xs & {
+				display: none;
+			}
+		}
+		.press-bottom-line {
+			background: url(/assets/press-bottom-line.png) top left no-repeat;
+			height: 73px;
+			left: 247px;
+			position: absolute;
+			bottom: 125px;
+			width: 12px;
+			.sm & {
+				left: 187px;
+			}
+			.xs & {
+				background: url(/assets/press-bottom-line-xs.png) bottom center no-repeat;
+				background-size: 14px;
+				width: 100%;
+				left: 0;
+				right: 0;
+				bottom: 78px;
+				height: 71px;
+			}
+		}
+		.list {
+			position: relative;
+			.left-area {
+				left: 35px;
+				position: absolute;
+				top: 0;
+				.sm & {
+					left: 15px;
+					width: 160px;
+				}
+				.xs & {
+					left: 0;
+					padding: 20px 15px;
+					position: relative;
+					text-align: center;
+				}
+				.date {
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+				&:before {
+					background: white;
+					border: #2a2f32 5px solid;
+					border-radius: 18px;
+					content: '';
+					height: 21px;
+					top: 0;
+					left: 50%;
+					margin-left: -10px;
+					position: absolute;
+					width: 21px;
+					.lg &,
+					.md &,
+					.sm & {
+						display: none;
+					}
+				}
+			}
+			.right-area {
+				background: url(/assets/press-line.png) top left repeat-y;
+				margin-left: 252px;
+				min-height: 180px;
+				padding-bottom: 100px;
+				padding-left: 50px;
+				padding-right: 50px;
+				position: relative;
+				.sm & {
+					margin-left: 192px;
+					padding-right: 15px;
+				}
+				.xs & {
+					background: url(/assets/press-line-xs.png) bottom center no-repeat;
+					background-size: 2px;
+					margin-left: 0;
+					min-height: auto;
+					padding: 0 15px 80px;
+					text-align: center;
+				}
+				strong {
+					display: block;
+					font-weight: bold;
+					padding-bottom: 20px;
+				}
+				&:before {
+					background: white;
+					border: #2a2f32 5px solid;
+					border-radius: 18px;
+					content: '';
+					height: 21px;
+					left: -10px;
+					position: absolute;
+					top: 50px;
+					width: 21px;
+					.xs & {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }

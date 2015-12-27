@@ -52,10 +52,6 @@ body {
 			text-decoration: none;
 		}
 	}
-	&.show-menu {
-		margin-left: -280px;
-		margin-right: 280px;
-	}
 }
 
 .content {
@@ -295,6 +291,9 @@ body {
 	-webkit-transform: translateY(-50%);
 }
 
+.fixed {
+	position: fixed;
+}
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

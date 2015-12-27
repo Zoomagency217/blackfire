@@ -1,18 +1,26 @@
-<div app-press></div>
-<div class="more-press fs-1">
-	<div class="hd text-center">
-		{{data.more}}
-	</div>
-	<div class="list" ng-repeat="item in data.list">
-		<div class="left-area">
-			<div class="date ct">{{item.date}}</div>
-			<div class="image fullwidth-image">
-				<img ng-src="{{item.image}}" />
+<div class="page-press">
+	<div app-press></div>
+	<div class="main-press">
+		<div class="press-top-line-1 fade-in-up-item"></div>
+		<div class="press-top-line-2 fade-in-up-item"></div>
+		<div class="press-top-line-3 fade-in-up-item"></div>
+		<div class="press-bottom-line fade-in-up-item"></div>
+		<div class="more-press fs-1">
+			<div class="hd text-center fade-in-up-item">
+				{{data.more}}
 			</div>
-		</div>
-		<div class="right-area">
-			<strong class="ct">{{item.title}}</strong>
-			<div class="ct">{{item.content}}</div>
+			<div class="list" ng-repeat="item in data.list">
+				<div class="left-area">
+					<div class="date ct fade-in-up-item">{{item.date}}</div>
+					<div class="image fullwidth-image fade-in-up-item">
+						<img ng-src="{{item.image}}" />
+					</div>
+				</div>
+				<div class="right-area">
+					<strong class="ct fade-in-up-item">{{item.title}}</strong>
+					<div class="ct fade-in-up-item">{{item.content}}</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

@@ -14,10 +14,6 @@ $menu-color: #353535;
 	.xs & {
 		height: 65px;
 	}
-	.show-menu & {
-		margin-left: -280px;
-		margin-right: 280px;
-	}
 	.bl-logo {
 		float: left;
 		margin: 24px 0 0 40px;
@@ -87,31 +83,36 @@ $menu-color: #353535;
 		.bl-menu-xs {
 			margin-top: 15px;
 		}
+		.menu-xs {
+			top: 51px;
+		}
 	}
 	.menu-xs {
 		position: fixed;
-		top: 0;
-		bottom: 0;
-		right: -280px;
-		width: 280px;
-		background: #2a2f32;
-		color: white;
-		transition: right .3s ease-out;
-		-moz-transition: right .3s ease-out;
-		-webkit-transition: right .3s ease-out;
+		top: 65px;
+		background: #f1f1f1;
+		color: #2d2d2d;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .3s ease-out;
+		-moz-transition: max-height .3s ease-out;
+		-webkit-transition: max-height .3s ease-out;
+		width: 100%;
 		.show-menu & {
-			right: 0;
+			max-height: 800px;
 		}
 	}
 	.bl-menu-right-xs {
+		margin-bottom: 0;
+		text-align: center;
 		li {
 			a {
 				display: block;
 				width: 100%;
-				padding: 10px 20px;
-				border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
-				color: white;
-				font-size: 20px;
+				padding: 16px 20px;
+				border-bottom: #d6d6d6 1px solid;
+				color: #2d2d2d;
+				font-size: 16px;
 			}
 		}
 	}
