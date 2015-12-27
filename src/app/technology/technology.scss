@@ -1,39 +1,107 @@
+@mixin showline($line, $height-sm, $height-md, $height-lg) {
+	.sm &,
+	.md &,
+	.lg & {
+		-webkit-line-clamp: $line;
+		-moz-line-clamp: $line;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: block;
+		display: -webkit-box;
+		display: -moz-box;
+		white-space: normal;
+	}
+	.sm & {
+		height: $height-sm;
+	}
+	.md & {
+		height: $height-md;
+	}
+	.lg & {
+		height: $height-lg;
+	}
+}
+
 .technology {
+	.banner {
+		position: relative;
+		.xs & {
+			background: #d54b19;
+		}
+		.cta {
+			position: absolute;
+			top: 50%;
+			width: 50%;
+			padding-left: 100px;
+			padding-right: 40px;
+			.v-center {
+				.xs & {
+					transform: none;
+				}
+			}
+			.md & {
+				padding-left: 40px
+			}
+			.sm & {
+				padding-left: 20px;
+				padding-right: 20px;
+				width: 80%;
+			}
+			.xs & {
+				position: relative;
+				padding: 40px 20px;
+				top: auto;
+				width: 100%;
+				text-align: center;
+			}
+			.hd.text {
+				float: left;
+				.xs & {
+					float: none;
+				}
+			}
+			.hd.text,
+			.ct {
+				background: #d54b19;
+				margin-bottom: 5px;
+				padding: 20px;
+				.sm & {
+					padding: 10px;
+				}
+				.xs & {
+					padding: 0;
+				}
+			}
+		}
+	}
 	.detail {
 		.cta {
 			bottom: 0;
 			color: white;
 			left: 0;
-			padding: 0 3rem 3rem;
+			padding: 0 3vw 3vw;
 			position: absolute;
 			right: 0;
 			z-index: 9;
-			h3 {
-				font-size: 2.5rem;
-				font-weight: bold;
+			.hd.sub {
+				font-weight: normal;
+				font-size: 25px;
 			}
-			h4 {
-				font-size: 1.8rem;
-				font-weight: 300;
+			.hd,
+			.hd.sub {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
-			p {
-				font-size: 1rem;
-				min-height: 4.5rem;
+			.ct {
+				@include showline(4, 100px, 120px, 135px);
 			}
 		}
 	}
 	.technology-footer {
 		background: #d4373c;
 		color: white;
-		padding: 100px 0;
-		h3 {
-			font-size: 41px;
-			margin-bottom: 20px;
-			font-weight: bold;
-		}
-		p {
-			font-size: 30px;
-			line-height: 36px;
-		}
 	}
 }

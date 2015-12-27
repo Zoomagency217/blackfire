@@ -1,4 +1,4 @@
-@mixin showline($line, $height) {
+@mixin showline($line, $height-sm, $height-md, $height-lg) {
 	.sm &,
 	.md &,
 	.lg & {
@@ -11,8 +11,16 @@
 		display: block;
 		display: -webkit-box;
 		display: -moz-box;
-		height: $height;
 		white-space: normal;
+	}
+	.sm & {
+		height: $height-sm;
+	}
+	.md & {
+		height: $height-md;
+	}
+	.lg & {
+		height: $height-lg;
 	}
 }
 
@@ -25,6 +33,7 @@
 		position: relative;
 		.xs & {
 			background: #f46b01;
+			height: auto;
 		}
 		.cta {
 			position: absolute;
@@ -43,6 +52,7 @@
 			}
 			.md & {
 				padding-left: 30px;
+				margin-top: 15px;
 			}
 			.xs & {
 				text-align: center;
@@ -52,7 +62,7 @@
 				top: auto;
 			}
 			.ct {
-				@include showline(5, 135px);
+				@include showline(5, 113px, 120px, 135px);
 			}
 		}
 	}

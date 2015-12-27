@@ -8,17 +8,26 @@ angular.module 'blackfire'
         {
           image: 'assets/multichanel.png'
           title: 'Multichannel'
-          description: 'Want surround sound? Or add a subwoofer? That’s'
+          description: [
+            'Multi-room and multi-channel streaming to Wi-Fi speakers and SmartTVs for surround sound and multi-room experiences'
+            'Flawlessly stream audio and video from your Home Theatre PC'
+          ]
         }
         {
           image: 'assets/multidevice.png'
           title: 'Multidevice'
-          description: '20 speaker dream set-up? No problem.'
+          description: [
+            'Enjoy perfect audio from your wireless headsets'
+            'Turn your smartwatch indo a mobile music hub'
+          ]
         }
         {
           image: 'assets/multiroom.png'
           title: 'Multiroom'
-          description: 'If it gets Wi-Fi, it’ll work with Blackfire.'
+          description: [
+            'Stream to your smartphone/tablet… or from your smartphone/tablet!'
+            'Connect multiple devices to the same stream for a multi-screen experience'
+          ]
         }
       ]
 

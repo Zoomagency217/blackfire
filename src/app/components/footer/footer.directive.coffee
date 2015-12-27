@@ -5,42 +5,38 @@ angular.module 'blackfire'
       'ngInject'
       ft = this
       ft.devices = [
-        [
-          {
-            image: 'assets/icon-mobile.png'
-            title: 'Mobile'
-          }
-          {
-            image: 'assets/icon-speaker.png'
-            title: 'Speakers'
-          }
-          {
-            image: 'assets/icon-tv.png'
-            title: 'TV'
-          }
-          {
-            image: 'assets/icon-tablet.png'
-            title: 'Tablet'
-          }
-        ]
-        [
-          {
-            image: 'assets/icon-thermostat.png'
-            title: 'Thermostat'
-          }
-          {
-            image: 'assets/icon-router.png'
-            title: 'Router'
-          }
-          {
-            image: 'assets/icon-earphone.png'
-            title: 'Ear Phone'
-          }
-          {
-            image: 'assets/icon-smarthome.png'
-            title: 'Smart Home'
-          }
-        ]
+        {
+          image: 'assets/icon-mobile.png'
+          title: 'Mobile'
+        }
+        {
+          image: 'assets/icon-speaker.png'
+          title: 'Speakers'
+        }
+        {
+          image: 'assets/icon-tv.png'
+          title: 'TV'
+        }
+        {
+          image: 'assets/icon-tablet.png'
+          title: 'Tablet'
+        }
+        {
+          image: 'assets/icon-thermostat.png'
+          title: 'Thermostat'
+        }
+        {
+          image: 'assets/icon-router.png'
+          title: 'Router'
+        }
+        {
+          image: 'assets/icon-earphone.png'
+          title: 'Ear Phone'
+        }
+        {
+          image: 'assets/icon-smarthome.png'
+          title: 'Smart Home'
+        }
       ]
       ft.techs = [
         {
