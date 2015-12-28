@@ -14,11 +14,11 @@ angular.module 'blackfire'
           'description': 'You can stream audio and video in your home with complete freedom'
           'content': [
             {
-              'image': 'assets/solution-1.png'
+              'image': 'assets/images/solution-1.png'
               'description': 'Stream audio to one device, video to another. Multichannel transforms into multiroom.'
             }
             {
-              'image': 'assets/solution-2.png'
+              'image': 'assets/images/solution-2.png'
               'description': 'Stream to multiple tablets through Blackfire. Everyone gets to watch.'
             }
           ]
@@ -26,7 +26,7 @@ angular.module 'blackfire'
         {
           'title': 'TV, PC, Smartphone, all in in perfect rhythm'
           'description': 'Because sometimes life just needs a soundtrack. Blackfire makes sure that you don’t miss a beat.'
-          'image': 'assets/about.png'
+          'image': 'assets/images/about.png'
         }
         {
           'title': 'Get Connected With Blackfire'

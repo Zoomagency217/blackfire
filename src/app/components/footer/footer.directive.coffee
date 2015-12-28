@@ -6,50 +6,50 @@ angular.module 'blackfire'
       ft = this
       ft.devices = [
         {
-          image: 'assets/icon-mobile.png'
+          image: 'assets/images/icon-mobile.png'
           title: 'Mobile'
         }
         {
-          image: 'assets/icon-speaker.png'
+          image: 'assets/images/icon-speaker.png'
           title: 'Speakers'
         }
         {
-          image: 'assets/icon-tv.png'
+          image: 'assets/images/icon-tv.png'
           title: 'TV'
         }
         {
-          image: 'assets/icon-tablet.png'
+          image: 'assets/images/icon-tablet.png'
           title: 'Tablet'
         }
         {
-          image: 'assets/icon-thermostat.png'
+          image: 'assets/images/icon-thermostat.png'
           title: 'Thermostat'
         }
         {
-          image: 'assets/icon-router.png'
+          image: 'assets/images/icon-router.png'
           title: 'Router'
         }
         {
-          image: 'assets/icon-earphone.png'
+          image: 'assets/images/icon-earphone.png'
           title: 'Ear Phone'
         }
         {
-          image: 'assets/icon-smarthome.png'
+          image: 'assets/images/icon-smarthome.png'
           title: 'Smart Home'
         }
       ]
       ft.techs = [
         {
-          image: 'assets/icon-blackfire.png'
+          image: 'assets/images/icon-blackfire.png'
         }
         {
-          image: 'assets/icon-wifi.png'
+          image: 'assets/images/icon-wifi.png'
         }
         {
-          image: 'assets/icon-android.png'
+          image: 'assets/images/icon-android.png'
         }
         {
-          image: 'assets/icon-apple.png'
+          image: 'assets/images/icon-apple.png'
         }
       ]
       ft.otherMenus = [
@@ -168,31 +168,31 @@ angular.module 'blackfire'
       ft.socials = [
         {
           href: ''
-          image: 'assets/icon-twitter.png'
+          image: 'assets/images/icon-twitter.png'
         }
         {
           href: ''
-          image: 'assets/icon-facebook.png'
+          image: 'assets/images/icon-facebook.png'
         }
         {
           href: ''
-          image: 'assets/icon-linkedin.png'
+          image: 'assets/images/icon-linkedin.png'
         }
         {
           href: ''
-          image: 'assets/icon-youtube.png'
+          image: 'assets/images/icon-youtube.png'
         }
         {
           href: ''
-          image: 'assets/icon-googleplus.png'
+          image: 'assets/images/icon-googleplus.png'
         }
         {
           href: ''
-          image: 'assets/icon-instagram.png'
+          image: 'assets/images/icon-instagram.png'
         }
         {
           href: ''
-          image: 'assets/icon-t.png'
+          image: 'assets/images/icon-t.png'
         }
       ]
 

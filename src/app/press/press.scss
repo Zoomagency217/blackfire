@@ -26,7 +26,7 @@
 			}
 		}
 		.press-top-line-1 {
-			background: url(/assets/press-top-line-1.png) top left no-repeat;
+			background: url(../assets/images/press-top-line-1.png) top left no-repeat;
 			height: 427px;
 			margin-right: -5px;
 			position: absolute;
@@ -34,7 +34,7 @@
 			top: -135px;
 			width: 92px;
 			.xs & {
-				background: url(/assets/press-top-line-xs.png) top center no-repeat;
+				background: url(../assets/images/press-top-line-xs.png) top center no-repeat;
 				background-size: 100%;
 				height: 141px;
 				margin-right: -6px;
@@ -43,7 +43,7 @@
 			}
 		}
 		.press-top-line-2 {
-			background: url(/assets/press-top-line-2.png) top left repeat-x;
+			background: url(../assets/images/press-top-line-2.png) top left repeat-x;
 			left: 350px;
 			height: 3px;
 			margin-right: 89px;
@@ -58,7 +58,7 @@
 			}
 		}
 		.press-top-line-3 {
-			background: url(/assets/press-top-line-3.png) top left no-repeat;
+			background: url(../assets/images/press-top-line-3.png) top left no-repeat;
 			height: 100px;
 			left: 252px;
 			position: absolute;
@@ -72,7 +72,7 @@
 			}
 		}
 		.press-bottom-line {
-			background: url(/assets/press-bottom-line.png) top left no-repeat;
+			background: url(../assets/images/press-bottom-line.png) top left no-repeat;
 			height: 73px;
 			left: 247px;
 			position: absolute;
@@ -82,7 +82,7 @@
 				left: 187px;
 			}
 			.xs & {
-				background: url(/assets/press-bottom-line-xs.png) bottom center no-repeat;
+				background: url(../assets/images/press-bottom-line-xs.png) bottom center no-repeat;
 				background-size: 14px;
 				width: 100%;
 				left: 0;
@@ -130,7 +130,7 @@
 				}
 			}
 			.right-area {
-				background: url(/assets/press-line.png) top left repeat-y;
+				background: url(../assets/images/press-line.png) top left repeat-y;
 				margin-left: 252px;
 				min-height: 180px;
 				padding-bottom: 100px;
@@ -142,7 +142,7 @@
 					padding-right: 15px;
 				}
 				.xs & {
-					background: url(/assets/press-line-xs.png) bottom center no-repeat;
+					background: url(../assets/images/press-line-xs.png) bottom center no-repeat;
 					background-size: 2px;
 					margin-left: 0;
 					min-height: auto;
