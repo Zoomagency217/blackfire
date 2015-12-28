@@ -3,8 +3,8 @@
 	ul {
 		list-style-type: none;
 		margin-top: 25px;
+		white-space: nowrap;
 		> li {
-			display: inline-block;
 			margin: 0 22px;
 			padding: 13px 70px;
 			position: relative;

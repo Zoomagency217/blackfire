@@ -35,7 +35,7 @@
 			padding-top: 40px;
 		}
 		.bl-description {
-			margin-bottom: 175px;
+			margin-bottom: 7vw;
 			.xs & {
 				margin-bottom: 40px;
 			}
@@ -112,8 +112,14 @@
 		margin-right: -24.775vw;
 		width: 49.55vw;
 		height: 15vw;
-		bottom: -20.5vw;
+		bottom: -21.5vw;
 		z-index: 9;
+		.md & {
+			bottom: -22.5vw;
+		}
+		.sm & {
+			bottom: -23.5vw;
+		}
 	}
 	.line-about-2 {
 		background: url(../assets/images/line-about-2.png) top left no-repeat;

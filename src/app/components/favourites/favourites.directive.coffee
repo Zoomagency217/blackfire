@@ -32,7 +32,17 @@ angular.module 'blackfire'
             'title': 'TuneIn'
           }
         ]
-
+      fv.config =
+        autoHideScrollbar: false
+        theme: 'rounded-dots-dark'
+        advanced:
+          updateOnContentResize: true
+        setHeight: 210
+        mouseWheel:
+          enable: true
+          axis: 'x'
+        scrollButtons:
+          enable: true
       return
 
     directive =
