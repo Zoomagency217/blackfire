@@ -77,14 +77,20 @@
 		}
 	}
 	.detail {
-		.cta {
-			bottom: 0;
-			color: white;
-			left: 0;
-			padding: 0 3vw 3vw;
+		background-size: cover;
+		img {
 			position: absolute;
 			right: 0;
+			top: 0;
+		}
+		.cta {
+			color: white;
+			padding: 15vw 3vw 3vw;
+			right: 0;
 			z-index: 9;
+			.xs & {
+				padding-top: 40vw;
+			}
 			.hd.sub {
 				font-weight: normal;
 				font-size: 25px;
@@ -96,7 +102,70 @@
 				text-overflow: ellipsis;
 			}
 			.ct {
-				@include showline(4, 100px, 120px, 135px);
+				@include showline(5, 110px, 120px, 135px);
+			}
+		}
+	}
+	.blueprint {
+		background: url(../assets/images/technology-blueprint-bg.png);
+		.blueprint-item {
+			position: absolute;
+		}
+		.cover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			overflow: hidden;
+		}
+		.background {
+			.main-content {
+				position: relative;
+				button {
+					-moz-appearance: none;
+					-webkit-appearance: none;
+					background: white;
+					border: none;
+					border-radius: 50%;
+					box-shadow: none;
+					font-size: 21px;
+					height: 28px;
+					line-height: 23px;
+					margin: -14px 0 0 -14px;
+					position: relative;
+					text-align: center;
+					width: 28px;
+					z-index: 1;
+					&:hover {
+						width: 36px;
+						height: 36px;
+						line-height: 30px;
+						font-size: 27px;
+						margin: -18px 0 0 -18px;
+						+ .cta {
+							opacity: 1;
+						}
+					}
+				}
+				.cta {
+					opacity: 0;
+					margin-left: 15vw;
+					margin-top: -35px;
+					position: relative;
+					transition: opacity .3s;
+					-moz-transition: opacity .3s;
+					-webkit-transition: opacity .3s;
+					&:before {
+						border-top: white 1px solid;
+						content: '';
+						height: 1px;
+						left: -15vw;
+						position: absolute;
+						top: 17px;
+						width: 14vw;
+					}
+				}
 			}
 		}
 	}
