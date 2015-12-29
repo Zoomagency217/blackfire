@@ -26,9 +26,9 @@
 		</div>
 	</div>
 	<div class="clearfix"></div>
-	<div class="blueprint">
-		<div id="action-button">
-			<button>&gt;</button>
+	<div class="blueprint" ng-mousemove="draging($event)">
+		<div id="action-button" ng-style="{'left': dragPos+'vw'}">
+			<button ng-mousedown="startDrag()" ng-mouseup="stopDrag()" ng-mouseleave="stopDrag()">&nbsp;</button>
 		</div>
 		<div class="cover">
 			<div class="fullwidth-image">
@@ -55,16 +55,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="background">
-			<div class="main-content fullwidth-image">
+		<div class="background" ng-style="{'right': (100-dragPos)+'vw'}">
+			<div class="main-content fullwidth-image" ng-style="{'margin-left': (100-dragPos)+'vw'}">
 				<div class="center-content">
 					<img src="./assets/images/technology-blueprint.png">
 					<div ng-repeat="item in data.blueprint.background" ng-style="{'top': item.top+'vw', left: item.left+'vw'}" class="blueprint-item">
 						<button>+</button>
 						<div class="cta fs-1" ng-style="{width: item.width+'vw'}" ng-class="item.x + ' ' + item.y">
-							<div class="hd">{{item.title}}</div>
-							<div class="hd sub">{{item.subtitle}}</div>
-							<div class="ct">{{item.description}}</div>
+							<div class="hd" ng-bind-html="item.title"></div>
+							<div class="ct" ng-bind-html="item.description"></div>
 						</div>
 					</div>
 				</div>

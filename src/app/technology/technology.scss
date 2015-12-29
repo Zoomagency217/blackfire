@@ -112,28 +112,28 @@
 		overflow-x: hidden;
 		#action-button {
 			box-shadow: 9;
-			background: white;
-			border-radius: 30px;
+			background: url(../assets/images/arrow-right.png) center no-repeat white;
+			border-radius: 40px;
 			bottom: 60px;
-			height: 30px;
-			left: 40vw;
-			margin-left: -15px;
+			height: 40px;
+			margin-left: -20px;
 			position: absolute;
-			width: 30px;
-			-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
-			-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
-			box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+			width: 40px;
+			-webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+			box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
 			z-index: 99;
-			overflow: hidden;
 			button {
-				-moz-appearance: none;
-				-webkit-appearance: none;
-				background: transparent;
-				border: none;
-				box-shadow: none;
-				font-weight: bold;
-				height: 30px;
-				width: 30px;
+				opacity: 0;
+				height: 80px;
+				width: 80px;
+				padding: 0;
+				margin: -20px;
+				&:hover,
+				&:active,
+				&:focus {
+					outline: none;
+				}
 			}
 		}
 		.blueprint-item {
@@ -165,11 +165,9 @@
 			width: 100%;
 			overflow-x: hidden;
 			background: url(../assets/images/technology-blueprint-bg.png);
-			right: 60vw;
 			.main-content {
 				width: 100vw;
 				position: absolute;
-				margin-left: 60vw;
 				overflow: hidden;
 				top: 0;
 				bottom: 0;
