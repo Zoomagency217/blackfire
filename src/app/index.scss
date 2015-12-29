@@ -162,6 +162,26 @@ body {
 			font-size: 12px;
 			line-height: 18px;
 		}
+		small {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 20px;
+			.md & {
+				color: #76797c;
+				font-size: 14px;
+				line-height: 18px;
+			}
+			.sm & {
+				color: #76797c;
+				font-size: 13px;
+				line-height: 17px;
+			}
+			.xs & {
+				color: #76797c;
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
 	}
 }
 
@@ -311,6 +331,7 @@ body {
 .fixed {
 	position: fixed;
 }
+
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

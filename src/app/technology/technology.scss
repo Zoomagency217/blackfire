@@ -107,63 +107,144 @@
 		}
 	}
 	.blueprint {
-		background: url(../assets/images/technology-blueprint-bg.png);
+		position: relative;
+		min-height: 38.9vw;
+		overflow-x: hidden;
+		#action-button {
+			box-shadow: 9;
+			background: white;
+			border-radius: 30px;
+			bottom: 60px;
+			height: 30px;
+			left: 40vw;
+			margin-left: -15px;
+			position: absolute;
+			width: 30px;
+			-webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+			box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+			z-index: 99;
+			overflow: hidden;
+			button {
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: transparent;
+				border: none;
+				box-shadow: none;
+				font-weight: bold;
+				height: 30px;
+				width: 30px;
+			}
+		}
 		.blueprint-item {
 			position: absolute;
 		}
 		.cover {
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
+			background: #fafafa;
 			overflow: hidden;
-		}
-		.background {
+			position: relative;
+			z-index: 0;
+			> .fullwidth-image {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
 			.main-content {
 				position: relative;
-				button {
-					-moz-appearance: none;
-					-webkit-appearance: none;
-					background: white;
-					border: none;
-					border-radius: 50%;
-					box-shadow: none;
-					font-size: 21px;
-					height: 28px;
-					line-height: 23px;
-					margin: -14px 0 0 -14px;
-					position: relative;
-					text-align: center;
-					width: 28px;
-					z-index: 1;
-					&:hover {
-						width: 36px;
-						height: 36px;
-						line-height: 30px;
-						font-size: 27px;
-						margin: -18px 0 0 -18px;
-						+ .cta {
-							opacity: 1;
+				.cta {
+					padding: 7vw 7vw 7vw 55vw;
+				}
+			}
+		}
+		.background {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			z-index: 9;
+			width: 100%;
+			overflow-x: hidden;
+			background: url(../assets/images/technology-blueprint-bg.png);
+			right: 60vw;
+			.main-content {
+				width: 100vw;
+				position: absolute;
+				margin-left: 60vw;
+				overflow: hidden;
+				top: 0;
+				bottom: 0;
+				.center-content {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					button {
+						-moz-appearance: none;
+						-webkit-appearance: none;
+						background: white;
+						border: none;
+						border-radius: 50%;
+						box-shadow: none;
+						font-size: 21px;
+						height: 28px;
+						line-height: 23px;
+						margin: -14px 0 0 -14px;
+						position: relative;
+						text-align: center;
+						width: 28px;
+						z-index: 1;
+						&:hover {
+							width: 36px;
+							height: 36px;
+							line-height: 30px;
+							font-size: 27px;
+							margin: -18px 0 0 -18px;
+							+ .cta {
+								opacity: 1;
+							}
 						}
 					}
-				}
-				.cta {
-					opacity: 0;
-					margin-left: 15vw;
-					margin-top: -35px;
-					position: relative;
-					transition: opacity .3s;
-					-moz-transition: opacity .3s;
-					-webkit-transition: opacity .3s;
-					&:before {
-						border-top: white 1px solid;
-						content: '';
-						height: 1px;
-						left: -15vw;
-						position: absolute;
-						top: 17px;
-						width: 14vw;
+					.cta {
+						opacity: 0;
+						position: relative;
+						transition: opacity .3s;
+						-moz-transition: opacity .3s;
+						-webkit-transition: opacity .3s;
+						&.bl-top {
+							margin-top: -35px;
+							&:before {
+								top: 17px;
+							}
+						}
+						&.bl-left {
+							margin-left: 15vw;
+							&:before {
+								left: -15vw;
+							}
+						}
+						&.bl-right {
+							margin-left: -15vw;
+							transform: translateX(-100%);
+							text-align: right;
+							&:before {
+								right: -15vw;
+							}
+						}
+						&.bl-bottom {
+							transform: translateY(-100%);
+							&.bl-right {
+								transform: translate3d(-100%, -100%, 0);
+							}
+							&:before {
+								bottom: 17px;
+							}
+						}
+						&:before {
+							border-top: white 1px solid;
+							content: '';
+							height: 1px;
+							position: absolute;
+							width: 14vw;
+						}
 					}
 				}
 			}

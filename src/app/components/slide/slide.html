@@ -1,7 +1,22 @@
-<div class="app-slide fade-in-item">
+<div class="app-slide">
 	<carousel interval="myInterval">
 		<slide ng-repeat="slide in sl.slides" active="slide.active">
 			<img ng-src="{{slide.image}}">
+			<div ng-repeat="(index, item) in slide.items" class="bl-item fullwidth-image" ng-style="{'top': item.top, 'left': item.left, 'bottom': item.bottom, 'right': item.right, 'width': item.width, 'z-index': 'index'}" ng-class="item.class">
+				<img ng-src="{{item.image}}">
+			</div>
+			<div class="cta fs-1">
+				<div class="v-center">
+					<div class="fade-in-down-item text-left">
+						<div class="hd text" ng-bind-html="slide.title"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="fade-in-up-item text-left">
+						<div class="ct text" ng-bind-html="slide.description"></div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
 		</slide>
 	</carousel>
 </div>

@@ -31,7 +31,45 @@ angular.module 'blackfire'
         }
       ]
       'blueprint':
-        'cover': {}
+        'cover': {
+          'title': 'Ask For Blackfire'
+          'subtitle': 'Blackfire FireCast Wi-Fi'
+          'description': 'Our technology works with any Wi-Fi chipset, so whatever hardware or OS you have - Blackfire’s technology can light it up and deliver a seamless media experience.'
+          'list': [
+            {
+              'title': 'Features'
+              'images': './assets/images/technology-features.png'
+              'details': [
+                '24-bit/96kHz'
+                'Multiroom'
+                'MultiChannel'
+                '1, 2.1, 5.1 Home Theater'
+                'BT & Aux Rebroadcast'
+                '24But/96 KHZ, Lossy, Lossless'
+              ]
+            }
+            {
+              'title': 'Specifications'
+              'images': './assets/images/technology-specifications.png'
+              'details': [
+                '802.11n 2.4 Ghz'
+                '24 Bit / 96 Khz Music'
+                '12S Audio output'
+                '12S in 16bit, 44 Khz'
+                'Support GPIO or UART Control'
+              ]
+            }
+            {
+              'title': 'Input & Output'
+              'images': './assets/images/technology-input-output.png'
+              'details': [
+                'Bluetooth Input'
+                'AUX Input'
+                'Low Cost'
+              ]
+            }
+          ]
+        }
         'background': [
           {
             'top': 9.5
@@ -40,6 +78,8 @@ angular.module 'blackfire'
             'title': 'DSB'
             'subtitle': 'Dynamic Stream Balancing'
             'description': 'When streaming to multiple devices, DSM keeps it all in balance. This acts as the conductor in your media orchestra, ensuring that your media is rendered accurately on each device.'
+            'x': 'bl-left'
+            'y': 'bl-top'
           }
           {
             'top': 24
@@ -48,14 +88,18 @@ angular.module 'blackfire'
             'title': 'DSB'
             'subtitle': 'Dynamic Stream Balancing'
             'description': 'When streaming to multiple devices, DSM keeps it all in balance. This acts as the conductor in your media orchestra, ensuring that your media is rendered accurately on each device.'
+            'x': 'bl-left'
+            'y': 'bl-bottom'
           }
           {
             'top': 30
             'left': 38
-            'width': 25
+            'width': 20
             'title': 'DSB'
             'subtitle': 'Dynamic Stream Balancing'
             'description': 'When streaming to multiple devices, DSM keeps it all in balance. This acts as the conductor in your media orchestra, ensuring that your media is rendered accurately on each device.'
+            'x': 'bl-right'
+            'y': 'bl-bottom'
           }
         ]
       'footer':

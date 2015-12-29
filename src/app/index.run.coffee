@@ -24,6 +24,9 @@ angular.module 'blackfire'
       $('.fade-in-up-item').each ->
         add $(this), 'animated fadeInUp'
 
+      $('.fade-in-down-item').each ->
+        add $(this), 'animated fadeInDown'
+
       $('.fade-in-item').each ->
         add $(this), 'animated fadeIn'
 
