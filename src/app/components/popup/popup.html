@@ -1,0 +1,12 @@
+<div class="app-popup text-center fs-4">
+    <img ng-src="{{data.image}}">
+    <div class="hd" ng-bind-html="data.title"></div>
+    <div class="ct" ng-bind-html="data.description"></div>
+    <div class="input-group">
+        <input type="email" class="form-control" placeholder="{{data.placeholder}}" aria-label="{{data.placeholder}}">
+        <div class="input-group-btn">
+            <button class="btn btn-default">{{data.buttonlabel}}</button>
+        </div>
+    </div>
+    <div class="icon-close" ng-click="close()"></div>
+</div>
