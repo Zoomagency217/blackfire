@@ -1,7 +1,8 @@
 <div class="app-gallery">
 	<div class="fs-4 fs-p">
-		<div class="fade-in-up-item hd">{{gl.title}}</div>
-		<div class="fade-in-up-item ct">{{gl.description}}</div>
+		<div class="fade-in-up-item hd col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1"><strong>{{gl.title}}</strong></div>
+		<div class="fade-in-up-item ct col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">{{gl.description}}</div>
+		<div class="clearfix"></div>
 	</div>
 	<ul class="list-unstyled">
 		<li class="fade-in-item" ng-repeat="item in gl.gallery" ng-class="'w-'+item.width">

@@ -48,6 +48,7 @@ angular.module 'blackfire'
 
     $rootScope.$on '$stateChangeStart', (event, toState, toParams, fromState, fromParams)->
       $rootScope.showMenu = false
+      window.scrollTo 0, 0
       $timeout ->
         checkScroll()
       , 300

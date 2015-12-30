@@ -25,7 +25,7 @@ angular.module 'blackfire'
               'bottom': 'auto'
               'right': 'auto'
               'width': '54.4vw'
-              'class': 'fade-in-item'
+              'class': 'fade-in-up-item'
             }
             {
               'image': './assets/images/banner-1-item-3.png'
