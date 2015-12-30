@@ -1,10 +1,13 @@
 <div class="app-connected fs-1">
 	<div class="bl-main">
-		<video autoplay poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop class="fade-in-up-item">
-			<source src="//www.w3schools.com/html/mov_bbb.webm" type="video/webm">
-			<source src="//www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+		<video poster="./assets/images/videobg.png" id="connected-video" loop ng-if="cn.page == 'home'">
+			<source src="./assets/videos/video-1.mp4" type="video/mp4">
+		</video>
+		<video poster="./assets/images/videobg.png" id="connected-video" loop ng-if="cn.page == 'solution'">
+			<source src="./assets/videos/video-2.mp4" type="video/mp4">
 		</video>
 		<div class="bl-cta text-center">
+			<div class="text-center play-button"><img ng-src="{{cn.playButton}}" ng-click="cn.togglePlay()"></div>
 			<div class="col-xs-10 col-xs-offset-1 fade-in-up-item hd">{{cn.data.cta.title}}</div>
 			<div class="col-xs-10 col-xs-offset-1 fade-in-up-item ct">{{cn.data.cta.description}}</div>
 		</div>

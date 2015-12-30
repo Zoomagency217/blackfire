@@ -1,5 +1,5 @@
 angular.module 'blackfire'
-  .run ($log, $rootScope, $timeout, $window, $uibModal) ->
+  .run ($log, $rootScope, $timeout, $window) ->
     'ngInject'
 
     $rootScope.toggleSearch = ->
@@ -52,9 +52,3 @@ angular.module 'blackfire'
       $timeout ->
         checkScroll()
       , 300
-
-    modalInstance = $uibModal.open
-      'animation': true
-      'templateUrl': 'app/components/popup/popup.html'
-      'controller': 'PopupController'
-      'size': 'md'

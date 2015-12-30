@@ -8,6 +8,13 @@
 			margin: 0 22px;
 			padding: 13px 70px;
 			position: relative;
+			.xs &,
+			&:last-child {
+				&:after {
+					border-right: none;
+					width: 0;
+				}
+			}
 			&:after {
 				border-right: #dfdfdf 1px solid;
 				content: '';
@@ -16,11 +23,6 @@
 				right: 0;
 				top: 0;
 				width: 1px;
-				.xs &,
-				&:last-child {
-					border-right: none;
-					width: 0;
-				}
 			}
 			img {
 				margin-right: 25px;
