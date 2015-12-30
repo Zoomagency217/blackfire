@@ -60,7 +60,7 @@ angular.module 'blackfire'
             }
           ]
           'title': 'Powering the best streaming media'
-          'description': 'Wi-Fi speakers always break signal… until now.<br><small>We’ve partnered with Harmon Kardon to integrate in their new Omni Wireless HD audio system.</small>'
+          'description': 'WiFi speakers range has always been a problem... until now..<br><small>Harmon Kardon Omni 10 & 20 are powered by Blackfire</small>'
         }
       ]
 

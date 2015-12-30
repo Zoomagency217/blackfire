@@ -8,10 +8,10 @@
 			</li>
 		</ul>
 	</div>
-	<carousel interval="myInterval" class="visible-xs fade-in-up-item">
-		<slide ng-repeat="item in fv.data.favourites" active="item.active">
+	<uib-carousel interval="6000" class="visible-xs fade-in-up-item">
+		<uib-slide ng-repeat="item in fv.data.favourites" active="item.active">
 			<img ng-src="{{item.image}}"> {{item.title}}
-		</slide>
-	</carousel>
+		</uib-slide>
+	</uib-carousel>
 	<div class="clearfix"></div>
 </div>

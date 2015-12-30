@@ -59,13 +59,24 @@
 				.ct {
 					margin-top: 20px;
 					margin-bottom: 20px;
+					font-size: 16px;
+					font-weight: normal;
+					line-height: 28px;
 					.md & {
 						margin-top: 10px;
 						margin-bottom: 10px;
+						font-size: 15px;
+						line-height: 25px;
 					}
 					.sm & {
 						margin-top: 5px;
 						margin-bottom: 5px;
+						font-size: 13px;
+						line-height: 22px;
+					}
+					.xs & {
+						font-size: 12px;
+						line-height: 18px;
 					}
 					@include showline(2, 45px, 50px, 55px);
 					&:before {

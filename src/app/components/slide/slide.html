@@ -1,6 +1,6 @@
 <div class="app-slide">
-	<carousel interval="myInterval">
-		<slide ng-repeat="slide in sl.slides" active="slide.active">
+	<uib-carousel interval="6000">
+		<uib-slide ng-repeat="slide in sl.slides" active="slide.active">
 			<img ng-src="{{slide.image}}">
 			<div ng-repeat="(index, item) in slide.items" class="bl-item fullwidth-image" ng-style="{'top': item.top, 'left': item.left, 'bottom': item.bottom, 'right': item.right, 'width': item.width, 'z-index': 'index'}" ng-class="item.class">
 				<img ng-src="{{item.image}}">
@@ -17,6 +17,6 @@
 					</div>
 				</div>
 			</div>
-		</slide>
-	</carousel>
+		</uib-slide>
+	</uib-carousel>
 </div>

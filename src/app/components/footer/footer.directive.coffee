@@ -92,7 +92,7 @@ angular.module 'blackfire'
               title: 'Home'
             }
             {
-              state: 'home'
+              state: 'company'
               title: 'About Us'
             }
             {
@@ -104,12 +104,12 @@ angular.module 'blackfire'
               title: 'Connected home'
             }
             {
-              state: 'home'
+              state: 'company'
               title: 'Company'
             }
             {
-              state: 'home'
-              title: 'Solution'
+              state: 'solutions'
+              title: 'Solutions'
             }
             {
               state: 'home'

@@ -13,8 +13,8 @@
 			</div>
 		</li>
 	</ul>
-	<carousel interval="myInterval" class="visible-xs fade-in-up-item">
-		<slide ng-repeat="item in pr.data.presses" active="item.active">
+	<uib-carousel interval="6000" class="visible-xs fade-in-up-item">
+		<uib-slide ng-repeat="item in pr.data.presses" active="item.active">
 			<div class="bl-container">
 				<img ng-src="{{item.image}}">
 				<div class="bl-cta">
@@ -22,8 +22,8 @@
 					<div class="bl-desciption ct">{{item.description}}</div>
 				</div>
 			</div>
-		</slide>
-	</carousel>
+		</uib-slide>
+	</uib-carousel>
 	<div class="bl-viewmore fade-in-up-item">
 		<a ui-sref="main" class="ct">{{pr.data.viewmore}}</a>
 	</div>

@@ -14,10 +14,10 @@ angular.module 'blackfire'
       onDrag = false
 
     $scope.data =
-      'title': 'Chip and OS Agnostic'
+      'title': 'Chip and OS Inter-operation'
       'content': [
-        'Blackfire works perfectly with hardware from many Wi-Fi chipset vendors including Broadcom, and RealTek.'
-        'It supports Linux, Android, iOS, Windows, ThreadEx and other RTOS operating systems.'
+        'Blackfire works perfectly with hardware from many Wi-Fi chipset vendors including Broadcom, Texas Instruments and RealTek.'
+        'It supports simultaneously Linux, Android, iOS, Windows, Mac Os X, ThreadEx and other RTOS operating systems.'
       ]
       'list': [
         {

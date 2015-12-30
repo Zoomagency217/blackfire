@@ -12,11 +12,11 @@ angular.module 'blackfire'
         templateUrl: 'app/company/company.html'
         controller: 'CompanyController'
         controllerAs: 'company'
-      .state 'solution',
-        url: '/solution'
-        templateUrl: 'app/solution/solution.html'
-        controller: 'SolutionController'
-        controllerAs: 'solution'
+      .state 'solutions',
+        url: '/solutions'
+        templateUrl: 'app/solutions/solutions.html'
+        controller: 'SolutionsController'
+        controllerAs: 'solutions'
       .state 'technology',
         url: '/technology'
         templateUrl: 'app/technology/technology.html'
