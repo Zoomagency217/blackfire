@@ -1,16 +1,71 @@
 .app-gallery {
 	padding-top: 25px;
 	text-align: center;
-	ul {
-		li {
-			position: relative;
-			width: 20%;
-			float: left;
-			&.w-2 {
-				width: 40%;
+	position: relative;
+	.gallery-main {
+		height: 44vw;
+		position: relative;
+		.gallery-image {
+			position: absolute;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display: none;
+			#gallery-content {
+				img {
+					width: 110vw;
+				}
 			}
-			img {
-				width: 100%;
+			.close-button {
+				background: url(../assets/images/close-button.png) top left no-repeat;
+				background-size: 40px;
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				right: 40px;
+				top: 40px;
+				z-index: 9;
+				&:active,
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+		ul {
+			li {
+				position: relative;
+				width: 20vw;
+				height: 22vw;
+				float: left;
+				overflow: hidden;
+				cursor: pointer;
+				&:hover,
+				&:focus,
+				&:active {
+					outline: none;
+				}
+				&.w-2 {
+					width: 40vw;
+				}
+				&.h-2 {
+					height: 44vw;
+				}
+				.gallery-item {
+					position: absolute;
+					top: 50%;
+					.v-center {}
+				}
+				img {
+					width: 100%;
+					transform: matrix(1, 0, 0, 1, 0, 0);
+					transition: all .2s ease-in;
+					cursor: hover;
+					&:hover {
+						transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+					}
+				}
 			}
 		}
 	}

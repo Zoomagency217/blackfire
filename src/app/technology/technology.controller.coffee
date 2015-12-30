@@ -46,7 +46,7 @@ angular.module 'blackfire'
           'list': [
             {
               'title': 'Features'
-              'images': './assets/images/technology-features.png'
+              'image': './assets/images/technology-features.png'
               'details': [
                 '24-bit/96kHz'
                 'Multiroom'
@@ -58,7 +58,7 @@ angular.module 'blackfire'
             }
             {
               'title': 'Specifications'
-              'images': './assets/images/technology-specifications.png'
+              'image': './assets/images/technology-specifications.png'
               'details': [
                 '802.11n 2.4 Ghz'
                 '24 Bit / 96 Khz Music'
@@ -69,7 +69,7 @@ angular.module 'blackfire'
             }
             {
               'title': 'Input & Output'
-              'images': './assets/images/technology-input-output.png'
+              'image': './assets/images/technology-input-output.png'
               'details': [
                 'Bluetooth Input'
                 'AUX Input'

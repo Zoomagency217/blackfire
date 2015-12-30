@@ -139,24 +139,6 @@
 		.blueprint-item {
 			position: absolute;
 		}
-		.cover {
-			background: #fafafa;
-			overflow: hidden;
-			position: relative;
-			z-index: 0;
-			> .fullwidth-image {
-				position: absolute;
-				top: 50%;
-				left: 0;
-				transform: translateY(-50%);
-			}
-			.main-content {
-				position: relative;
-				.cta {
-					padding: 7vw 7vw 7vw 55vw;
-				}
-			}
-		}
 		.background {
 			position: absolute;
 			top: 0;
@@ -165,12 +147,20 @@
 			width: 100%;
 			overflow-x: hidden;
 			background: url(../assets/images/technology-blueprint-bg.png);
+			.xs & {
+				height: 150vw;
+				right: auto !important;
+				position: relative;
+			}
 			.main-content {
 				width: 100vw;
 				position: absolute;
 				overflow: hidden;
 				top: 0;
 				bottom: 0;
+				.xs & {
+					margin-left: auto !important;
+				}
 				.center-content {
 					position: absolute;
 					top: 50%;
@@ -242,6 +232,55 @@
 							height: 1px;
 							position: absolute;
 							width: 14vw;
+						}
+					}
+				}
+			}
+		}
+		.cover {
+			background: #fafafa;
+			overflow: hidden;
+			position: relative;
+			z-index: 0;
+			.xs & {
+				padding-bottom: 100px;
+			}
+			> .fullwidth-image {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
+			.mobile-image-1 {
+				img {
+					width: 120px;
+					margin-top: 90px;
+					margin-bottom: 40px;
+				}
+			}
+			.main-content {
+				position: relative;
+				.cta {
+					padding: 7vw 7vw 7vw 55vw;
+					.xs & {
+						padding: 15px;
+						text-align: center;
+					}
+					.hd {
+						.xs & {
+							font-size: 24px;
+							font-weight: bold;
+						}
+					}
+					.ct {
+						border-bottom: #adadad 1px solid;
+						padding-bottom: 60px;
+					}
+					.bl-group {
+						margin-top: 100px;
+						.list-title {
+							font-size: 20px;
+							margin: 20px 0;
 						}
 					}
 				}

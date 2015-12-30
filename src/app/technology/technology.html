@@ -27,44 +27,48 @@
 	</div>
 	<div class="clearfix"></div>
 	<div class="blueprint" ng-mousemove="draging($event)">
-		<div id="action-button" ng-style="{'left': dragPos+'vw'}">
+		<div id="action-button" ng-style="{'left': dragPos+'vw'}" class="hidden-xs">
 			<button ng-mousedown="startDrag()" ng-mouseup="stopDrag()" ng-mouseleave="stopDrag()">&nbsp;</button>
 		</div>
+		<div class="background" ng-style="{'right': (100-dragPos)+'vw'}">
+			<div class="main-content fullwidth-image" ng-style="{'margin-left': (100-dragPos)+'vw'}">
+				<div class="center-content">
+					<img src="./assets/images/technology-blueprint.png" class="hidden-xs">
+					<img src="./assets/images/technology-blueprint-mobile.png" class="visible-xs">
+					<div ng-repeat="item in data.blueprint.background" ng-style="{'top': item.top+'vw', left: item.left+'vw'}" class="blueprint-item hidden-xs">
+						<button>+</button>
+						<div class="cta fs-1" ng-style="{width: item.width+'vw'}" ng-class="item.x + ' ' + item.y">
+							<div class="hd" ng-bind-html="item.title"></div>
+							<div class="ct" ng-bind-html="item.description"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="cover">
-			<div class="fullwidth-image">
+			<div class="fullwidth-image hidden-xs">
 				<img src="./assets/images/technology-blueprint-cover.png">
+			</div>
+			<div class="text-center visible-xs mobile-image-1">
+				<img src="./assets/images/technology-mobile-1.png">
 			</div>
 			<div class="main-content">
 				<div class="cta fs-4">
 					<div class="col-sm-12">
 						<div class="hd">{{data.blueprint.cover.title}}</div>
 						<div class="subtitle">{{data.blueprint.cover.subtitle}}</div>
-						<div class="ct">{{data.blueprint.cover.description}}</div>
+						<div class="ct" ng-bind-html="data.blueprint.cover.description"></div>
 					</div>
 					<div class="clearfix"></div>
 					<div class="bl-list">
 						<div ng-repeat="item in data.blueprint.cover.list" class="bl-group col-sm-4">
 							<img ng-src="{{item.image}}">
-							<br> {{item.title}}
+							<div class="list-title">{{item.title}}</div>
 							<div ng-repeat="dt in item.details" class="bl-detail">
 								{{dt}}
 							</div>
 						</div>
 						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="background" ng-style="{'right': (100-dragPos)+'vw'}">
-			<div class="main-content fullwidth-image" ng-style="{'margin-left': (100-dragPos)+'vw'}">
-				<div class="center-content">
-					<img src="./assets/images/technology-blueprint.png">
-					<div ng-repeat="item in data.blueprint.background" ng-style="{'top': item.top+'vw', left: item.left+'vw'}" class="blueprint-item">
-						<button>+</button>
-						<div class="cta fs-1" ng-style="{width: item.width+'vw'}" ng-class="item.x + ' ' + item.y">
-							<div class="hd" ng-bind-html="item.title"></div>
-							<div class="ct" ng-bind-html="item.description"></div>
-						</div>
 					</div>
 				</div>
 			</div>
