@@ -10,49 +10,47 @@ angular.module 'blackfire'
         {
           'thumbnail': './assets/images/gallery/thumbnails/01.jpg'
           'image': './assets/images/gallery/01.jpg'
-          'mobileImage': './assets/image/gallery/s/thumbnails/01.jpg'
+          'mobileImage': './assets/images/gallery/mobile/01.jpg'
           'width': 1
           'height': 2
         }
         {
           'thumbnail': './assets/images/gallery/thumbnails/02.jpg'
           'image': './assets/images/gallery/02.jpg'
-          'mobileImage': './assets/image/gallery/s/thumbnails/02.jpg'
+          'mobileImage': './assets/images/gallery/mobile/02.jpg'
           'width': 1
           'height': 1
         }
         {
           'thumbnail': './assets/images/gallery/thumbnails/03.jpg'
           'image': './assets/images/gallery/03.jpg'
-          'mobileImage': './assets/image/gallery/s/thumbnails/03.jpg'
+          'mobileImage': './assets/images/gallery/mobile/03.jpg'
           'width': 2
           'height': 1
         }
         {
           'thumbnail': './assets/images/gallery/thumbnails/04.jpg'
           'image': './assets/images/gallery/04.jpg'
-          'mobileImage': './assets/image/gallery/s/thumbnails/04.jpg'
+          'mobileImage': './assets/images/gallery/mobile/04.jpg'
           'width': 1
           'height': 1
         }
         {
           'thumbnail': './assets/images/gallery/thumbnails/05.jpg'
           'image': './assets/images/gallery/05.jpg'
-          'mobileImage': './assets/image/gallery/s/thumbnails/05.jpg'
+          'mobileImage': './assets/images/gallery/mobile/05.jpg'
           'width': 1
           'height': 1
         }
         {
           'thumbnail': './assets/images/gallery/thumbnails/06.jpg'
           'image': './assets/images/gallery/06.jpg'
-          'mobileImage': './assets/image/gallery/s/thumbnails/06.jpg'
           'width': 1
           'height': 1
         }
         {
           'thumbnail': './assets/images/gallery/thumbnails/07.jpg'
           'image': './assets/images/gallery/07.jpg'
-          'mobileImage': './assets/image/gallery/s/thumbnails/07.jpg'
           'width': 2
           'height': 1
         }

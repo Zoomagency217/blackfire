@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<uib-carousel interval="6000" class="visible-xs fade-in-up-item">
-			<uib-slide ng-repeat="item in gl.gallery" active="item.active">
+			<uib-slide ng-repeat="item in gl.gallery" active="item.active" ng-if="item.mobileImage">
 				<img ng-src="{{item.mobileImage}}">
 			</uib-slide>
 		</uib-carousel>

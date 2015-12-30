@@ -5,6 +5,9 @@
 	.gallery-main {
 		height: 44vw;
 		position: relative;
+		.xs & {
+			height: auto;
+		}
 		.gallery-image {
 			position: absolute;
 			overflow: hidden;
@@ -66,6 +69,34 @@
 						transform: matrix(1.1, 0, 0, 1.1, 0, 0);
 					}
 				}
+			}
+		}
+	}
+	.carousel {
+		list-style-type: none;
+		white-space: nowrap;
+		overflow-x: scroll;
+		.carousel-indicators {
+			bottom: 20px;
+			li {
+				border: none;
+				background: white;
+				margin: 0 2px;
+			}
+			.active {
+				background: #f78f1e;
+				width: 10px;
+				height: 10px;
+			}
+		}
+		.carousel-control {
+			display: none;
+		}
+		.item {
+			width: 100%;
+			img {
+				margin-right: 15px;
+				display: inline-block;
 			}
 		}
 	}
