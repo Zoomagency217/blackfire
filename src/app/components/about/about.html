@@ -1,4 +1,4 @@
-<div class="app-about">
+<div class="app-about" ng-cloak>
 	<div class="bl-group-1 text-center fs-2">
 		<div class="bl-description col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 fade-in-up-item">{{ab.data[0].description}}</div>
 		<div class="clearfix"></div>
@@ -15,7 +15,7 @@
 		<div class="clearfix"></div>
 		<div class="col-sm-6 bl-list fs-1" ng-repeat="item in ab.data[1].content">
 			<div class="row">
-				<img ng-src="{{item.image}}" />
+				<img ng-src="{{item.image}}" ng-cloak/>
 				<div class="bl-description col-lg-8 col-xs-10 col-lg-offset-2 col-xs-offset-1 fade-in-up-item">
 					<div class="v-center ct">
 						{{item.description}}
@@ -40,7 +40,7 @@
 				</div>
 			</div>
 			<div class="bl-image col-lg-3 col-md-4 col-sm-5">
-				<img ng-src="{{ab.data[2].image}}" class="fade-in-up-item" />
+				<img ng-src="{{ab.data[2].image}}" class="fade-in-up-item" ng-cloak/>
 				<div class="line-about-2 fade-in-up-item"></div>
 			</div>
 			<div class="clearfix"></div>

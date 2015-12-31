@@ -1,11 +1,11 @@
-<div class="app-press fs-4 fs-p">
+<div class="app-press fs-4 fs-p" ng-cloak>
 	<div class="hd fade-in-up-item text-center"><strong>{{pr.data.title}}</strong></div>
 	<div class="ct col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 fade-in-up-item text-center">{{pr.data.description}}</div>
 	<div class="clearfix"></div>
 	<ul class="list-inline hidden-xs">
 		<li ng-repeat="item in pr.data.presses">
 			<div class="bl-container fade-in-up-item">
-				<img ng-src="{{item.image}}">
+				<img ng-src="{{item.image}}" ng-cloak/>
 				<div class="bl-cta">
 					<div class="bl-date ct">{{item.date}}</div>
 					<div class="bl-desciption ct">{{item.description}}</div>
@@ -16,7 +16,7 @@
 	<uib-carousel interval="6000" class="visible-xs fade-in-up-item">
 		<uib-slide ng-repeat="item in pr.data.presses" active="item.active">
 			<div class="bl-container">
-				<img ng-src="{{item.image}}">
+				<img ng-src="{{item.image}}" ng-cloak/>
 				<div class="bl-cta">
 					<div class="bl-date ct">{{item.date}}</div>
 					<div class="bl-desciption ct">{{item.description}}</div>

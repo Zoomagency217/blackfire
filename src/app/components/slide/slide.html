@@ -1,9 +1,9 @@
-<div class="app-slide">
+<div class="app-slide animated fadeIn" ng-cloak>
 	<uib-carousel interval="6000">
 		<uib-slide ng-repeat="slide in sl.slides" active="slide.active">
-			<img ng-src="{{slide.image}}">
+			<img ng-src="{{slide.image}}" ng-cloak/>
 			<div ng-repeat="(index, item) in slide.items" class="bl-item fullwidth-image" ng-style="{'top': item.top, 'left': item.left, 'bottom': item.bottom, 'right': item.right, 'width': item.width, 'z-index': 'index'}" ng-class="item.class">
-				<img ng-src="{{item.image}}">
+				<img ng-src="{{item.image}}" ng-cloak/>
 			</div>
 			<div class="cta fs-1">
 				<div class="v-center">

@@ -1,6 +1,6 @@
-<div class="technology">
+<div class="technology" ng-cloak>
 	<div class="banner fullwidth-image">
-		<img src="./assets/images/technology-banner.png" class="fade-in-item">
+		<img src="./assets/images/technology-banner.png" class="fade-in-item" ng-cloak/>
 		<div class="cta fs-1">
 			<div class="v-center">
 				<div class="fade-in-down-item">
@@ -17,7 +17,7 @@
 	</div>
 	<div class="col-sm-4" ng-repeat="item in data.list">
 		<div class="row fullwidth-image detail" ng-style="{'background-image':'url('+item.background+')'}">
-			<img ng-src="{{item.image}}" class="fade-in-up-item">
+			<img ng-src="{{item.image}}" class="fade-in-up-item" ng-cloak ng-cloak/>
 			<div class="cta fs-1">
 				<div class="fade-in-up-item hd">{{item.title}}</div>
 				<div class="fade-in-up-item hd sub">{{item.subtitle}}</div>
@@ -26,15 +26,15 @@
 		</div>
 	</div>
 	<div class="clearfix"></div>
-	<div class="blueprint" ng-mousemove="draging($event)">
+	<div class="blueprint" ng-mousemove="draging($event)" ng-mouseup="stopDrag()" ng-mouseleave="stopDrag()">
 		<div id="action-button" ng-style="{'left': dragPos+'vw'}" class="hidden-xs">
-			<button ng-mousedown="startDrag()" ng-mouseup="stopDrag()" ng-mouseleave="stopDrag()">&nbsp;</button>
+			<button ng-mousedown="startDrag()">&nbsp;</button>
 		</div>
 		<div class="background" ng-style="{'right': (100-dragPos)+'vw'}">
 			<div class="main-content fullwidth-image" ng-style="{'margin-left': (100-dragPos)+'vw'}">
 				<div class="center-content">
-					<img src="./assets/images/technology-blueprint.png" class="hidden-xs">
-					<img src="./assets/images/technology-blueprint-mobile.png" class="visible-xs">
+					<img src="./assets/images/technology-blueprint.png" class="hidden-xs" ng-cloak/>
+					<img src="./assets/images/technology-blueprint-mobile.png" class="visible-xs" ng-cloak/>
 					<div ng-repeat="item in data.blueprint.background" ng-style="{'top': item.top+'vw', left: item.left+'vw'}" class="blueprint-item hidden-xs">
 						<button>+</button>
 						<div class="cta fs-1" ng-style="{width: item.width+'vw'}" ng-class="item.x + ' ' + item.y">
@@ -46,11 +46,8 @@
 			</div>
 		</div>
 		<div class="cover">
-			<div class="fullwidth-image hidden-xs">
-				<img src="./assets/images/technology-blueprint-cover.png">
-			</div>
-			<div class="text-center visible-xs mobile-image-1">
-				<img src="./assets/images/technology-mobile-1.png">
+			<div class="text-center cover-image">
+				<img src="./assets/images/technology-blueprint-cover-image.png" ng-cloak/>
 			</div>
 			<div class="main-content">
 				<div class="cta fs-4">
@@ -62,7 +59,7 @@
 					<div class="clearfix"></div>
 					<div class="bl-list">
 						<div ng-repeat="item in data.blueprint.cover.list" class="bl-group col-sm-4">
-							<img ng-src="{{item.image}}">
+							<img ng-src="{{item.image}}" ng-cloak/>
 							<div class="list-title">{{item.title}}</div>
 							<div ng-repeat="dt in item.details" class="bl-detail">
 								{{dt}}

@@ -27,6 +27,8 @@
 .technology {
 	.banner {
 		position: relative;
+		height: 37.5vw;
+		overflow: hidden;
 		.xs & {
 			background: #d54b19;
 		}
@@ -238,12 +240,14 @@
 			}
 		}
 		.cover {
-			background: #fafafa;
+			background: url(../assets/images/technology-blueprint-cover-background.png) top 27.9vw left 4.1vw no-repeat #fafafa;
 			overflow: hidden;
 			position: relative;
 			z-index: 0;
+			background-size: 6.3vw;
 			.xs & {
 				padding-bottom: 100px;
+				background: #fafafa;
 			}
 			> .fullwidth-image {
 				position: absolute;
@@ -251,17 +255,31 @@
 				left: 0;
 				transform: translateY(-50%);
 			}
-			.mobile-image-1 {
-				img {
-					width: 120px;
-					margin-top: 90px;
-					margin-bottom: 40px;
+			.cover-image {
+				.lg &,
+				.md &,
+				.sm & {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					img {
+						width: 9.343vw;
+						margin-top: -5.12vw;
+						margin-left: -4.7vw;
+					}
+				}
+				.xs & {
+					img {
+						width: 120px;
+						margin-top: 90px;
+						margin-bottom: 40px;
+					}
 				}
 			}
 			.main-content {
 				position: relative;
 				.cta {
-					padding: 7vw 7vw 7vw 55vw;
+					padding: 7vw 7vw 7vw 60vw;
 					.xs & {
 						padding: 15px;
 						text-align: center;

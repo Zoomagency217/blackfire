@@ -1,4 +1,4 @@
-<div class="app-gallery">
+<div class="app-gallery" ng-cloak>
 	<div class="fs-4 fs-p">
 		<div class="fade-in-up-item hd col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1"><strong>{{gl.title}}</strong></div>
 		<div class="fade-in-up-item ct col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">{{gl.description}}</div>
@@ -9,7 +9,7 @@
 			<li class="fade-in-item" ng-repeat="item in gl.gallery" ng-class="'w-'+item.width+ ' h-'+item.height" ng-click="gl.showPhoto(item)">
 				<div class="gallery-item">
 					<div class="v-center">
-						<img ng-src="{{item.thumbnail}}">
+						<img ng-src="{{item.thumbnail}}" ng-cloak/>
 					</div>
 				</div>
 			</li>
@@ -17,12 +17,12 @@
 		<div class="gallery-image hidden-xs" ng-class="{'show': gl.galleryDetail}">
 			<div class="close-button animated" ng-click="gl.hidePhoto()" ng-class="{'fadeIn': gl.showImage, 'fadeOut': !gl.showImage}"></div>
 			<div id="gallery-content" class="animated" ng-mousemove="gl.moving($event)" ng-class="{'fadeIn': gl.showImage, 'fadeOut': !gl.showImage}">
-				<img ng-src="{{gl.galleryDetail}}" ng-style="{'margin-left': gl.image.ml, 'margin-top': gl.image.mt}" />
+				<img ng-src="{{gl.galleryDetail}}" ng-style="{'margin-left': gl.image.ml, 'margin-top': gl.image.mt}" ng-cloak/>
 			</div>
 		</div>
 		<uib-carousel interval="6000" class="visible-xs fade-in-up-item">
 			<uib-slide ng-repeat="item in gl.gallery" active="item.active" ng-if="item.mobileImage">
-				<img ng-src="{{item.mobileImage}}">
+				<img ng-src="{{item.mobileImage}}" ng-cloak/>
 			</uib-slide>
 		</uib-carousel>
 		<div class="clearfix"></div>

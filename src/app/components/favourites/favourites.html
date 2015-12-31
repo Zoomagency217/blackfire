@@ -1,16 +1,16 @@
-<div class="app-favourites fs-4 fs-p">
+<div class="app-favourites fs-4 fs-p" ng-cloak>
 	<div class="hd col-lg-6 col-md-8 col-sm-10 col-lg-offset-3 col-md-offset-2 col-sm-offset-1 fade-in-up-item">{{fv.data.title}}</div>
 	<div class="clearfix"></div>
 	<div ng-scrollbars ng-scrollbars-config="fv.config" class="col-xs-10 col-xs-offset-1 hidden-xs">
 		<ul class="list list-inline">
 			<li ng-repeat="item in fv.data.favourites" class="fade-in-up-item">
-				<img ng-src="{{item.image}}"> {{item.title}}
+				<img ng-src="{{item.image}}" ng-cloak/> {{item.title}}
 			</li>
 		</ul>
 	</div>
 	<uib-carousel interval="6000" class="visible-xs fade-in-up-item">
 		<uib-slide ng-repeat="item in fv.data.favourites" active="item.active">
-			<img ng-src="{{item.image}}"> {{item.title}}
+			<img ng-src="{{item.image}}" ng-cloak/> {{item.title}}
 		</uib-slide>
 	</uib-carousel>
 	<div class="clearfix"></div>

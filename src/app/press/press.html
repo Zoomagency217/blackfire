@@ -1,4 +1,4 @@
-<div class="page-press">
+<div class="page-press" ng-cloak>
 	<div app-press></div>
 	<div class="main-press">
 		<div class="press-top-line-1 fade-in-up-item"></div>
@@ -13,7 +13,7 @@
 				<div class="left-area">
 					<div class="date ct fade-in-up-item">{{item.date}}</div>
 					<div class="image fullwidth-image fade-in-up-item">
-						<img ng-src="{{item.image}}" />
+						<img ng-src="{{item.image}}" ng-cloak/>
 					</div>
 				</div>
 				<div class="right-area">

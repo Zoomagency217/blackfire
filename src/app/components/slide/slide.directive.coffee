@@ -11,7 +11,7 @@ angular.module 'blackfire'
           'items': [
             {
               'image': './assets/images/banner-1-item-1.png'
-              'top': '7.8vw'
+              'top': '7.3vw'
               'left': '35vw'
               'bottom': 'auto'
               'right': 'auto'
