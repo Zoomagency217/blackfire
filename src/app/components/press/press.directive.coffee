@@ -1,9 +1,10 @@
 angular.module 'blackfire'
   .directive 'appPress', ->
 
-    pressController = () ->
+    pressController = ($state) ->
       'ngInject'
       pr = this
+      pr.page = $state.current.name
       pr.data =
         'title': 'Press'
         'description': 'People have already discovered Blackfire Technology. See what the press is saying about our products, technology, and partners.'
