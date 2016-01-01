@@ -108,8 +108,8 @@ angular.module 'blackfire'
               title: 'Company'
             }
             {
-              state: 'solutions'
-              title: 'Solutions'
+              state: 'solution'
+              title: 'Solution'
             }
             {
               state: 'home'

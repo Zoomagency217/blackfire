@@ -11,8 +11,8 @@ angular.module 'blackfire'
           state: 'company'
         }
         {
-          title: 'Solutions'
-          state: 'solutions'
+          title: 'Solution'
+          state: 'solution'
         }
         {
           title: 'Technology'

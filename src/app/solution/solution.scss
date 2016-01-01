@@ -1,0 +1,69 @@
+@mixin showline($line, $height-sm, $height-md, $height-lg) {
+	.sm &,
+	.md &,
+	.lg & {
+		-webkit-line-clamp: $line;
+		-moz-line-clamp: $line;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: block;
+		display: -webkit-box;
+		display: -moz-box;
+		white-space: normal;
+	}
+	.sm & {
+		height: $height-sm;
+	}
+	.md & {
+		height: $height-md;
+	}
+	.lg & {
+		height: $height-lg;
+	}
+}
+
+.page-solution {
+	.solution-banner {
+		background: url(../assets/images/solution-banner.png) top left no-repeat;
+		background-size: 100%;
+		width: 100%;
+		height: 42.2vw;
+		position: relative;
+		.xs & {
+			background: #f46b01;
+			height: auto;
+		}
+		.cta {
+			position: absolute;
+			top: 50%;
+			width: 50%;
+			padding-left: 110px;
+			padding-right: 55px;
+			.v-center {
+				.xs & {
+					transform: none;
+				}
+			}
+			.sm & {
+				padding-left: 30px;
+				margin-top: 35px;
+			}
+			.md & {
+				padding-left: 30px;
+				margin-top: 15px;
+			}
+			.xs & {
+				text-align: center;
+				width: 100%;
+				padding: 40px 20px;
+				position: relative;
+				top: auto;
+			}
+			.ct {
+				@include showline(5, 113px, 120px, 135px);
+			}
+		}
+	}
+}
