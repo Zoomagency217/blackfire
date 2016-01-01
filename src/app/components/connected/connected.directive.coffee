@@ -9,7 +9,7 @@ angular.module 'blackfire'
       playButtonSrc = './assets/images/play-button.png'
       pauseButtonSrc = './assets/images/pause-button.png'
 
-      cn.playButton = playButtonSrc
+      cn.playButton = pauseButtonSrc
       cn.data =
         cta:
           title: 'Always connected'
@@ -20,9 +20,13 @@ angular.module 'blackfire'
         video = document.getElementById 'connected-video'
         if video.paused
           video.play()
+          document.getElementById('home-video-1').play()
+          document.getElementById('home-video-2').play()
           cn.playButton = pauseButtonSrc
         else
           video.pause()
+          document.getElementById('home-video-1').pause()
+          document.getElementById('home-video-2').pause()
           cn.playButton = playButtonSrc
 
         cn.videoStatus = video.paused
