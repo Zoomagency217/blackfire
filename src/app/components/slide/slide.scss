@@ -21,13 +21,10 @@
 	.carousel-indicators {
 		li {
 			border: none;
-			background: white;
+			background: #464442;
 			margin: 0 5px;
 			width: 15px;
 			height: 15px;
-			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
 			&:focus,
 			&:hover,
 			&:active {
@@ -38,9 +35,6 @@
 			background: #f78f1e;
 			width: 15px;
 			height: 15px;
-			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
 		}
 	}
 	.bl-item {
