@@ -39,12 +39,12 @@
 				position: absolute;
 				top: auto;
 				bottom: 15px;
-				height: 220px;
+				height: 180px;
 				.sm & {
-					height: 165px;
+					height: 150px;
 				}
 				.md & {
-					height: 190px;
+					height: 170px;
 				}
 				.hd {
 					padding: 10px 50px;
@@ -57,28 +57,28 @@
 					line-height: 60px;
 				}
 				.ct {
-					margin-top: 20px;
-					margin-bottom: 20px;
+					margin-top: 10px;
+					margin-bottom: 10px;
 					font-size: 16px;
 					font-weight: normal;
-					line-height: 28px;
+					line-height: 22px;
 					.md & {
-						margin-top: 10px;
-						margin-bottom: 10px;
+						margin-top: 8px;
+						margin-bottom: 8px;
 						font-size: 15px;
-						line-height: 25px;
+						line-height: 20px;
 					}
 					.sm & {
 						margin-top: 5px;
 						margin-bottom: 5px;
 						font-size: 13px;
-						line-height: 22px;
+						line-height: 18px;
 					}
 					.xs & {
 						font-size: 12px;
-						line-height: 18px;
+						line-height: 16px;
 					}
-					@include showline(2, 45px, 50px, 55px);
+					@include showline(2, 40px, 45px, 50px);
 					&:before {
 						content: '• '
 					}

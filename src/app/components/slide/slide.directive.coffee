@@ -41,7 +41,7 @@ angular.module 'blackfire'
             }
             {
               'type': 'image'
-              'image': 'assets/images/banner-1-item-2.png'
+              'image': './assets/images/banner-1-item-2.png'
               'top': '1.6vw'
               'left': '31.4vw'
               'bottom': 'auto'
@@ -67,12 +67,13 @@ angular.module 'blackfire'
           'image': './assets/images/banner-2-bg.png'
           'items': []
           'title': 'Your media, your way'
-          'description': '5 speakers in 5 rooms or a 5 speaker home theatre setup. You decide.'
+          'description': 'Multiple speakers in many rooms or multiple speaker home theatre setup. You decide.'
         }
         {
           'image': './assets/images/banner-3-bg.png'
           'items': [
             {
+              'type': 'image'
               'image': './assets/images/banner-3-item-1.png'
               'top': '8vw'
               'left': '40vw'
