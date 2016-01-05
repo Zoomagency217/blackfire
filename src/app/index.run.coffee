@@ -1,5 +1,5 @@
 angular.module 'blackfire'
-  .run ($log, $rootScope, $timeout, $window) ->
+  .run ($interval, $log, $rootScope, $timeout, $window) ->
     'ngInject'
 
     $rootScope.toggleSearch = ->
@@ -39,7 +39,39 @@ angular.module 'blackfire'
 
       # Contact page only
       $('#contact-banner').each ->
-        parallax $(this)
+        parallax()
+
+    videoPlaying = true
+    # Home page only
+    $interval ->
+      video1 = document.getElementById 'home-video-1'
+      video2 = document.getElementById 'home-video-2'
+      scrY = $window.pageYOffset/$window.innerWidth
+
+      if video1 and video2
+        video1.muted = 'muted'
+        video2.muted = 'muted'
+        $('.app-slide .carousel-inner > .item').each ->
+          if $(this).hasClass('active')
+            if $(this).index() is 0
+              if scrY < 0.3 and !videoPlaying
+                console.log 1
+                videoPlaying = true
+                video1.play()
+                video2.play()
+            else
+              if videoPlaying
+                console.log 2
+                videoPlaying = false
+                video1.pause()
+                video2.pause()
+          
+        if scrY > 0.3 and videoPlaying
+          console.log 3
+          videoPlaying = false
+          video1.pause()
+          video2.pause()
+    , 10
 
     add = (self, cls)->
       bottom_of_object = self.offset().top + self.outerHeight()
@@ -51,9 +83,9 @@ angular.module 'blackfire'
       if bottom_of_window > bottom_of_object
         self.addClass cls
 
-    parallax = (self)->
+    parallax = ->
       $rootScope.parallaxY = ($rootScope.pageWidth * 0.43 + 50 - $rootScope.pageYOffset)/$rootScope.pageWidth*43-20
-      console.log $rootScope.parallaxY
+
 
     $rootScope.$on '$stateChangeStart', (event, toState, toParams, fromState, fromParams)->
       $rootScope.showMenu = false
