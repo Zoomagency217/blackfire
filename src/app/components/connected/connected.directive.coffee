@@ -33,6 +33,7 @@ angular.module 'blackfire'
 
       cn.playVideo = ->
         video = document.getElementById 'connected-video'
+        video.muted = false
         video.play()
         cn.playing = true
 

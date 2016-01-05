@@ -44,15 +44,18 @@
 					padding: 30px;
 					text-align: left;
 					height: 220px;
+					.bl-title {
+						margin-bottom: 5px;
+					}
 					.bl-date {
 						text-transform: uppercase;
-						background: url(../assets/images/icon-calendar.png) top left no-repeat;
+						background: url(../assets/images/icon-calendar.png) top 4px left no-repeat;
 						padding-left: 30px;
 					}
 					.bl-description {
 						height: 100px;
 						overflow: hidden;
-						margin-top: 26px;
+						margin-top: 10px;
 					}
 				}
 			}

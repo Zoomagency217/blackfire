@@ -7,8 +7,9 @@
 			<div class="bl-container fade-in-up-item">
 				<img ng-src="{{item.image}}" ng-cloak/>
 				<div class="bl-cta">
+					<div class="bl-title ct"><strong>{{item.title}}</strong></div>
 					<div class="bl-date ct">{{item.date}}</div>
-					<div class="bl-desciption ct" ng-bind-html="item.description"></div>
+					<div class="bl-description ct" ng-bind-html="item.description"></div>
 				</div>
 			</div>
 		</li>
@@ -18,8 +19,9 @@
 			<div class="bl-container">
 				<img ng-src="{{item.image}}" ng-cloak/>
 				<div class="bl-cta">
+					<div class="bl-title ct"><strong>{{item.title}}</strong></div>
 					<div class="bl-date ct">{{item.date}}</div>
-					<div class="bl-desciption ct">{{item.description}}</div>
+					<div class="bl-description ct">{{item.description}}</div>
 				</div>
 			</div>
 		</uib-slide>

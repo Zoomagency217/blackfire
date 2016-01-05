@@ -1,9 +1,9 @@
 <div class="app-connected fs-1" ng-cloak>
 	<div class="bl-main">
-		<video poster="./assets/images/videobg-1.png" id="connected-video" loop ng-if="cn.page == 'home'">
+		<video poster="./assets/images/videobg-1.png" id="connected-video" loop ng-if="cn.page == 'home'" muted="muted">
 			<source src="./assets/videos/video-1.mp4" type="video/mp4">
 		</video>
-		<video poster="./assets/images/videobg-2.png" id="connected-video" loop ng-if="cn.page == 'solution'">
+		<video poster="./assets/images/videobg-2.png" id="connected-video" loop ng-if="cn.page == 'solution'" muted="muted">
 			<source src="./assets/videos/video-2.mp4" type="video/mp4">
 		</video>
 		<div class="bl-cta text-center" ng-if="!cn.playing">
