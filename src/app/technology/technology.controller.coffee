@@ -108,6 +108,6 @@ angular.module 'blackfire'
           }
         ]
       'footer':
-        'title': 'Lorem ipsum dolor'
-        'description': 'Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Cras et leo hendrerit risus porta'
+        'title': ''
+        'description': 'Join the Blackfire revolution - let\'s bring the Media Internet of Things to life!'
     return

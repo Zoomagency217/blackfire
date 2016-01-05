@@ -10,6 +10,7 @@ angular.module 'blackfire'
     
     angular.element($window).bind "scroll", ->
       $rootScope.pageYOffset = $window.pageYOffset
+      $rootScope.pageWidth = $window.innerWidth
       $rootScope.$apply()
 
       checkScroll()
@@ -36,6 +37,10 @@ angular.module 'blackfire'
       $('.fade-in-right-item').each ->
         add $(this), 'animated fadeInRight'
 
+      # Contact page only
+      $('#contact-banner').each ->
+        parallax $(this)
+
     add = (self, cls)->
       bottom_of_object = self.offset().top + self.outerHeight()
       bottom_of_window = $(window).scrollTop() + $(window).height()
@@ -45,6 +50,10 @@ angular.module 'blackfire'
 
       if bottom_of_window > bottom_of_object
         self.addClass cls
+
+    parallax = (self)->
+      $rootScope.parallaxY = ($rootScope.pageWidth * 0.43 + 50 - $rootScope.pageYOffset)/$rootScope.pageWidth*43-20
+      console.log $rootScope.parallaxY
 
     $rootScope.$on '$stateChangeStart', (event, toState, toParams, fromState, fromParams)->
       $rootScope.showMenu = false

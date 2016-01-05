@@ -53,116 +53,138 @@ angular.module 'blackfire'
         }
       ]
       ft.otherMenus = [
+        # {
+        #   state: 'home'
+        #   title: 'Terms of Use'
+        # }
+        # {
+        #   state: 'home'
+        #   title: 'Privacy Policy'
+        # }
+        # {
+        #   state: 'home'
+        #   title: 'SiteMap'
+        # }
+      ]
+      ft.submenus = [
         {
           state: 'home'
-          title: 'Terms of Use'
+          title: 'Home'
         }
         {
-          state: 'home'
-          title: 'Privacy Policy'
+          state: 'solution'
+          title: 'Solution'
         }
         {
-          state: 'home'
-          title: 'SiteMap'
+          state: 'technology'
+          title: 'Technology'
+        }
+        {
+          state: 'press'
+          title: 'Press'
+        }
+        {
+          state: 'contact'
+          title: 'Contact'
         }
       ]
       ft.menus = [
-        {
-          title: 'BlackFire'
-          items: [
-            {
-              state: 'home'
-              title: 'Overview'
-            }
-            {
-              state: 'home'
-              title: 'Advantage'
-            }
-            {
-              state: 'home'
-              title: 'Support'
-            }
-          ]
-        }
-        {
-          title: 'SiteMap'
-          items: [
-            {
-              state: 'home'
-              title: 'Home'
-            }
-            {
-              state: 'company'
-              title: 'About Us'
-            }
-            {
-              state: 'home'
-              title: 'Audio and Video'
-            }
-            {
-              state: 'home'
-              title: 'Connected home'
-            }
-            {
-              state: 'company'
-              title: 'Company'
-            }
-            {
-              state: 'solution'
-              title: 'Solution'
-            }
-            {
-              state: 'home'
-              title: 'Industry'
-            }
-            {
-              state: 'home'
-              title: 'Partners'
-            }
-            {
-              state: 'home'
-              title: 'Contact'
-            }
-          ]
-        }
-        {
-          title: 'Careers'
-          items: [
-            {
-              state: 'home'
-              title: 'Become a partner'
-            }
-            {
-              state: 'home'
-              title: 'Partners Information'
-            }
-            {
-              state: 'home'
-              title: 'Partner List'
-            }
-          ]
-        }
-        {
-          title: 'QIContact Form'
-          items: [
-            {
-              state: 'home'
-              title: 'Terms of Use'
-            }
-            {
-              state: 'home'
-              title: 'Privacy Policy'
-            }
-            {
-              state: 'home'
-              title: 'Sitemap'
-            }
-            {
-              state: 'home'
-              title: 'Careers'
-            }
-          ]
-        }
+        # {
+        #   title: 'BlackFire'
+        #   items: [
+        #     {
+        #       state: 'home'
+        #       title: 'Overview'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Advantage'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Support'
+        #     }
+        #   ]
+        # }
+        # {
+        #   title: 'SiteMap'
+        #   items: [
+        #     {
+        #       state: 'home'
+        #       title: 'Home'
+        #     }
+        #     {
+        #       state: 'company'
+        #       title: 'About Us'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Audio and Video'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Connected home'
+        #     }
+        #     {
+        #       state: 'company'
+        #       title: 'Company'
+        #     }
+        #     {
+        #       state: 'solution'
+        #       title: 'Solution'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Industry'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Partners'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Contact'
+        #     }
+        #   ]
+        # }
+        # {
+        #   title: 'Careers'
+        #   items: [
+        #     {
+        #       state: 'home'
+        #       title: 'Become a partner'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Partners Information'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Partner List'
+        #     }
+        #   ]
+        # }
+        # {
+        #   title: 'QIContact Form'
+        #   items: [
+        #     {
+        #       state: 'home'
+        #       title: 'Terms of Use'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Privacy Policy'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Sitemap'
+        #     }
+        #     {
+        #       state: 'home'
+        #       title: 'Careers'
+        #     }
+        #   ]
+        # }
       ]
 
       ft.socials = [
@@ -196,8 +218,7 @@ angular.module 'blackfire'
         }
       ]
 
-      ft.about = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Fusce tincidunt tristique nunc ut lacinia. Integer tempus nisl et dolor malesuada, sit amet interdum ipsum posuere.'
+      ft.about = 'Blackfire\'s technology will form the key infrastructure for the rapidly growing Media IoT space.'
 
       return
 

@@ -1,4 +1,14 @@
 .app-contact {
+	.bl-banner {
+		position: relative;
+		max-width: 100vw;
+		height: 42.2vw;
+		overflow: hidden;
+		text-align: center;
+		img {
+			height: 62.2vw;
+		}
+	}
 	.about {
 		margin-top: 80px;
 		margin-bottom: 200px;

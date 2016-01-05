@@ -5,7 +5,8 @@
 				<ul class="list-inline text-center">
 					<li ng-repeat="item in ft.devices" class="fade-in-up-item">
 						<img ng-src="{{item.image}}" ng-cloak/>
-						<br><br>{{item.title}}
+						<br>
+						<br>{{item.title}}
 					</li>
 				</ul>
 			</div>
@@ -23,13 +24,16 @@
 							</a>
 						</li>
 					</ul>
-					<ul class="other-menus list-inline">
+					<ul class="other-menus list-inline" ng-if="ft.otherMenus.length">
 						<li ng-repeat="item in ft.otherMenus" class="fade-in-up-item">
 							<a ui-sref="{{item.state}}">{{item.title}}</a>
 							<span class="divider">|</span>
 						</li>
 					</ul>
 					<div class="about">{{ft.about}}</div>
+				</div>
+				<div ng-if="ft.submenus.length" class="col-md-8 submenus">
+					<a ng-repeat="item in ft.submenus" ui-sref="{{item.state}}">{{item.title}}</a>
 				</div>
 				<div ng-repeat="menu in ft.menus" class="col-md-2 col-sm-3 col-xs-6 text-left menus">
 					<div class="title fade-in-up-item">{{menu.title}}</div>
@@ -39,7 +43,7 @@
 						</li>
 					</ul>
 				</div>
-				</ul>
 			</div>
 		</div>
 	</div>
+</div>

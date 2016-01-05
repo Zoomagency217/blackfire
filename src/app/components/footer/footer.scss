@@ -76,6 +76,25 @@ $footer-color: #2c2c2c;
 				}
 			}
 		}
+		.submenus {
+			text-align: right;
+			.sm &,
+			.xs & {
+				text-align: center;
+			}
+			a {
+				&:after {
+					content: '|';
+					margin: 10px;
+					color: #cccccc;
+				}
+				&:last-child {
+					&:after {
+						content: '';
+					}
+				}
+			}
+		}
 		.menus {
 			.list-unstyled {
 				li {

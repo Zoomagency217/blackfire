@@ -7,7 +7,7 @@ angular.module 'blackfire'
       pr.page = $state.current.name
       pr.data =
         'title': 'Press'
-        'description': 'People have already discovered Blackfire Technology. See what the press is saying about our products, technology, and partners.'
+        'description': 'Read all about how Blackfire is fixing up everything you want to see and hear<br>Press inquiries? We can be reached at <a href="mailto:info@bfrx.com">info@bfrx.com</a>'
         'presses': [
           {
             'image': 'assets/images/press_1.png'

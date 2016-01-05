@@ -34,6 +34,9 @@ $menu-color: #353535;
 		text-align: right;
 		margin: 45px 45px 0 0;
 		transition: margin-top .2s ease-in;
+		.sm & {
+			margin-right: 12px;
+		}
 		.xs & {
 			margin: 22px 20px 0 0;
 		}

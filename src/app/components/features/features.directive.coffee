@@ -9,7 +9,7 @@ angular.module 'blackfire'
           image: 'assets/images/multichanel.png'
           title: 'Multichannel'
           description: [
-            'Multi-room and multi-channel streaming to Wi-Fi speakers and SmartTVs for surround sound and multi-room experiences'
+            'Multi-room and multi-channel streaming to Wi-Fi speakers and SmartTVs'
             'Flawlessly stream audio and video from your Home Theatre PC'
           ]
         }
