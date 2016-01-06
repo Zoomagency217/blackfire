@@ -45,12 +45,14 @@ angular.module 'blackfire'
         {
           'thumbnail': './assets/images/gallery/thumbnails/06.jpg'
           'image': './assets/images/gallery/06.jpg'
+          'mobileImage': './assets/images/gallery/mobile/06.jpg'
           'width': 1
           'height': 1
         }
         {
           'thumbnail': './assets/images/gallery/thumbnails/07.jpg'
           'image': './assets/images/gallery/07.jpg'
+          'mobileImage': './assets/images/gallery/mobile/07.jpg'
           'width': 2
           'height': 1
         }
