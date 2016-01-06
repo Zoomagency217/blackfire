@@ -104,7 +104,7 @@
 				text-overflow: ellipsis;
 			}
 			.ct {
-				@include showline(2, 45px, 50px, 55px);
+				@include showline(5, 110px, 120px, 135px);
 			}
 		}
 	}

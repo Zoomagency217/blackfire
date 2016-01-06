@@ -24,19 +24,19 @@ angular.module 'blackfire'
           'background': './assets/images/technology-bg-1.png'
           'image': './assets/images/technology-1.png'
           'title': 'RPM'
-          'description': 'Traffic Independent Synchronization'
+          'description': 'Realtime Packet Management<br><small>RPM streams lossless 24-bit/96kHz Studio Quality HD audio and HD video to any device, any room — it’s how we make sure that there are no gaps or drop-outs in your music.</small>'
         }
         {
           'background': './assets/images/technology-bg-2.png'
           'image': './assets/images/technology-2.png'
           'title': 'TIS'
-          'description': 'Traffic Independent Synchronization'
+          'description': 'Traffic Independent Synchronization<br><small>No matter how much bandwidth you are using on your network, Blackfire will ensure that there is always enough room to serve your media. It always stays in synch.</small>'
         }
         {
           'background': './assets/images/technology-bg-3.png'
           'image': './assets/images/technology-3.png'
           'title': 'DSB'
-          'description': 'Dynamic Stream Balancing'
+          'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This ensures that your media streams are rendered accurately on each device.</small>'
         }
       ]
       'blueprint':
@@ -108,6 +108,6 @@ angular.module 'blackfire'
           }
         ]
       'footer':
-        'title': ''
-        'description': 'Join the Blackfire revolution - let\'s bring the Media Internet of Things to life!'
+        'title': 'Join the Blackfire revolution'
+        'description': 'Let\'s bring the Media Internet of Things to life!'
     return

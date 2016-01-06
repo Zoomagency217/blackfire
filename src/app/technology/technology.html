@@ -21,7 +21,7 @@
 			<div class="cta fs-1">
 				<div class="fade-in-up-item hd">{{item.title}}</div>
 				<div class="fade-in-up-item hd sub">{{item.subtitle}}</div>
-				<div class="fade-in-up-item ct">{{item.description}}</div>
+				<div class="fade-in-up-item ct" ng-bind-html="item.description"></div>
 			</div>
 		</div>
 	</div>

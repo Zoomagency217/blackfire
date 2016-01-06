@@ -10,5 +10,9 @@ angular.module 'blackfire'
     
     $scope.close = ->
       $uibModalInstance.dismiss 'cancel'
+
+    $scope.sendmail = ->
+      localStorage.setItem 'email', $scope.email
+      $uibModalInstance.dismiss 'cancel'
     
     return
