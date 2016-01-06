@@ -5,7 +5,7 @@ angular.module 'blackfire'
       'ngInject'
       fv = this
       fv.data =
-        'title': 'Supports your Favourite Streaming Services'
+        'title': 'Smarter distribution, syncing and playback of media on multiple A/V devices over WiFi'
         'favourites': [
           {
             'image': 'assets/images/favourite_spotify.png'

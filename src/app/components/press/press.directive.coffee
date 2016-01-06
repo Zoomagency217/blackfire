@@ -11,21 +11,21 @@ angular.module 'blackfire'
         'presses': [
           {
             'image': 'assets/images/press_1.png'
-            'date': 'DEC 28, 2015'
+            'date': 'DEC 27, 2015'
             'title': 'CES 2016'
             'description': 'Celebrate the beginning of a week of innovation and life-changing technology at these CES events.'
             'url': 'https://www.cesweb.org/'
           }
           {
             'image': 'assets/images/press_2.jpg'
-            'date': 'JAN 02, 2016'
+            'date': 'DEC 21, 2015'
             'title': 'Mobile World Congress'
             'description': 'The GSMA Mobile World Congress is the place where mobile leaders to gather, collaborate and conduct business.'
             'url': 'http://www.gsma.com/events/mobile-world-congress'
           }
           {
             'image': 'assets/images/press_3.jpg'
-            'date': 'JUL 15, 2016'
+            'date': 'DEC 12, 2015'
             'title': 'IFA Berlin'
             'description': 'IFA is the main meeting place for key retailers, buyers, and experts from the industry and the media.'
             'url': 'http://b2b.ifa-berlin.com/'

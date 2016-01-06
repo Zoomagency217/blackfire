@@ -11,6 +11,7 @@ angular.module 'blackfire'
 
       cn.playButton = playButtonSrc
       cn.playing = false
+      cn.started = false
       cn.data =
         cta:
           title: 'Always connected'
@@ -31,11 +32,13 @@ angular.module 'blackfire'
 
       #   cn.videoStatus = video.paused
 
-      cn.playVideo = ->
+      cn.toggleVideo = ->
         video = document.getElementById 'connected-video'
-        video.muted = false
-        video.play()
-        cn.playing = true
+        video.muted = video.muted is 'muted' ? false : 'muted'
+        cn.playing = !cn.playing
+        cn.started = true
+        if cn.playing then video.play()
+        else video.pause()
 
       return
 

@@ -19,26 +19,26 @@ angular.module 'blackfire'
               'width': '41.2vw'
               'class': 'fade-in-down-item'
             }
-            {
-              'type': 'video'
-              'top': '4.9vw'
-              'left': '39vw'
-              'bottom': 'auto'
-              'right': 'auto'
-              'width': '22.3vw'
-              'class': 'fade-in-down-item'
-              'videoid': 'home-video-1'
-            }
-            {
-              'type': 'video'
-              'top': '17.9vw'
-              'left': '74vw'
-              'bottom': 'auto'
-              'right': 'auto'
-              'width': '15.7vw'
-              'class': 'fade-in-right-item'
-              'videoid': 'home-video-2'
-            }
+            # {
+            #   'type': 'video'
+            #   'top': '4.9vw'
+            #   'left': '39vw'
+            #   'bottom': 'auto'
+            #   'right': 'auto'
+            #   'width': '22.3vw'
+            #   'class': 'fade-in-down-item'
+            #   'videoid': 'home-video-1'
+            # }
+            # {
+            #   'type': 'video'
+            #   'top': '17.9vw'
+            #   'left': '74vw'
+            #   'bottom': 'auto'
+            #   'right': 'auto'
+            #   'width': '15.7vw'
+            #   'class': 'fade-in-right-item'
+            #   'videoid': 'home-video-2'
+            # }
             {
               'type': 'image'
               'image': './assets/images/banner-1-item-2.png'

@@ -14,6 +14,10 @@
 		position: relative;
 		max-height: 54vw;
 		overflow: hidden;
+		&:focus,
+		&:active {
+			outline: none;
+		}
 		video {
 			width: 100%;
 			margin-top: -1vw;

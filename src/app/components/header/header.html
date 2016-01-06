@@ -6,12 +6,12 @@
 	</div>
 	<ul class="bl-menu hidden-xs">
 		<li ng-repeat="item in hd.menus"><a ui-sref="{{item.state}}">{{item.title}}</a></li>
-		<li>
+		<!-- <li>
 			<a href="javascript:;" ng-click="toggleSearch()"><img src="./assets/images/icon-search.png" ng-cloak/></a>
-		</li>
+		</li> -->
 	</ul>
 	<div class="bl-menu-xs visible-xs">
-		<a href="javascript:;" ng-click="toggleSearch()"><img src="./assets/images/icon-search.png" ng-cloak/></a>
+		<!-- <a href="javascript:;" ng-click="toggleSearch()"><img src="./assets/images/icon-search.png" ng-cloak/></a> -->
 		<a href="javascript:;" ng-click="global.toggleMenu()"><img src="./assets/images/icon-menu.png" ng-cloak/></a>
 	</div>
 	<div class="menu-xs visible-xs">
@@ -19,5 +19,5 @@
 			<li ng-repeat="item in hd.menus"><a ui-sref="{{item.state}}">{{item.title}}</a></li>
 		</ul>
 	</div>
-	<div ng-include="'app/components/search/search.html'"></div>
+	<!-- <div ng-include="'app/components/search/search.html'"></div> -->
 </div>

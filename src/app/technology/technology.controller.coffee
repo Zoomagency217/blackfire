@@ -24,19 +24,19 @@ angular.module 'blackfire'
           'background': './assets/images/technology-bg-1.png'
           'image': './assets/images/technology-1.png'
           'title': 'RPM'
-          'description': 'Realtime Packmmmtet Management<br><small>RPM streams lossless 24-bit/96kHz Studio Quality HD audio and HD video to any device, any room — it’s how we make sure that there are no gaps or drop-outs in your music.</small>'
+          'description': 'Traffic Independent Synchronization'
         }
         {
           'background': './assets/images/technology-bg-2.png'
           'image': './assets/images/technology-2.png'
           'title': 'TIS'
-          'description': 'Traffic Independent Synchronization<br><small>No matter how much bandwidth you are using on your network, Blackfire will ensure that there is always enough room to serve your media. It always stays in synch.</small>'
+          'description': 'Traffic Independent Synchronization'
         }
         {
           'background': './assets/images/technology-bg-3.png'
           'image': './assets/images/technology-3.png'
           'title': 'DSB'
-          'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This ensures that your media streams are rendered accurately on each device.</small>'
+          'description': 'Dynamic Stream Balancing'
         }
       ]
       'blueprint':
@@ -83,8 +83,8 @@ angular.module 'blackfire'
             'top': 9.5
             'left': 58.5
             'width': 25
-            'title': 'DSB'
-            'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This acts as the conductor in your media orchestra, ensuring that your media is rendered accurately on each device.</small>'
+            'title': 'TIS'
+            'description': 'Traffic Independent Synchronization'
             'x': 'bl-left'
             'y': 'bl-top'
           }
@@ -93,7 +93,7 @@ angular.module 'blackfire'
             'left': 59
             'width': 25
             'title': 'DSB'
-            'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This acts as the conductor in your media orchestra, ensuring that your media is rendered accurately on each device.</small>'
+            'description': 'Dynamic Stream Balancing'
             'x': 'bl-left'
             'y': 'bl-bottom'
           }
@@ -101,8 +101,8 @@ angular.module 'blackfire'
             'top': 30
             'left': 38
             'width': 20
-            'title': 'DSB'
-            'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This acts as the conductor in your media orchestra, ensuring that your media is rendered accurately on each device.</small>'
+            'title': 'RPM'
+            'description': 'Realtime Packet Management'
             'x': 'bl-right'
             'y': 'bl-bottom'
           }
