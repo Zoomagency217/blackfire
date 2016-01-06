@@ -4,9 +4,9 @@
 			<img ng-src="{{slide.image}}" ng-cloak/>
 			<div ng-repeat="(index, item) in slide.items" class="bl-item fullwidth-image" ng-style="{'top': item.top, 'left': item.left, 'bottom': item.bottom, 'right': item.right, 'width': item.width, 'z-index': index}" ng-class="item.class">
 				<img ng-src="{{item.image}}" ng-cloak ng-if="item.type=='image'"/>
-				<video autoplay loop ng-if="item.type=='video'" id="{{item.videoid}}" muted="muted">
+				<!-- <video autoplay loop ng-if="item.type=='video'" id="{{item.videoid}}" muted="muted">
 					<source src="./assets/videos/video-1.mp4" type="video/mp4">
-				</video>
+				</video> -->
 			</div>
 			<div class="cta fs-1">
 				<div class="v-center">

@@ -32,8 +32,10 @@ angular.module 'blackfire'
 
       #   cn.videoStatus = video.paused
 
-      cn.toggleVideo = ->
-        video = document.getElementById 'connected-video'
+      cn.toggleVideo = (page)->
+        if page is 'home' then video = document.getElementById 'connected-home-video'
+        else video = document.getElementById 'connected-solution-video'
+        
         video.muted = video.muted is 'muted' ? false : 'muted'
         cn.playing = !cn.playing
         cn.started = true
