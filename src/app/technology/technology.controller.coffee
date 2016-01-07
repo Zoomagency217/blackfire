@@ -16,27 +16,27 @@ angular.module 'blackfire'
     $scope.data =
       'title': 'Chip and OS Inter-operation'
       'content': [
-        'Blackfire works perfectly with hardware from many Wi-Fi chipset vendors including Broadcom, Texas Instruments and RealTek.'
-        'It supports simultaneously Linux, Android, iOS, Windows, Mac Os X, ThreadEx and other RTOS operating systems.'
+        'Blackfire works perfectly with hardware from many Wi-Fi chipset vendors including Broadcom, RealTek,Texas Instruments and others.'
+        'It supports simultaneous operation on Linux, Android, iOS, Windows, Mac Os X, ThreadEx and other RTOS operating systems.'
       ]
       'list': [
         {
           'background': './assets/images/technology-bg-1.png'
           'image': './assets/images/technology-1.png'
           'title': 'RPM'
-          'description': 'Realtime Packet Management<br><small>RPM streams lossless 24-bit/96kHz Studio Quality HD audio and HD video to any device, any room — it’s how we make sure that there are no gaps or drop-outs in your music.</small>'
+          'description': 'Real-time Packet Management<br><small>RPM streams HD Video and lossless 24-bit/192kHz Studio Quality HD audio to any device, any room - it’s how we make sure that there are no gaps or drop-outs in your music.</small>'
         }
         {
           'background': './assets/images/technology-bg-2.png'
           'image': './assets/images/technology-2.png'
           'title': 'TIS'
-          'description': 'Traffic Independent Synchronization<br><small>No matter how much bandwidth you are using on your network, Blackfire will ensure that there is always enough room to serve your media. It always stays in synch.</small>'
+          'description': 'Traffic Independent Synchronization<br><small>No matter how much bandwidth you are using on your network, Blackfire will ensure that it stays in synch.</small>'
         }
         {
           'background': './assets/images/technology-bg-3.png'
           'image': './assets/images/technology-3.png'
           'title': 'DSB'
-          'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This ensures that your media streams are rendered accurately on each device.</small>'
+          'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This ensures that your devices all have the media it needs – exactly in the time it’s needed.</small>'
         }
       ]
       'blueprint':
@@ -48,32 +48,25 @@ angular.module 'blackfire'
               'title': 'Features'
               'image': './assets/images/technology-features.png'
               'details': [
-                '24-bit/96kHz'
-                'Multiroom'
-                'MultiChannel'
-                '1, 2.1, 5.1 Home Theater'
-                'BT & Aux Rebroadcast'
-                '24But/96 KHZ, Lossy, Lossless'
+                'Up to 24-bit/192kHz'
+                'Multi-Room, Multi-Channel, Multi Video Sync'
+                '1, 2.1, 5.1, 7.1 Home Theater (Surround Sound)'
+                'Lossy or Lossless operation'
+                'BlueTooth & Aux Input Rebroadcast'
+                'Multi Source Play'
+                'Auto discovery, Setup'
+                'Grouping, Control'
               ]
             }
             {
               'title': 'Specifications'
               'image': './assets/images/technology-specifications.png'
               'details': [
-                '802.11n 2.4 Ghz'
-                '24 Bit / 96 Khz Music'
-                '12S Audio output'
-                '12S in 16bit, 44 Khz'
-                'Support GPIO or UART Control'
-              ]
-            }
-            {
-              'title': 'Input & Output'
-              'image': './assets/images/technology-input-output.png'
-              'details': [
-                'Bluetooth Input'
-                'AUX Input'
-                'Low Cost'
+                '802.11n 2.4/5.0GHz'
+                'I2S Audio Input/ Output'
+                'Supports GPIO and UART Control'
+                '<150usec synchronization accuracy'
+
               ]
             }
           ]
@@ -102,7 +95,7 @@ angular.module 'blackfire'
             'left': 38
             'width': 20
             'title': 'RPM'
-            'description': 'Realtime Packet Management'
+            'description': 'Real-time Packet Management'
             'x': 'bl-right'
             'y': 'bl-bottom'
           }

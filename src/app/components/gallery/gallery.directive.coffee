@@ -73,7 +73,7 @@ angular.module 'blackfire'
         h = $('#gallery-content img').height() - $('#gallery-content').height()
         gl.image =
           ml: (- w * e.offsetX / e.currentTarget.clientWidth * 0.9) + 'px'
-          mt: (- w * e.offsetY / e.currentTarget.clientHeight * 0.9) + 'px'
+          mt: (- w * e.offsetY / e.currentTarget.clientHeight * 1.78) + 'px'
 
       return
 

@@ -6,7 +6,7 @@ angular.module 'blackfire'
       ab = this
       ab.data = [
         {
-          'description': 'Stream media to anywhere in the house, or to the whole house. It works the way you need it to work. The idea is brilliantly simple, the delivery, simply brilliant.'
+          'description': 'Stream media to anywhere in the house, or to the whole house. It works the way you want. The idea is brilliantly simple, the delivery, simply brilliant.'
           'cta': 'We call it Blackfire'
         }
         {

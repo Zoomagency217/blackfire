@@ -60,8 +60,8 @@ angular.module 'blackfire'
               'class': 'fade-in-right-item'
             }
           ]
-          'title': 'Connected Home Media'
-          'description': 'Audio & Video - Beyond Multi Room'
+          'title': 'Immersive Media Experience – wirelessly!'
+          'Whole home audio and video over Wi-Fi'
         }
         {
           'image': './assets/images/banner-2-bg.png'
@@ -83,8 +83,8 @@ angular.module 'blackfire'
               'class': 'fade-in-down-item'
             }
           ]
-          'title': 'Powering the best streaming media'
-          'description': 'WiFi speakers range has always been a problem... until now..<br><small>Harmon Kardon Omni 10 & 20 are powered by Blackfire</small>'
+          'title': 'Powering the best'
+          'description': 'Harmon Kardon Omni HD Wireless systems are powered by Blackfire<br><small>Smarter distribution, syncing and playback of media on multiple A/V devices over Wi-Fi</small>'
         }
       ]
 

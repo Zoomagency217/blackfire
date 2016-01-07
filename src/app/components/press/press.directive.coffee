@@ -7,20 +7,20 @@ angular.module 'blackfire'
       pr.page = $state.current.name
       pr.data =
         'title': 'Press'
-        'description': 'Read all about how Blackfire is fixing up everything you want to see and hear<br>Press inquiries? We can be reached at <a href="mailto:info@bfrx.com">info@bfrx.com</a>'
+        'description': 'Read all about how Blackfire is connecting up everything you want to see and hear<br>Press inquiries? We can be reached at <a href="mailto:info@bfrx.com">info@bfrx.com</a>'
         'presses': [
           {
             'image': 'assets/images/press_1.png'
             'date': 'DEC 27, 2015'
             'title': 'CES 2016'
-            'description': 'Celebrate the beginning of a week of innovation and life-changing technology at these CES events.'
+            'description': 'Celebrate the beginning of a week of innovation and life-changing technology at these events.'
             'url': 'https://www.cesweb.org/'
           }
           {
             'image': 'assets/images/press_2.jpg'
             'date': 'DEC 21, 2015'
             'title': 'Mobile World Congress'
-            'description': 'The GSMA Mobile World Congress is the place where mobile leaders to gather, collaborate and conduct business.'
+            'description': 'The Mobile World Congress is the place where mobile leaders to gather, collaborate and conduct business.'
             'url': 'http://www.gsma.com/events/mobile-world-congress'
           }
           {

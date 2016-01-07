@@ -12,24 +12,24 @@ angular.module 'blackfire'
             'title': 'Spotify'
           }
           {
-            'image': 'assets/images/favourite_google_play_music.png'
-            'title': 'Google Play Music'
+            'image': 'assets/images/favourite_google_cast.png'
+            'title': 'Google Cast'
           }
           {
-            'image': 'assets/images/favourite_rdio.png'
-            'title': 'Rdio'
+            'image': 'assets/images/favourite_tidal.png'
+            'title': 'Tidal'
           }
           {
-            'image': 'assets/images/favourite_nrpone.png'
-            'title': 'NRpone'
+            'image': 'assets/images/favourite_deezer.png'
+            'title': 'Deezer'
           }
           {
-            'image': 'assets/images/favourite_7_digital.png'
-            'title': '7 digital'
+            'image': 'assets/images/favourite_mix_radio.png'
+            'title': 'Mix Radio'
           }
           {
-            'image': 'assets/images/favourite_tune_in.png'
-            'title': 'TuneIn'
+            'image': 'assets/images/favourite_rhapsody.png'
+            'title': 'Rhapsody'
           }
         ]
       fv.config =
