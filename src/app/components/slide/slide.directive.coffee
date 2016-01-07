@@ -61,7 +61,7 @@ angular.module 'blackfire'
             }
           ]
           'title': 'Immersive Media Experience – wirelessly!'
-          'Whole home audio and video over Wi-Fi'
+          'description': 'Whole home audio and video over Wi-Fi'
         }
         {
           'image': './assets/images/banner-2-bg.png'
@@ -84,7 +84,7 @@ angular.module 'blackfire'
             }
           ]
           'title': 'Powering the best'
-          'description': 'Harmon Kardon Omni HD Wireless systems are powered by Blackfire<br><small>Smarter distribution, syncing and playback of media on multiple A/V devices over Wi-Fi</small>'
+          'description': 'Harmon Kardon Omni HD Wireless systems are powered by Blackfire'
         }
       ]
 

@@ -20,7 +20,7 @@ angular.module 'blackfire'
             'image': 'assets/images/press_2.jpg'
             'date': 'DEC 21, 2015'
             'title': 'Mobile World Congress'
-            'description': 'The Mobile World Congress is the place where mobile leaders to gather, collaborate and conduct business.'
+            'description': 'The Mobile World Congress is the place where mobile leaders gather, collaborate and conduct business.'
             'url': 'http://www.gsma.com/events/mobile-world-congress'
           }
           {
