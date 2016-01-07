@@ -5,7 +5,7 @@ angular.module 'blackfire'
       'ngInject'
       gl = this
       gl.title = 'Easy as Blackfire'
-      gl.description = 'Enjoying a truly seamless real-time media experience on multiple devices has never been this easy. Our technology works with almost any hardware platform.'
+      gl.description = 'Enjoying a truly seamless real-time media experience on multiple devices has never been this easy. Our technology works with many hardware platforms.'
       gl.gallery = [
         {
           'thumbnail': './assets/images/gallery/thumbnails/01.jpg'
