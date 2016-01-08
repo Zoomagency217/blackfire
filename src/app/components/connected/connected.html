@@ -13,7 +13,7 @@
 		<div class="bl-cta text-center" ng-if="!cn.started">
 			<div class="text-center play-button"><img ng-src="{{cn.playButton}}" /></div>
 			<div class="col-xs-10 col-xs-offset-1 fade-in-up-item hd">{{cn.data.cta.title}}</div>
-			<div class="col-xs-10 col-xs-offset-1 fade-in-up-item ct">{{cn.data.cta.description}}</div>
+			<div class="col-xs-10 col-xs-offset-1 fade-in-up-item ct" ng-bind-html="cn.data.cta.description[cn.page]"></div>
 		</div>
 	</div>
 </div>

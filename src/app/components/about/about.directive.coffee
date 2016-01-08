@@ -24,7 +24,7 @@ angular.module 'blackfire'
           ]
         }
         {
-          'title': 'TV, PC, Smartphone, all in in perfect rhythm'
+          'title': 'TV, PC, Smartphone, all in perfect rhythm'
           'description': 'Because sometimes life just needs a soundtrack. Blackfire makes sure that you don’t miss a beat.'
           'image': 'assets/images/about.png'
         }

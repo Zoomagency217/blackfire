@@ -15,7 +15,9 @@ angular.module 'blackfire'
       cn.data =
         cta:
           title: 'Always connected'
-          description: 'Enjoying a truly seamless real-time media experience on multiple devices has never been this easy. Our technology works with many hardware platforms'
+          description:
+            home: 'Enjoying a truly seamless real-time media experience on multiple devices has never been this easy. Our technology works with many hardware platforms'
+            solution: 'What’s the point of wireless if you always need to pair your device? With Blackfire you can get the music going from any room.'
 
       # cn.togglePlay = ->
       #   video = document.getElementById 'connected-video'

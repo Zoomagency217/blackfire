@@ -37,6 +37,10 @@ body {
 		font-family: 'Helvetica';
 		font-weight: 300;
 		color: #353535;
+		&:active,
+		&:focus {
+			outline: none;
+		}
 	}
 	&.xs {
 		* {
