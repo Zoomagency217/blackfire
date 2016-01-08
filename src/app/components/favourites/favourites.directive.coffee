@@ -37,7 +37,7 @@ angular.module 'blackfire'
         theme: 'rounded-dots-dark'
         advanced:
           updateOnContentResize: true
-        setHeight: 130
+        setHeight: 150
         mouseWheel:
           enable: true
           axis: 'x'
