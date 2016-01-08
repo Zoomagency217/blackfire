@@ -4,7 +4,7 @@ angular.module 'blackfire'
     $scope.data = [
       {
         'title': 'About Blackfire Research'
-        'content': 'We are a San Francisco based company that believes everything should be connected, should be smart and should be wireless! Mainstream connected-home technology wasn’t doing enough. What we really want is seamless access to our media. To play on any screen and any speaker - from anywhere - wirelessly! And, we want it without the range, dropout and out-of-synch issues.'
+        'content': 'We are a San Francisco based company that believe everything should be connected, should be smart and should be wireless! Mainstream connected-home technology wasn’t doing enough. What we really want is seamless access to our media. To play on any screen and any speaker - from anywhere - wirelessly! And, we want it without the range, dropout and out-of-synch issues.'
       }
       {
         'title': 'We made it and we made it easy'

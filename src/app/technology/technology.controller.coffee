@@ -14,10 +14,10 @@ angular.module 'blackfire'
       onDrag = false
 
     $scope.data =
-      'title': 'Chip and OS Inter-operation'
+      'title': 'Chip and OS Interoperation'
       'content': [
         'Blackfire works perfectly with hardware from many Wi-Fi chipset vendors including Broadcom, RealTek,Texas Instruments and others.'
-        'It supports simultaneous operation on Linux, Android, iOS, Windows, Mac Os X, ThreadEx and other RTOS operating systems.'
+        'It supports simultaneous operation on Linux, Android, iOS, Windows, Mac Os X, ThreadX and other RTOS operating systems.'
       ]
       'list': [
         {
@@ -41,7 +41,7 @@ angular.module 'blackfire'
       ]
       'blueprint':
         'cover': {
-          'title': 'Ask For Blackfire'
+          'title': 'Blackfire Audio Solutions'
           'description': 'Blackfire FireCast Wi-Fi<br><small>Our technology works with any Wi-Fi chipset, so whatever hardware or OS you have - Blackfire’s technology can light it up and deliver a seamless media experience.</small>'
           'list': [
             {
@@ -52,7 +52,7 @@ angular.module 'blackfire'
                 'Multi-Room, Multi-Channel, Multi Video Sync'
                 '1, 2.1, 5.1, 7.1 Home Theater (Surround Sound)'
                 'Lossy or Lossless operation'
-                'BlueTooth & Aux Input Rebroadcast'
+                'BT & Aux Input Rebroadcast'
                 'Multi Source Play'
                 'Auto discovery, Setup'
                 'Grouping, Control'
@@ -62,7 +62,7 @@ angular.module 'blackfire'
               'title': 'Specifications'
               'image': './assets/images/technology-specifications.png'
               'details': [
-                '802.11n 2.4/5.0GHz'
+                '802.11n 2.4/5GHz'
                 'I2S Audio Input/ Output'
                 'Supports GPIO and UART Control'
                 '<150usec synchronization accuracy'
