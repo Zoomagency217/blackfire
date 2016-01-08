@@ -12,7 +12,7 @@ angular.module 'blackfire'
       }
       {
         'title': 'Everything is connected'
-        'content': '<p>With 50 billion smart media devices expected by the year 2020, we have a lot of people to get connected. Blackfire is the simplest and most reliable streaming playback experience ever created. And that’s just the beginning..</p> <p><strong> We will make you believe what your eyes and ears already know:</strong><br><strong>Blackfire is the new standard for streaming media.<p>'
+        'content': '<p>With 50 billion smart media devices expected by the year 2020, we have a lot of people to get connected. Blackfire is the simplest and most reliable streaming playback experience ever created. And that’s just the beginning...</p> <p><strong> We will make you believe what your eyes and ears already know:</strong><br><strong>Blackfire is the new standard for streaming media.<p>'
       }
     ]
     return
