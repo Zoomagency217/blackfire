@@ -16,7 +16,7 @@ angular.module 'blackfire'
         cta:
           title: 'Always connected'
           description:
-            home: 'Enjoying a truly seamless real-time media experience on multiple devices has never been this easy. Our technology works with many hardware platforms'
+            home: 'Enjoying a truly seamless real-time media experience on multiple devices has never been this easy.<br>Our technology works with many hardware platforms'
             solution: 'What’s the point of wireless if you always need to pair your device? With Blackfire you can get the music going from any room.'
 
       # cn.togglePlay = ->

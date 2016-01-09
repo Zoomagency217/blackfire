@@ -16,11 +16,9 @@
 		</div>
 	</div>
 	<div class="col-sm-4" ng-repeat="item in data.list">
-		<div class="row fullwidth-image detail" ng-style="{'background-image':'url('+item.background+')'}">
-			<img ng-src="{{item.image}}" class="fade-in-up-item" ng-cloak ng-cloak/>
+		<div class="row fullwidth-image detail" ng-style="{'background-image':'url('+item.background+')', 'background-color':'#'+item.backgroundcolor}">
 			<div class="cta fs-1">
 				<div class="fade-in-up-item hd">{{item.title}}</div>
-				<div class="fade-in-up-item hd sub">{{item.subtitle}}</div>
 				<div class="fade-in-up-item ct" ng-bind-html="item.description"></div>
 			</div>
 		</div>

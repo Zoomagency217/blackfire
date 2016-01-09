@@ -30,7 +30,8 @@
 		height: 42.2vw;
 		overflow: hidden;
 		.xs & {
-			background: #d54b19;
+			background: rgba(247, 143, 30, 1);
+			height: auto;
 		}
 		.cta {
 			position: absolute;
@@ -66,7 +67,7 @@
 			}
 			.hd.text,
 			.ct {
-				background: #d54b19;
+				background: rgba(247, 143, 30, 0.9);
 				margin-bottom: 5px;
 				padding: 20px;
 				.sm & {
@@ -79,7 +80,9 @@
 		}
 	}
 	.detail {
-		background-size: cover;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top left;
 		img {
 			position: absolute;
 			right: 0;
@@ -93,15 +96,34 @@
 			.xs & {
 				padding-top: 40vw;
 			}
-			.hd.sub {
-				font-weight: normal;
-				font-size: 25px;
-			}
-			.hd,
-			.hd.sub {
+			.hd {
+				padding-left: 50px;
+				background: url(../assets/images/icon-blackfire-logo.png) top 0px left 0px no-repeat;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+				height: 40px;
+				.lg & {
+					line-height: 40px;
+				}
+				.md & {
+					height: 30px;
+					background-size: 30px;
+					line-height: 30px;
+					padding-left: 40px;
+				}
+				.sm & {
+					background-size: 25px;
+					height: 30px;
+					line-height: 26px;
+					padding-left: 35px;
+				}
+				.xs & {
+					background-size: 20px;
+					height: 35px;
+					line-height: 23px;
+					padding-left: 25px;
+				}
 			}
 			.ct {
 				@include showline(5, 110px, 120px, 135px);

@@ -107,6 +107,7 @@
 					padding: 20px 15px;
 					position: relative;
 					text-align: center;
+					margin: auto;
 				}
 				.date {
 					font-size: 14px;
@@ -117,12 +118,12 @@
 					border: #2a2f32 5px solid;
 					border-radius: 18px;
 					content: '';
-					height: 21px;
+					height: 20px;
 					top: 0;
 					left: 50%;
 					margin-left: -10px;
 					position: absolute;
-					width: 21px;
+					width: 20px;
 					.lg &,
 					.md &,
 					.sm & {

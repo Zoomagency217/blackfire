@@ -22,19 +22,19 @@ angular.module 'blackfire'
       'list': [
         {
           'background': './assets/images/technology-bg-1.png'
-          'image': './assets/images/technology-1.png'
+          'backgroundcolor': '060005'
           'title': 'RPM'
           'description': 'Real-time Packet Management<br><small>RPM streams HD Video and lossless 24-bit/192kHz Studio Quality HD audio to any device, any room - it’s how we make sure that there are no gaps or drop-outs in your music.</small>'
         }
         {
           'background': './assets/images/technology-bg-2.png'
-          'image': './assets/images/technology-2.png'
+          'backgroundcolor': '230f0f'
           'title': 'TIS'
           'description': 'Traffic Independent Synchronization<br><small>No matter how much bandwidth you are using on your network, Blackfire will ensure that it stays in synch.</small>'
         }
         {
           'background': './assets/images/technology-bg-3.png'
-          'image': './assets/images/technology-3.png'
+          'backgroundcolor': '021a20'
           'title': 'DSB'
           'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This ensures that your devices all have the media it needs – exactly in the time it’s needed.</small>'
         }
