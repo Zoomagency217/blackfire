@@ -44,15 +44,12 @@
 		}
 		.press-top-line-2 {
 			background: url(../assets/images/press-top-line-2.png) top left repeat-x;
-			left: 350px;
+			left: 280px;
 			height: 3px;
 			margin-right: 89px;
 			position: absolute;
 			right: 50%;
 			top: 289px;
-			.sm & {
-				left: 290px;
-			}
 			.xs & {
 				display: none;
 			}
@@ -60,13 +57,10 @@
 		.press-top-line-3 {
 			background: url(../assets/images/press-top-line-3.png) top left no-repeat;
 			height: 100px;
-			left: 252px;
+			left: 182px;
 			position: absolute;
 			top: 289px;
 			width: 100px;
-			.sm & {
-				left: 192px;
-			}
 			.xs & {
 				display: none;
 			}
@@ -74,13 +68,10 @@
 		.press-bottom-line {
 			background: url(../assets/images/press-bottom-line.png) top left no-repeat;
 			height: 73px;
-			left: 247px;
+			left: 177px;
 			position: absolute;
 			bottom: 125px;
 			width: 12px;
-			.sm & {
-				left: 187px;
-			}
 			.xs & {
 				background: url(../assets/images/press-bottom-line-xs.png) bottom center no-repeat;
 				background-size: 14px;
@@ -97,11 +88,7 @@
 				left: 35px;
 				position: absolute;
 				top: 0;
-				width: 200px;
-				.sm & {
-					left: 15px;
-					width: 160px;
-				}
+				width: 100px;
 				.xs & {
 					left: 0;
 					padding: 20px 15px;
@@ -133,16 +120,12 @@
 			}
 			.right-area {
 				background: url(../assets/images/press-line.png) top left repeat-y;
-				margin-left: 252px;
+				margin-left: 182px;
 				min-height: 180px;
 				padding-bottom: 100px;
 				padding-left: 50px;
 				padding-right: 50px;
 				position: relative;
-				.sm & {
-					margin-left: 192px;
-					padding-right: 15px;
-				}
 				.xs & {
 					background: url(../assets/images/press-line-xs.png) bottom center no-repeat;
 					background-size: 2px;
