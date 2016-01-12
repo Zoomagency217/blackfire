@@ -9,4 +9,5 @@ angular.module 'blackfire', [
   'ui.bootstrap'
   'toastr'
   'ngScrollbars'
+  'firebase'
 ]

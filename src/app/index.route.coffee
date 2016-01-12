@@ -32,5 +32,10 @@ angular.module 'blackfire'
         templateUrl: 'app/contact/contact.html'
         controller: 'ContactController'
         controllerAs: 'contact'
+      .state 'admin',
+        url: '/admin'
+        templateUrl: 'app/admin/admin.html'
+        controller: 'AdminController'
+        controllerAs: 'admin'
 
     $urlRouterProvider.otherwise '/'

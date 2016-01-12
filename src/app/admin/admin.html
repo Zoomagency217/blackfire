@@ -1,0 +1,22 @@
+<div class="app-company" ng-cloak>
+	<div class="about fs-4 fs-p">
+		<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+			<div class="fade-in-up-item hd ng-binding animated fadeInUp">List of data</div>
+			<hr>
+			<div class="fade-in-up-item ct ng-binding animated fadeInUp" ng-repeat="(key, value) in dataset">
+				<h3>{{value.name}}</h3>
+				<p>
+					<strong>Email</strong>: {{value.email}}
+				</p>
+				<p>
+					<strong>Subject</strong>: {{value.subject}}
+				</p>
+				<p>
+					<strong>Message</strong>: {{value.message}}
+				</p>
+				<hr>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>

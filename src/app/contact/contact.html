@@ -11,7 +11,7 @@
 	</div>
 	<div class="clearfix"></div>
 	<div class="contact-form">
-		<form ng-submit="contact()">
+		<form ng-submit="submit()">
 			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 text-center fs-3">
 				<div class="fade-in-up-item hd">Contact us today to join the Media IOT.</div>
 				<div class="row">
@@ -25,7 +25,7 @@
 						<input type="text" class="form-control fade-in-up-item" placeholder="Subject" ng-model="subject">
 					</div>
 					<div class="col-md-12">
-						<textarea class="form-control fade-in-up-item" rows="6" placeholder="Message"></textarea>
+						<textarea class="form-control fade-in-up-item" rows="6" placeholder="Message" ng-model="message"></textarea>
 					</div>
 					<div class="col-md-12 text-left">
 						<button type="submit" class="btn fade-in-up-item">SEND</button>
