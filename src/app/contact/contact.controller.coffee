@@ -6,10 +6,15 @@ angular.module 'blackfire'
     syncObject = $firebaseArray ref
 
     $scope.submit = ->
-      console.log syncObject
-      syncObject.$add
-        name: $scope.name
-        email: $scope.email
-        subject: $scope.subject
-        message: $scope.message
+      $scope.loading = true
+      syncObject
+        .$add
+          name: $scope.name
+          email: $scope.email
+          subject: $scope.subject
+          message: $scope.message
+        .then (data)->
+          $scope.loading = false
+          $scope.success = true
+
     return

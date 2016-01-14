@@ -1,6 +1,8 @@
 angular.module 'blackfire'
-  .controller 'PopupController', ($scope, $uibModalInstance) ->
+  .controller 'PopupController', ($scope, $uibModalInstance, type) ->
     'ngInject'
+    $scope.type = type
+
     $scope.data =
       'image': './assets/images/popup-logo.png'
       'title': 'See us at CES 2016'

@@ -1,14 +1,18 @@
 <div class="app-popup text-center fs-4" ng-cloak>
-    <form ng-submit="sendmail()">
-        <img ng-src="{{data.image}}" ng-cloak/>
-        <div class="hd" ng-bind-html="data.title"></div>
-        <div class="ct" ng-bind-html="data.description"></div>
-        <div class="input-group">
-            <input type="email" class="form-control" placeholder="{{data.placeholder}}" aria-label="{{data.placeholder}}" ng-model="email" required>
-            <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">{{data.buttonlabel}}</button>
+    <div ng-if="type=0">
+        <form ng-submit="sendmail()">
+            <img ng-src="{{data.image}}" ng-cloak/>
+            <div class="hd" ng-bind-html="data.title"></div>
+            <div class="ct" ng-bind-html="data.description"></div>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="{{data.placeholder}}" aria-label="{{data.placeholder}}" ng-model="email" required>
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">{{data.buttonlabel}}</button>
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
+    <div ng-if="type=1">
+    </div>
     <div class="icon-close" ng-click="close()"></div>
 </div>

@@ -13,12 +13,19 @@
 				<div class="left-area">
 					<div class="date ct fade-in-up-item">{{item.date}}</div>
 					<div class="image fullwidth-image fade-in-up-item">
-						<img ng-src="{{item.image}}" ng-cloak/>
+						<a href="javascript:;" target="_blank" ng-click="openLink(item.url)">
+							<img ng-src="{{item.image}}" ng-cloak/>
+						</a>
 					</div>
 				</div>
 				<div class="right-area">
-					<strong class="ct fade-in-up-item">{{item.title}}</strong>
-					<div class="ct fade-in-up-item">{{item.content}}</div>
+					<a href="javascript:;" ng-click="openLink(item.url)">
+						<strong class="ct fade-in-up-item">{{item.title}}</strong>
+					</a>
+					<p class="ct fade-in-up-item">{{item.content}}</p>
+					<em>
+						<a href="javascript:;" class="ct fade-in-up-item" ng-click="openLink(item.pdf)">Download article</a>
+					</em>
 				</div>
 			</div>
 		</div>
