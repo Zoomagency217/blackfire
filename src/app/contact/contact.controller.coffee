@@ -1,20 +1,22 @@
 angular.module 'blackfire'
   .controller 'ContactController', ($scope, $firebaseArray) ->
     'ngInject'
-    ref = new Firebase 'https://resplendent-torch-9249.firebaseio.com/data'
+    ref = new Firebase 'https://radiant-heat-2467.firebaseio.com/data'
 
     syncObject = $firebaseArray ref
 
-    $scope.submit = ->
-      $scope.loading = true
-      syncObject
-        .$add
-          name: $scope.name
-          email: $scope.email
-          subject: $scope.subject
-          message: $scope.message
-        .then (data)->
-          $scope.loading = false
-          $scope.success = true
+    $scope.data =
+      success: false
 
+    $scope.submit = ->
+      $scope.data.success = true
+      data =
+        name: $scope.data.name
+        email: $scope.data.email
+        subject: $scope.data.subject
+        message: $scope.data.message
+      syncObject
+        .$add data
+        .then (data)->
+          console.log 'success'
     return

@@ -11,21 +11,21 @@
 	</div>
 	<div class="clearfix"></div>
 	<div class="contact-form">
-		<form ng-submit="submit()" ng-if="!loading && !success">
+		<form ng-submit="submit()" ng-if="!loading && !data.success">
 			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 text-center fs-3">
 				<div class="fade-in-up-item hd">Contact us today to join the Media IOT.</div>
 				<div class="row">
 					<div class="col-md-4">
-						<input type="text" class="form-control name fade-in-up-item" placeholder="Name" ng-model="name" ng-disabled="loading" ng-required="true" required="required">
+						<input type="text" class="form-control name fade-in-up-item" placeholder="Name" ng-model="data.name" ng-disabled="loading" ng-required="true" required="required">
 					</div>
 					<div class="col-md-4">
-						<input type="email" class="form-control fade-in-up-item" placeholder="E-mail" ng-model="email" ng-disabled="loading" ng-required="true" required="required">
+						<input type="email" class="form-control fade-in-up-item" placeholder="E-mail" ng-model="data.email" ng-disabled="loading" ng-required="true" required="required">
 					</div>
 					<div class="col-md-4">
-						<input type="text" class="form-control fade-in-up-item" placeholder="Subject" ng-model="subject" ng-disabled="loading" ng-required="true" required="required">
+						<input type="text" class="form-control fade-in-up-item" placeholder="Subject" ng-model="data.subject" ng-disabled="loading" ng-required="true" required="required">
 					</div>
 					<div class="col-md-12">
-						<textarea class="form-control fade-in-up-item" rows="6" placeholder="Message" ng-model="message" ng-disabled="loading" ng-required="true" required="required"></textarea>
+						<textarea class="form-control fade-in-up-item" rows="6" placeholder="Message" ng-model="data.message" ng-disabled="loading" ng-required="true" required="required"></textarea>
 					</div>
 					<div class="col-md-12 text-left">
 						<button type="submit" class="btn fade-in-up-item" ng-disabled="loading">SEND</button>
@@ -34,7 +34,7 @@
 			</div>
 			<div class="clearfix"></div>
 		</form>
-		<div class="success" ng-if="success">
+		<div class="success" ng-show="data.success">
 			<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 text-center fs-3">
 				<div class="fade-in-up-item hd">Thank you for getting in touch!</div>
 				<div class="fade-in-up-item ct">We appreciate you contacting us. We try to respond as soon as possible.<br>Have a great day ahead!</div>
