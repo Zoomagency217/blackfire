@@ -84,7 +84,7 @@ angular.module 'blackfire'
             }
           ]
           'title': 'Powering the best'
-          'description': 'Harmon Kardon Omni HD Wireless systems are powered by Blackfire'
+          'description': 'Harman Kardon Omni HD Wireless systems are powered by Blackfire'
         }
       ]
 

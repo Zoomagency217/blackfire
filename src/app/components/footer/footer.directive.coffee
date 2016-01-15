@@ -72,8 +72,12 @@ angular.module 'blackfire'
           title: 'Home'
         }
         {
-          state: 'solution'
-          title: 'Solution'
+          state: 'company'
+          title: 'Company'
+        }
+        {
+          state: 'solutions'
+          title: 'Solutions'
         }
         {
           state: 'technology'
