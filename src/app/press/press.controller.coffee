@@ -29,7 +29,7 @@ angular.module 'blackfire'
           'pdf': './assets/pdf/BlackFire_Announces_Distribution_Agreement_with_Macnica_Networks_Corporation.pdf'
         }
         {
-          'date': 'Nov 27, 2016'
+          'date': 'Nov 27, 2015'
           'image': './assets/images/press_placeholder.png'
           'title': 'Blackfire powering Harman Kardon Omni WiFi Speakers'
           'content': 'Harman/Kardon is rolling out its Omni speaker displays nationwide all powered by Blackfire Technology'
