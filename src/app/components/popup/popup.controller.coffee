@@ -4,7 +4,7 @@ angular.module 'blackfire'
     $scope.type = type
 
     $scope.data =
-      'image': './assets/images/popup-logo.png'
+      'image': './assets/images/popup-logo.jpg'
       'title': 'See us at CES 2016'
       'description': 'Blackfire Research will be at the 2016 Consumer Electronics Show (CES) in Las Vegas from January 6-9th, 2016. Sign up to our newsletter to get the latest news and information directly from our team.'
       'placeholder': 'Enter your email address'

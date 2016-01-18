@@ -7,7 +7,7 @@ angular.module 'blackfire'
       sl.myInterval = 3000
       sl.slides = [
         {
-          'image': './assets/images/banner-1-bg.png'
+          'image': './assets/images/banner-1-bg.jpg'
           'items': [
             {
               'type': 'image'
@@ -64,13 +64,13 @@ angular.module 'blackfire'
           'description': 'Whole home audio and video over Wi-Fi'
         }
         {
-          'image': './assets/images/banner-2-bg.png'
+          'image': './assets/images/banner-2-bg.jpg'
           'items': []
           'title': 'Your media, your way'
           'description': 'Multiple speakers in many rooms or multiple speaker home theatre setup. You decide.'
         }
         {
-          'image': './assets/images/banner-3-bg.png'
+          'image': './assets/images/banner-3-bg.jpg'
           'items': [
             {
               'type': 'image'

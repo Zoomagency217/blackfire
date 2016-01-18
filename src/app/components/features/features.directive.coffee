@@ -6,7 +6,7 @@ angular.module 'blackfire'
       ft = this
       ft.features = [
         {
-          image: 'assets/images/feature-1.png'
+          image: 'assets/images/feature-1.jpg'
           title: 'Streaming home'
           description: [
             'Multi-room and multi-channel streaming to Wi-Fi speakers and SmartTVs'
@@ -14,7 +14,7 @@ angular.module 'blackfire'
           ]
         }
         {
-          image: 'assets/images/feature-2.png'
+          image: 'assets/images/feature-2.jpg'
           title: 'Wearables'
           description: [
             'Enjoy perfect audio from your wireless headsets'
@@ -22,7 +22,7 @@ angular.module 'blackfire'
           ]
         }
         {
-          image: 'assets/images/feature-3.png'
+          image: 'assets/images/feature-3.jpg'
           title: 'Mobile'
           description: [
             'Stream to your smartphone/tablet… or from your smartphone/tablet!'

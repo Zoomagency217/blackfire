@@ -10,7 +10,7 @@ angular.module 'blackfire'
         'description': 'Read all about how Blackfire is connecting up everything you want to see and hear<br>Press inquiries? We can be reached at <a href="mailto:info@bfrx.com">info@bfrx.com</a>'
         'presses': [
           {
-            'image': 'assets/images/press_1.png'
+            'image': 'assets/images/press_1.jpg'
             'date': 'DEC 27, 2015'
             'title': 'CES 2016'
             'description': 'Celebrate the beginning of a week of innovation and life-changing technology at these events.'
