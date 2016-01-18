@@ -18,7 +18,7 @@ angular.module 'blackfire'
           title: 'Wearables'
           description: [
             'Enjoy perfect audio from your wireless headsets'
-            'Turn your smartwatch indo a mobile music hub'
+            'Turn your smartwatch into a mobile music hub'
           ]
         }
         {
