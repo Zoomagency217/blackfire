@@ -44,6 +44,9 @@ $menu-color: #353535;
 		.xs & {
 			margin: 22px 20px 0 0;
 		}
+		.active {
+			color: #f78f1e;
+		}
 		li {
 			display: inline-block;
 			padding: 0 15px;
