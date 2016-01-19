@@ -10,7 +10,7 @@ angular.module 'blackfire'
           'title': 'Blackfire expands operations in Japan partnering with premier distributor Macnica'
           'content': 'Blackfire Research, the leader in Wireless High Performance Multimedia, Multi-Channel Wi-Fi Streaming Solutions, signed an agreement with Premier Japanese Distributor TecStar a division of Macnica, Inc.'
           'url': 'http://www.abnewswire.com/pressreleases/blackfire-research-announces-distribution-agreement-with-tecstarmacnica-of-japan_48565.html'
-          'pdf': './assets/pdf/Harman_International_Android_Development_with_Blackfire.pdf'
+          'pdf': './assets/pdf/BlackFire_Announces_Distribution_Agreement_with_Macnica_Networks_Corporation.pdf'
         }
         {
           'date': 'Jan 06, 2016'
@@ -26,7 +26,7 @@ angular.module 'blackfire'
           'title': 'HARMAN and Blackfire Announce Android Software Development Kit and Developer Community for Wireless HD Audio Networks'
           'content': 'HARMAN ANDROID SDK focuses on supporting developer innovation.'
           'url': 'http://news.harman.com/releases/harman-and-blackfire-announce-android-software-development-kit-and-developer-community-for-wireless-hd-audio-networks'
-          'pdf': './assets/pdf/BlackFire_Announces_Distribution_Agreement_with_Macnica_Networks_Corporation.pdf'
+          'pdf': './assets/pdf/Harman_International_Android_Development_with_Blackfire.pdf'
         }
         {
           'date': 'Nov 27, 2015'
