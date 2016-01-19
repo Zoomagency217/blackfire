@@ -11,6 +11,13 @@
 	img {
 		margin: auto;
 		width: 100%;
+		opacity: 1;
+		transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		-webkit-transition: opacity 1s;
+		&.transparent {
+			opacity: 0;
+		}
 	}
 	.carousel-control {
 		&.right,
