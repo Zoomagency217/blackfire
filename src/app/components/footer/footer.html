@@ -32,7 +32,7 @@
 					</ul>
 					<div class="about">{{ft.about}}</div>
 				</div>
-				<div ng-if="ft.submenus.length" class="col-md-8 submenus">
+				<div ng-if="ft.submenus.length" class="col-md-8 submenus hidden-xs">
 					<a ng-repeat="item in ft.submenus" ui-sref="{{item.state}}">{{item.title}}</a>
 				</div>
 				<div ng-repeat="menu in ft.menus" class="col-md-2 col-sm-3 col-xs-6 text-left menus">
