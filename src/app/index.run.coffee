@@ -84,7 +84,7 @@ angular.module 'blackfire'
       if bottom_of_window > top_of_object
         $timeout ->
           self.addClass cls
-        , 200 
+        , 200
 
     parallax = ->
       $rootScope.parallaxY = ($rootScope.pageWidth * 0.43 + 50 - $rootScope.pageYOffset)/$rootScope.pageWidth*43-20
