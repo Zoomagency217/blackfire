@@ -20,6 +20,9 @@ angular.module 'blackfire'
         $rootScope.pageYOffset
       toggleMenu: ->
         $rootScope.showMenu = !$rootScope.showMenu
+      assetUrl: 'http://bfrx.com/assets/'
+      
+    $rootScope.global.imageUrl = $rootScope.global.assetUrl + 'images/'
 
     checkScroll = ->
       $('.fade-in-up-item').each ->
@@ -55,13 +58,11 @@ angular.module 'blackfire'
           if $(this).hasClass('active')
             if $(this).index() is 0
               if scrY < 0.3 and !videoPlaying
-                console.log 1
                 videoPlaying = true
                 video1.play()
                 video2.play()
             else
               if videoPlaying
-                console.log 2
                 videoPlaying = false
                 video1.pause()
                 video2.pause()
@@ -74,14 +75,16 @@ angular.module 'blackfire'
     , 10
 
     add = (self, cls)->
-      bottom_of_object = self.offset().top + self.outerHeight()
+      top_of_object = self.offset().top
       bottom_of_window = $(window).scrollTop() + $(window).height()
 
       if self.outerHeight() > 50
-        bottom_of_object = self.offset().top + 50
+        top_of_object = self.offset().top + 50
 
-      if bottom_of_window > bottom_of_object
-        self.addClass cls
+      if bottom_of_window > top_of_object
+        $timeout ->
+          self.addClass cls
+        , 200 
 
     parallax = ->
       $rootScope.parallaxY = ($rootScope.pageWidth * 0.43 + 50 - $rootScope.pageYOffset)/$rootScope.pageWidth*43-20

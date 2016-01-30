@@ -1,5 +1,5 @@
 angular.module 'blackfire'
-  .directive 'appSlide', ->
+  .directive 'appSlide', ($rootScope)->
 
     slideController = () ->
       'ngInject'
@@ -7,11 +7,11 @@ angular.module 'blackfire'
       sl.myInterval = 3000
       sl.slides = [
         {
-          'image': './assets/images/banner-1-bg.jpg'
+          'image': $rootScope.global.imageUrl + 'banner-1-bg.jpg'
           'items': [
             {
               'type': 'image'
-              'image': './assets/images/banner-1-item-1.png'
+              'image': $rootScope.global.imageUrl + 'banner-1-item-1.png'
               'top': '4.4vw'
               'left': '30vw'
               'bottom': 'auto'
@@ -41,7 +41,7 @@ angular.module 'blackfire'
             # }
             {
               'type': 'image'
-              'image': './assets/images/banner-1-item-2.png'
+              'image': $rootScope.global.imageUrl + 'banner-1-item-2.png'
               'top': '1.6vw'
               'left': '31.4vw'
               'bottom': 'auto'
@@ -51,7 +51,7 @@ angular.module 'blackfire'
             }
             {
               'type': 'image'
-              'image': './assets/images/banner-1-item-3.png'
+              'image': $rootScope.global.imageUrl + 'banner-1-item-3.png'
               'top': '16.7vw'
               'left': '59vw'
               'bottom': 'auto'
@@ -64,17 +64,17 @@ angular.module 'blackfire'
           'description': 'Whole home audio and video over Wi-Fi'
         }
         {
-          'image': './assets/images/banner-2-bg.jpg'
+          'image': $rootScope.global.imageUrl + 'banner-2-bg.jpg'
           'items': []
           'title': 'Your media, your way'
           'description': 'Multiple speakers in many rooms or multiple speaker home theatre setup. You decide.'
         }
         {
-          'image': './assets/images/banner-3-bg.jpg'
+          'image': $rootScope.global.imageUrl + 'banner-3-bg.jpg'
           'items': [
             {
               'type': 'image'
-              'image': './assets/images/banner-3-item-1.png'
+              'image': $rootScope.global.imageUrl + 'banner-3-item-1.png'
               'top': '8vw'
               'left': '40vw'
               'bottom': 'auto'

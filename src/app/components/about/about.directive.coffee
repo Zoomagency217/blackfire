@@ -1,5 +1,5 @@
 angular.module 'blackfire'
-  .directive 'appAbout', ->
+  .directive 'appAbout', ($rootScope)->
 
     aboutController = () ->
       'ngInject'
@@ -14,11 +14,11 @@ angular.module 'blackfire'
           'description': 'You can stream audio and video in your home with complete freedom'
           'content': [
             {
-              'image': 'assets/images/solution-1.jpg'
+              'image': $rootScope.global.imageUrl + 'solution-1.jpg'
               'description': 'Stream audio to one device, video to another. Multichannel transforms into multiroom.'
             }
             {
-              'image': 'assets/images/solution-2.jpg'
+              'image': $rootScope.global.imageUrl + 'solution-2.jpg'
               'description': 'Stream to multiple tablets through Blackfire. Everyone gets to watch.'
             }
           ]
@@ -26,7 +26,7 @@ angular.module 'blackfire'
         {
           'title': 'TV, PC, Smartphone, all in perfect rhythm'
           'description': 'Because sometimes life just needs a soundtrack. Blackfire makes sure that you don’t miss a beat.'
-          'image': 'assets/images/about.png'
+          'image': $rootScope.global.imageUrl + 'about.png'
         }
         {
           'title': 'Get Connected With Blackfire'

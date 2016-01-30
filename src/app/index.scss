@@ -394,6 +394,16 @@ body {
 	visibility: hidden;
 }
 
+.preload {
+	opacity: 0;
+	transition: opacity .8s ease-in;
+	-moz-transition: opacity .8s ease-in;
+	-webkit-transition: opacity .8s ease-in;
+	&.show-image {
+		opacity: 1;
+	}
+}
+
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

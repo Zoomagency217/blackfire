@@ -1,12 +1,12 @@
 angular.module 'blackfire'
-  .controller 'PressController', ($scope) ->
+  .controller 'PressController', ($rootScope, $scope) ->
     'ngInject'
     $scope.data =
       'more': 'More Press'
       'list': [
         {
           'date': 'Jan 08, 2016'
-          'image': './assets/images/press_placeholder.png'
+          'image': $rootScope.global.imageUrl + 'press_placeholder.png'
           'title': 'Blackfire expands operations in Japan partnering with premier distributor Macnica'
           'content': 'Blackfire Research, the leader in Wireless High Performance Multimedia, Multi-Channel Wi-Fi Streaming Solutions, signed an agreement with Premier Japanese Distributor TecStar a division of Macnica, Inc.'
           'url': 'http://www.abnewswire.com/pressreleases/blackfire-research-announces-distribution-agreement-with-tecstarmacnica-of-japan_48565.html'
@@ -14,7 +14,7 @@ angular.module 'blackfire'
         }
         {
           'date': 'Jan 06, 2016'
-          'image': './assets/images/press_placeholder.png'
+          'image': $rootScope.global.imageUrl + 'press_placeholder.png'
           'title': 'Blackfire powers new generation of Harman Kardon High-Res Speakers'
           'content': 'Harman Kardon’s next generation of Omni wireless multiroom-audio products, based on the Blackfire platform'
           'url': 'http://www.twice.com/harman-kardon-adds-high-res-audio-speakers/60030'
@@ -22,7 +22,7 @@ angular.module 'blackfire'
         }
         {
           'date': 'Dec 03, 2015'
-          'image': './assets/images/press_placeholder.png'
+          'image': $rootScope.global.imageUrl + 'press_placeholder.png'
           'title': 'HARMAN and Blackfire Announce Android Software Development Kit and Developer Community for Wireless HD Audio Networks'
           'content': 'HARMAN ANDROID SDK focuses on supporting developer innovation.'
           'url': 'http://news.harman.com/releases/harman-and-blackfire-announce-android-software-development-kit-and-developer-community-for-wireless-hd-audio-networks'
@@ -30,7 +30,7 @@ angular.module 'blackfire'
         }
         {
           'date': 'Nov 27, 2015'
-          'image': './assets/images/press_placeholder.png'
+          'image': $rootScope.global.imageUrl + 'press_placeholder.png'
           'title': 'Blackfire powering Harman Kardon Omni WiFi Speakers'
           'content': 'Harman/Kardon is rolling out its Omni speaker displays nationwide all powered by Blackfire Technology'
           'url': 'http://www.applianceretailer.com.au/2015/11/how-one-brand-plans-to-keep-the-audio-category-alive/#.VphZS_krI-U'
@@ -38,7 +38,7 @@ angular.module 'blackfire'
         }
         {
           'date': 'Nov 26, 2015'
-          'image': './assets/images/press_placeholder.png'
+          'image': $rootScope.global.imageUrl + 'press_placeholder.png'
           'title': 'Blackfire Research Launches on Smartphones with the New HTC One M9- HTC\'s Flagship Product'
           'content': 'Blackfire Research Wireless media technology is now integrated into the HTC One M9 smartphones. '
           'url': 'http://www.prweb.com/releases/2015/05/prweb12714698.htm'
@@ -46,7 +46,7 @@ angular.module 'blackfire'
         }
         {
           'date': 'Nov 18, 2015'
-          'image': './assets/images/press_placeholder.png'
+          'image': $rootScope.global.imageUrl + 'press_placeholder.png'
           'title': 'The first wireless HD multi-room system that streams music from room to room at the touch of a button'
           'content': 'New Harman Kardon Omni Wireless HD Audio System Delivers Whole Home Sound with Ease and Elegance.'
           'url': 'http://investor.harman.com/releasedetail.cfm?ReleaseID=869069'

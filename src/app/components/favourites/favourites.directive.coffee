@@ -1,5 +1,5 @@
 angular.module 'blackfire'
-  .directive 'appFavourites', ->
+  .directive 'appFavourites', ($rootScope)->
 
     favouritesController = () ->
       'ngInject'
@@ -8,27 +8,27 @@ angular.module 'blackfire'
         'title': 'Smarter distribution, syncing and playback of media on multiple A/V devices over Wi-Fi'
         'favourites': [
           {
-            'image': 'assets/images/favourite_spotify.png'
+            'image': $rootScope.global.imageUrl + 'favourite_spotify.png'
             'title': 'Spotify'
           }
           {
-            'image': 'assets/images/favourite_google_cast.png'
+            'image': $rootScope.global.imageUrl + 'favourite_google_cast.png'
             'title': 'Google Cast'
           }
           {
-            'image': 'assets/images/favourite_tidal.png'
+            'image': $rootScope.global.imageUrl + 'favourite_tidal.png'
             'title': 'Tidal'
           }
           {
-            'image': 'assets/images/favourite_deezer.png'
+            'image': $rootScope.global.imageUrl + 'favourite_deezer.png'
             'title': 'Deezer'
           }
           {
-            'image': 'assets/images/favourite_mix_radio.png'
+            'image': $rootScope.global.imageUrl + 'favourite_mix_radio.png'
             'title': 'Mix Radio'
           }
           {
-            'image': 'assets/images/favourite_rhapsody.png'
+            'image': $rootScope.global.imageUrl + 'favourite_rhapsody.png'
             'title': 'Rhapsody'
           }
         ]

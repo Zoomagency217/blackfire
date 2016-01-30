@@ -1,11 +1,15 @@
 <div class="app-slide animated fadeIn">
 	<uib-carousel interval="6000">
 		<uib-slide ng-repeat="slide in sl.slides" active="slide.active">
-			<img ng-src="{{slide.image}}" ng-cloak/>
+			<div class="img">
+				<img preload-src="slide.image" ng-cloak class="preload"/>
+			</div>
 			<div ng-repeat="(index, item) in slide.items" class="bl-item fullwidth-image" ng-style="{'top': item.top, 'left': item.left, 'bottom': item.bottom, 'right': item.right, 'width': item.width, 'z-index': index}" ng-class="item.class">
-				<img ng-src="{{item.image}}" ng-cloak ng-if="item.type=='image'"/>
+				<div class="img">
+					<img preload-src="item.image" ng-cloak ng-if="item.type=='image'"/>
+				</div>
 				<!-- <video autoplay loop ng-if="item.type=='video'" id="{{item.videoid}}" muted="muted">
-					<source src="./assets/videos/video-1.mp4" type="video/mp4">
+					<source ng-src="{{global.imageUrl}}videos/video-1.mp4" type="video/mp4">
 				</video> -->
 			</div>
 			<div class="cta fs-1">

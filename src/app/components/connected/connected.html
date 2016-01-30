@@ -2,12 +2,12 @@
 	<div class="bl-main" ng-click="cn.toggleVideo(cn.page)">
 		<div ng-if="cn.page == 'home'">
 			<video poster="./assets/images/videobg-1.jpg" id="connected-home-video" loop muted="muted">
-				<source src="./assets/videos/video-1.mp4" type="video/mp4">
+				<source ng-src="./assets/videos/video-1.mp4" type="video/mp4">
 			</video>
 		</div>
 		<div ng-if="cn.page == 'solution'">
 			<video poster="./assets/images/videobg-2.jpg" id="connected-solution-video" loop muted="muted">
-				<source src="./assets/videos/video-2.mp4" type="video/mp4">
+				<source ng-src="./assets/videos/video-2.mp4" type="video/mp4">
 			</video>
 		</div>
 		<div class="bl-overlay">{{cn.data.overlay}}</div>

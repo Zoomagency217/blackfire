@@ -8,7 +8,7 @@
 			height: 200px;
 		}
 	}
-	img {
+	.img {
 		margin: auto;
 		width: 100%;
 		opacity: 1;
@@ -17,6 +17,9 @@
 		-webkit-transition: opacity 1s;
 		&.transparent {
 			opacity: 0;
+		}
+		img {
+			width: 100%;
 		}
 	}
 	.carousel-control {
@@ -97,6 +100,17 @@
 		small {
 			color: white;
 			font-size: 14px;
+		}
+	}
+	.carousel {
+		height: 42vw;
+		.carousel-inner {
+			height: 42vw;
+			.item {
+				background: #333;
+				height: 42vw;
+				overflow: hidden;
+			}
 		}
 	}
 }

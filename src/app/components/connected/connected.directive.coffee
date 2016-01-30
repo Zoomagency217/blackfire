@@ -1,13 +1,13 @@
 angular.module 'blackfire'
   .directive 'appConnected', ->
 
-    connectedController = ($state, $timeout) ->
+    connectedController = ($rootScope, $state, $timeout) ->
       'ngInject'
       cn = this
       cn.page = $state.current.name
 
-      playButtonSrc = './assets/images/play-button.png'
-      # pauseButtonSrc = './assets/images/pause-button.png'
+      playButtonSrc = $rootScope.global.imageUrl + 'play-button.png'
+      # pauseButtonSrc = $rootScope.global.imageUrl + 'pause-button.png'
 
       cn.playButton = playButtonSrc
       cn.playing = false

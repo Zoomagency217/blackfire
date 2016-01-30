@@ -1,13 +1,18 @@
-# angular.module 'blackfire'
-#   .directive 'preload', ->
-#     directive =
-#       restrict: 'A'
-#       scope:
-#         ngSrc: '='
-#       link: (scope, element)->
-#         element.on 'load', ->
-#           element.removeClass 'transparent'
+angular.module 'blackfire'
+  .directive 'preload', ($timeout)->
+    directive =
+      restrict: 'AC'
+      scope:
+        preloadSrc: '='
+      link: (scope, element, attrs)->
+        downloadingImage = new Image()
 
-#         scope.$watch 'dataSrc', ->
-#           console.log element
-#         return
+        downloadingImage.onload = ->
+          attrs.$set 'src', scope.preloadSrc
+          $timeout ->
+            element.addClass 'show-image'
+          , 1000
+
+        scope.$watch 'preloadSrc', ->
+          downloadingImage.src = scope.preloadSrc
+        return

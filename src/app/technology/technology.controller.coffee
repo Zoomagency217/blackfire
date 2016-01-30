@@ -1,5 +1,5 @@
 angular.module 'blackfire'
-  .controller 'TechnologyController', ($scope) ->
+  .controller 'TechnologyController', ($rootScope, $scope) ->
     'ngInject'
     $scope.dragPos = 40
     onDrag = false
@@ -21,19 +21,19 @@ angular.module 'blackfire'
       ]
       'list': [
         {
-          'background': './assets/images/technology-bg-1.jpg'
+          'background': $rootScope.global.imageUrl + 'technology-bg-1.jpg'
           'backgroundcolor': '060005'
           'title': 'RPM'
           'description': 'Real-time Packet Management<br><small>RPM streams HD Video and lossless 24-bit/192kHz Studio Quality HD audio to any device, any room - it’s how we make sure that there are no gaps or drop-outs in your music.</small>'
         }
         {
-          'background': './assets/images/technology-bg-2.jpg'
+          'background': $rootScope.global.imageUrl + 'technology-bg-2.jpg'
           'backgroundcolor': '230f0f'
           'title': 'TIS'
           'description': 'Traffic Independent Synchronization<br><small>No matter how much bandwidth you are using on your network, Blackfire will ensure that it stays in synch.</small>'
         }
         {
-          'background': './assets/images/technology-bg-3.jpg'
+          'background': $rootScope.global.imageUrl + 'technology-bg-3.jpg'
           'backgroundcolor': '021a20'
           'title': 'DSB'
           'description': 'Dynamic Stream Balancing<br><small>When streaming to multiple devices, DSM keeps it all in balance. This ensures that your devices all have the media it needs – exactly in the time it’s needed.</small>'
@@ -46,7 +46,7 @@ angular.module 'blackfire'
           'list': [
             {
               'title': 'Features'
-              'image': './assets/images/technology-features.png'
+              'image': $rootScope.global.imageUrl + 'technology-features.png'
               'details': [
                 'Up to 24-bit/192kHz'
                 'Multi-Room, Multi-Channel, Multi Video Sync'
@@ -60,7 +60,7 @@ angular.module 'blackfire'
             }
             {
               'title': 'Specifications'
-              'image': './assets/images/technology-specifications.png'
+              'image': $rootScope.global.imageUrl + 'technology-specifications.png'
               'details': [
                 '802.11n 2.4/5GHz'
                 'I2S Audio Input/ Output'

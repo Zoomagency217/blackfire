@@ -1,6 +1,6 @@
 <div class="technology" ng-cloak>
 	<div class="banner fullwidth-image">
-		<img src="./assets/images/technology-banner.jpg" class="fade-in-item" ng-cloak/>
+		<img ng-src="{{global.imageUrl}}technology-banner.jpg" class="fade-in-item" ng-cloak/>
 		<div class="cta fs-1">
 			<div class="v-center">
 				<div class="fade-in-down-item">
@@ -31,8 +31,8 @@
 		<div class="background" ng-style="{'right': (100-dragPos)+'vw'}">
 			<div class="main-content fullwidth-image" ng-style="{'margin-left': (100-dragPos)+'vw'}">
 				<div class="center-content">
-					<img src="./assets/images/technology-blueprint.png" class="hidden-xs" ng-cloak/>
-					<img src="./assets/images/technology-blueprint-mobile.png" class="visible-xs" ng-cloak/>
+					<img ng-src="{{global.imageUrl}}technology-blueprint.png" class="hidden-xs" ng-cloak/>
+					<img ng-src="{{global.imageUrl}}technology-blueprint-mobile.png" class="visible-xs" ng-cloak/>
 					<div ng-repeat="item in data.blueprint.background" ng-style="{'top': item.top+'vw', left: item.left+'vw'}" class="blueprint-item hidden-xs">
 						<button>+</button>
 						<div class="cta fs-1" ng-style="{width: item.width+'vw'}" ng-class="item.x + ' ' + item.y">
@@ -45,7 +45,7 @@
 		</div>
 		<div class="cover">
 			<div class="text-center cover-image">
-				<img src="./assets/images/technology-blueprint-cover-image.png" ng-cloak/>
+				<img ng-src="{{global.imageUrl}}technology-blueprint-cover-image.png" ng-cloak/>
 			</div>
 			<div class="main-content">
 				<div class="cta fs-4">
