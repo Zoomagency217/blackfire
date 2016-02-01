@@ -9,7 +9,7 @@
 			<li class="fade-in-item" ng-repeat="item in gl.gallery" ng-class="'w-'+item.width+ ' h-'+item.height" ng-click="gl.showPhoto(item)">
 				<div class="gallery-item">
 					<div class="v-center">
-						<img ng-src="{{item.thumbnail}}" ng-cloak/>
+						<img preload-src="item.thumbnail" class="preload" />
 					</div>
 				</div>
 			</li>
@@ -17,12 +17,12 @@
 		<div class="gallery-image hidden-xs" ng-class="{'show': gl.galleryDetail}">
 			<div class="close-button animated" ng-click="gl.hidePhoto()" ng-class="{'fadeIn': gl.showImage, 'fadeOut': !gl.showImage}"></div>
 			<div id="gallery-content" class="animated" ng-mousemove="gl.moving($event)" ng-class="{'fadeIn': gl.showImage, 'fadeOut': !gl.showImage}">
-				<img ng-src="{{gl.galleryDetail}}" ng-style="{'margin-left': gl.image.ml, 'margin-top': gl.image.mt}" ng-cloak/>
+				<img preload-src="gl.galleryDetail" ng-style="{'margin-left': gl.image.ml, 'margin-top': gl.image.mt}" class="preload" />
 			</div>
 		</div>
 		<uib-carousel interval="6000" class="visible-xs fade-in-up-item">
 			<uib-slide ng-repeat="item in gl.gallery" active="item.active" ng-if="item.mobileImage">
-				<img ng-src="{{item.mobileImage}}" ng-cloak/>
+				<img preload-src="item.mobileImage" class="preload" />
 			</uib-slide>
 		</uib-carousel>
 		<div class="clearfix"></div>

@@ -6,7 +6,7 @@
 			</div>
 			<div ng-repeat="(index, item) in slide.items" class="bl-item fullwidth-image" ng-style="{'top': item.top, 'left': item.left, 'bottom': item.bottom, 'right': item.right, 'width': item.width, 'z-index': index}" ng-class="item.class">
 				<div class="img">
-					<img preload-src="item.image" ng-cloak ng-if="item.type=='image'"/>
+					<img preload-src="item.image" ng-cloak ng-if="item.type=='image'" class="preload" />
 				</div>
 				<!-- <video autoplay loop ng-if="item.type=='video'" id="{{item.videoid}}" muted="muted">
 					<source ng-src="{{global.imageUrl}}videos/video-1.mp4" type="video/mp4">

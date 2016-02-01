@@ -19,9 +19,14 @@
 .app-company {
 	> div {
 		position: relative;
+		&.bl-banner {
+			height: 42.2vw;
+			background: #333;
+		}
 	}
 	.company-banner {
 		position: relative;
+		background: #333;
 		.cta {
 			z-index: 9;
 			padding: 0 5%;
@@ -42,6 +47,12 @@
 			padding-left: 15px;
 			padding-right: 15px;
 		}
+	}
+	.bl-research-image {
+		height: 32.3vw;
+	}
+	.bl-wmi-image {
+		height: 29.1vw;
 	}
 	.line-company-1 {
 		background: url(../assets/images/line-company-1.png) top left no-repeat;

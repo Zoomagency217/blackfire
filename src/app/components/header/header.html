@@ -1,7 +1,7 @@
 <div class="app-header" ng-class="{'header-collapsed':hd.global.scrollTop()>0}" ng-cloak>
 	<div class="bl-logo">
 		<a ui-sref="home">
-			<img ng-src="{{global.imageUrl}}logo.png" ng-cloak>
+			<img preload-src="global.imageUrl + 'logo.png'" class="preload">
 		</a>
 	</div>
 	<ul class="bl-menu hidden-xs">
@@ -10,12 +10,12 @@
 			<span class="active" ng-if="state==item.state">{{item.title}}</span>
 		</li>
 		<!-- <li>
-			<a href="javascript:;" ng-click="toggleSearch()"><img ng-src="{{global.imageUrl}}icon-search.png" ng-cloak/></a>
+			<a href="javascript:;" ng-click="toggleSearch()"><img preload-src="global.imageUrl + 'icon-search.png" ng-cloak/></a>
 		</li> -->
 	</ul>
 	<div class="bl-menu-xs visible-xs">
-		<!-- <a href="javascript:;" ng-click="toggleSearch()"><img ng-src="{{global.imageUrl}}icon-search.png" ng-cloak/></a> -->
-		<a href="javascript:;" ng-click="global.toggleMenu()"><img ng-src="{{global.imageUrl}}icon-menu.png" ng-cloak/></a>
+		<!-- <a href="javascript:;" ng-click="toggleSearch()"><img preload-src="global.imageUrl + 'icon-search.png" ng-cloak/></a> -->
+		<a href="javascript:;" ng-click="global.toggleMenu()"><img preload-src="global.imageUrl + 'icon-menu.png'" class="preload" /></a>
 	</div>
 	<div class="menu-xs visible-xs">
 		<ul class="bl-menu-right-xs list-unstyled">

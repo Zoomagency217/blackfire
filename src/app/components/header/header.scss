@@ -28,7 +28,7 @@ $menu-color: #353535;
 		}
 		img {
 			width: 100%;
-			transition: width .2s ease-in, height .2s ease-in;
+			transition: width .2s ease-in, height .2s ease-in, opacity .8s ease-in;
 		}
 	}
 	.bl-menu,
